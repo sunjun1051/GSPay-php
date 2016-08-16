@@ -159,15 +159,15 @@ define('SELLER_REFUND_API', 'http://localhost/order_refund');
 [Openning Letter][CP_OpenningLetter]
 [ChinaPay Qualitification Verification][CP_Veri]
 
-#About
+#About 
 
 This plugin and this sample file is proudly brought to you by the [Globalshopper team][GS]
 
  [GS]: http://globalshopper.com.cn
  [GS_Mer_Platform]: http://globalshopper.com.cn
- [CP_OpenningLetter]: CP_OpenningLetter.html
- [CP_Veri]:CP_Verify.html
- [Interface_01]:interface_specify.html
+ [CP_OpenningLetter]: https://globalshopper.github.io/GSPay-php/CP_OpenningLetter.html
+ [CP_Veri]:https://globalshopper.github.io/GSPay-php/CP_Verify.html
+ [Interface_01]:https://globalshopper.github.io/GSPay-php/interface_specify.html
  [GS_OrderList_URL]:http://www.globalshopper.com.cn/member/order/list.jhtml
 
  
