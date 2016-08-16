@@ -40,31 +40,6 @@
 |perTotalAmt|Subtotal per product|YES|String|12|-|
 |SKU|Product SKU|YES|String|-|Must the same as sku you send to Globalshopper|
 
-- Code Sample 
-```jason
-{
-    "MerOrdId": "2016081700414026",
-    "GSMerId": "5020001",
-    "LogisticsId": "808080071198022",
-    "ProTotalAmt": "240",
-    "CuryId": "USD",
-    "plugin_version": "v2.0.1",
-    "ProductInfo": [
-        {
-            "productName": "Anti Aging Eye Cream",
-            "productAttr": "",
-            "imageUrl": "",
-            "perPrice": "240.00",
-            "quantity": "1",
-            "perWeight": "0.5",
-            "perVolume": "300",
-            "perTotalAmt": "240.00",
-            "SKU": "123456789000"
-        }
-    ]
-}
-```
-
 ##Order payment result notification
 - Description
 	- @See [flow chat 1.3.2]
@@ -250,6 +225,6 @@
 |detailAddress2|Detail address2|NO|String|-|If consignee address belongs to America ,it may be used, otherwise it is empty|
 
 
- [GS_img_url]:./assets/gs_pay_flow.png
- [GS_img_url_query]:./assets/gs_query_refund_flow.png
- [GS_doc_guide]:./assets/1.2_GS%20Pay%20Plugin%20Integration%20Manual%20V2.0.1.doc
+ [GS_img_url]:https://globalshopper.github.io/GSPay-php/assets/gs_pay_flow.png
+ [GS_img_url_query]:https://globalshopper.github.io/GSPay-php/assets/gs_query_refund_flow.png
+ [GS_doc_guide]:https://globalshopper.github.io/GSPay-php/assets/1.2_GS%20Pay%20Plugin%20Integration%20Manual%20V2.0.1.doc
