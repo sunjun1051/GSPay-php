@@ -137,7 +137,6 @@ define('SELLER_REFUND_API', 'http://localhost/order_refund');
 
  - Version 1.0.0
 
-
 ## About
 
 This plugin and this sample file is proudly brought to you by the [Globalshopper team][GS]
