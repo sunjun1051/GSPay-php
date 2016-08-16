@@ -127,13 +127,8 @@ define('SELLER_REFUND_API', 'http://localhost/order_refund');
 
 #System interact flow chat
 
-- Payment Flow chat
-
-![Payment Flow chat][GS_img_url]
-
-- Query and refund flow chat
-
-![Payment Flow chat][GS_img_url_query]
+- [Payment Flow chat][Interface_01]
+- [Query and refund flow chat][Interface_01]
 
 
 #Interface Specification
@@ -175,8 +170,5 @@ This plugin and this sample file is proudly brought to you by the [Globalshopper
  [Interface_01]:interface_specify.html
  [GS_OrderList_URL]:http://www.globalshopper.com.cn/member/order/list.jhtml
 
- [GS_img_url]:./assets/gs_pay_flow.png
- [GS_img_url_query]:./assets/gs_query_refund_flow.png
- [GS_doc_guide]:./assets/1.2_GS%20Pay%20Plugin%20Integration%20Manual%20V2.0.1.doc
-
+ 
 
