@@ -159,7 +159,7 @@ define('SELLER_REFUND_API', 'http://localhost/order_refund');
 [Openning Letter][CP_OpenningLetter]
 [ChinaPay Qualitification Verification][CP_Veri]
 
-#About
+#About 
 
 This plugin and this sample file is proudly brought to you by the [Globalshopper team][GS]
 
