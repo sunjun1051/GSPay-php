@@ -812,7 +812,7 @@ pre {
 <span class="pl-s1"><span class="pl-c1">define</span>(<span class="pl-s"><span class="pl-pds">'</span>CHINAPAY_PUBKEY<span class="pl-pds">'</span></span>, <span class="pl-c1">dirname</span>(<span class="pl-c1">__FILE__</span>) <span class="pl-k">.</span> <span class="pl-s"><span class="pl-pds">'</span>/key/company/PgPubk.key<span class="pl-pds">'</span></span>);</span></pre></div>
 
 <ul>
-<li>Merchant private key
+<li>Merchant private key for ChinaPay
 
 <ul>
 <li>Used for veryfy data signature.</li>
@@ -823,8 +823,36 @@ pre {
 </li>
 </ul>
 
-<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-c">//private key of ChinaPay</span></span>
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-c">//private key for ChinaPay</span></span>
 <span class="pl-s1"><span class="pl-c1">define</span>(<span class="pl-s"><span class="pl-pds">'</span>CHINAPAY_PRIVKEY<span class="pl-pds">'</span></span>, <span class="pl-c1">dirname</span>(<span class="pl-c1">__FILE__</span>) <span class="pl-k">.</span> <span class="pl-s"><span class="pl-pds">'</span>/key/thenatural/MerPrK_808080071198021_20160711103730.key<span class="pl-pds">'</span></span>);</span></pre></div>
+
+<ul>
+<li>Globalshopper public key
+
+<ul>
+<li>Used for data signature.</li>
+<li>Provided by Globalshopper.</li>
+<li>Different in test and production environment.</li>
+</ul>
+</li>
+</ul>
+
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-c">//public key of Globalshopper</span></span>
+<span class="pl-s1"><span class="pl-c1">define</span>(<span class="pl-s"><span class="pl-pds">'</span>GS_PUBKEY<span class="pl-pds">'</span></span>, <span class="pl-c1">dirname</span>(<span class="pl-c1">__FILE__</span>) <span class="pl-k">.</span> <span class="pl-s"><span class="pl-pds">'</span>/key/sign/thenatural/PgPubk.key<span class="pl-pds">'</span></span>);</span></pre></div>
+
+<ul>
+<li>Merchant private key for Globalshopper
+
+<ul>
+<li>Used for veryfy data signature.</li>
+<li>Provided by Globalshopper.</li>
+<li>Different in test and production environment.//public key configuration</li>
+</ul>
+</li>
+</ul>
+
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-c">//private key for Globalshopper</span></span>
+<span class="pl-s1"><span class="pl-c1">define</span>(<span class="pl-s"><span class="pl-pds">'</span>GS_PRIVKEY<span class="pl-pds">'</span></span>, <span class="pl-c1">dirname</span>(<span class="pl-c1">__FILE__</span>) <span class="pl-k">.</span> <span class="pl-s"><span class="pl-pds">'</span>/key/sign/thenatural/MerPrK_808080071198021_20160711103730.key<span class="pl-pds">'</span></span>);</span></pre></div>
 
 <ul>
 <li>Timezone Setting

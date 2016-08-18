@@ -59,15 +59,34 @@ $shopperpay_config['LogisticsId'] = '808080071198022';
 define('CHINAPAY_PUBKEY', dirname(__FILE__) . '/key/company/PgPubk.key');
 ```
 
-- Merchant private key
+- Merchant private key for ChinaPay
 	- Used for veryfy data signature.
 	- Provided by ChinaPay.
 	- Different in test and production environment.
 	- Provided by ChinaPay through email in [Openning Letter][CP_OpenningLetter] after your company get through [ChinaPay Qualitification Verification][CP_Veri].
 ```php
-//private key of ChinaPay
+//private key for ChinaPay
 define('CHINAPAY_PRIVKEY', dirname(__FILE__) . '/key/thenatural/MerPrK_808080071198021_20160711103730.key');
 ```
+
+- Globalshopper public key
+	- Used for data signature.
+	- Provided by Globalshopper.
+	- Different in test and production environment.
+```php
+//public key of Globalshopper
+define('GS_PUBKEY', dirname(__FILE__) . '/key/sign/thenatural/PgPubk.key');
+```
+
+- Merchant private key for Globalshopper
+	- Used for veryfy data signature.
+	- Provided by Globalshopper.
+	- Different in test and production environment.//public key configuration
+```php
+//private key for Globalshopper
+define('GS_PRIVKEY', dirname(__FILE__) . '/key/sign/thenatural/MerPrK_808080071198021_20160711103730.key');
+```
+
 
 - Timezone Setting
 	- Your system timezone setting
