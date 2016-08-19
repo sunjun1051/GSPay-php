@@ -50,7 +50,5 @@ $order_data['GSChkValue'] = $sp->get_signed_data($sign_data);
 // 合并数据， 准备提交
 $shopper_pay_order = $order_session + $order_data;
 
-var_dump($shopper_pay_order);return;
-
 // Form表单提交到GS商城
 $cps->buildFormSubmit($shopper_pay_order, GS_API.'pay_plugin/validate_merchant.jhtml');
