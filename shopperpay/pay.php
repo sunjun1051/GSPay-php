@@ -39,7 +39,6 @@ $sign_data = array(
 );
 
 $sign_data = $payRequest['GSOrdId'].$payRequest['TransAmt'].$payRequest['Priv1'].$payRequest['Priv2'].$payRequest['TransDate'].$payRequest['TransTime'];
-
 $shopper_api->verify($payRequest['GSChkValue'], $sign_data) or $sp->sendError('910', '验证签名失败！');
 
 $pay_data = array(
@@ -48,7 +47,7 @@ $pay_data = array(
 	'TransAmt' => $payRequest['TransAmt'],
 	'CuryId' => $shopperpay_config['CuryId'],
 	'CountryId' => $shopperpay_config['CountryId'],
-    'TransDate' => date('Ymd'),
+    'TransDate' => $payRequest['TransDate'],
 	'TransType' => '0001',
 	'Version' => $shopperpay_config['Version'],
 	'BgRetUrl' => $shopperpay_config['BgRetUrl'],
@@ -56,7 +55,7 @@ $pay_data = array(
 	'GateId' => $shopperpay_config['GateId'],
 	'Priv1' => $payRequest['Priv1'],
 	'TimeZone' => $shopperpay_config['TimeZone'],
-	'TransTime' => date('His'),
+	'TransTime' => $payRequest['TransTime'],
 	'DSTFlag' => $shopperpay_config['DSTFlag'],
 	'ExtFlag' => $shopperpay_config['ExtFlag'],
     'Priv2' => $payRequest['Priv2'],
@@ -66,7 +65,6 @@ $pay_data = array(
 // Sign order data
 $pay_sign = $cps->signPayData($pay_data);
 $pay_data['ChkValue'] = $pay_sign;
-
 
 // 创建ChinaPay支付表单
 // create ChinaPay payment form

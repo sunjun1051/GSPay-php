@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svn/Documents/!svn/ver/588/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay
+/svn/Documents/!svn/ver/592/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay
 END
 pay.php
 K 25
 svn:wc:ra_dav:version-url
 V 84
-/svn/Documents/!svn/ver/588/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/pay.php
+/svn/Documents/!svn/ver/591/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/pay.php
 END
 order_gs_query.php
 K 25
@@ -19,7 +19,7 @@ notify_url.php
 K 25
 svn:wc:ra_dav:version-url
 V 91
-/svn/Documents/!svn/ver/588/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/notify_url.php
+/svn/Documents/!svn/ver/591/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/notify_url.php
 END
 index_form.php
 K 25
@@ -55,13 +55,13 @@ return_url.php
 K 25
 svn:wc:ra_dav:version-url
 V 91
-/svn/Documents/!svn/ver/588/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/return_url.php
+/svn/Documents/!svn/ver/591/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/return_url.php
 END
 init.php
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svn/Documents/!svn/ver/588/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/init.php
+/svn/Documents/!svn/ver/591/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/init.php
 END
 refund.php
 K 25
@@ -79,11 +79,11 @@ config.php
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svn/Documents/!svn/ver/588/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/config.php
+/svn/Documents/!svn/ver/591/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/config.php
 END
 index.php
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/svn/Documents/!svn/ver/588/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/index.php
+/svn/Documents/!svn/ver/589/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/index.php
 END

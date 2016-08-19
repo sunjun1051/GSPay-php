@@ -1,17 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svn/Documents/!svn/ver/588/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/key/sign
+/svn/Documents/!svn/ver/592/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/key/sign
 END
-publicKey.keystore
+GS_Pubkey.key
 K 25
 svn:wc:ra_dav:version-url
-V 104
-/svn/Documents/!svn/ver/588/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/key/sign/publicKey.keystore
+V 99
+/svn/Documents/!svn/ver/592/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/key/sign/GS_Pubkey.key
 END
-privateKey_5020001.keystore
+GS_MerPrk_5020001.key
 K 25
 svn:wc:ra_dav:version-url
-V 113
-/svn/Documents/!svn/ver/588/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/key/sign/privateKey_5020001.keystore
+V 107
+/svn/Documents/!svn/ver/592/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/key/sign/GS_MerPrk_5020001.key
 END

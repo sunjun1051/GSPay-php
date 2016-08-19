@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/svn/Documents/!svn/ver/588/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/logs
+/svn/Documents/!svn/ver/592/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/logs
 END
 logs-20160816.txt
 K 25
@@ -14,6 +14,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 99
 /svn/Documents/!svn/ver/588/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/logs/logs-20160817.txt
+END
+logs-20160819.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Documents/!svn/ver/592/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/logs/logs-20160819.txt
 END
 .htaccess
 K 25

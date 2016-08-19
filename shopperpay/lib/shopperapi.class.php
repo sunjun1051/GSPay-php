@@ -106,7 +106,8 @@ class ShopperAPI
 	 * @return string
 	 */
 	function sign($data) {
-	    $fp=fopen(GS_PRIVKEY,"r"); 
+	    file_exists(GS_PRIVKEY) or die('The path of the GS private key is incorrect');
+	    $fp=fopen(GS_PRIVKEY,"r");
 	    $private_key=fread($fp,8192);
 	    fclose($fp);
 	    $res = openssl_pkey_get_private($private_key);
@@ -119,7 +120,8 @@ class ShopperAPI
 	 * @return string
 	 */
 	function verify($sign, $data) {
-	    $fp=fopen(GS_PUBKEY,"r"); 
+	    file_exists(GS_PUBKEY) or die('The path of the GS public key is incorrect');
+	    $fp=fopen(GS_PUBKEY,"r");
 	    $public_key=fread($fp,8192);   
 	    fclose($fp);
 	    $sig = base64_decode($sign);

@@ -37,7 +37,7 @@ define('CHINAPAY_REFUND_URL', $chinapay_refund_url);
 // define('CHINAPAY_REFUND_URL', 'http://console.chinapay.com/refund/SingleRefund.jsp');
 
 //插件版本号：
-$shopperpay_config['plugin_version'] = 'v2.0.1';
+$shopperpay_config['plugin_version'] = 'v2.0.2';
 
 // PHP 5.5 关闭已废弃提示
 // PHP 5.5 Shutdown the Deprecated warning
@@ -45,6 +45,7 @@ error_reporting(error_reporting() ^ E_DEPRECATED ^ E_NOTICE);
 
 // 交易回调地址
 $self_url = ((!empty($_SERVER['HTTPS']) && 'on' == $_SERVER['HTTPS']) ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+// $self_url = str_replace('localhost', '192.168.0.105', $self_url);
 define('NOTIFY_URL', dirname($self_url) . '/notify_url.php');
 define('RETURN_URL', dirname($self_url) . '/return_url.php');
 
@@ -56,19 +57,18 @@ define('PAY_INFO_URL', dirname($self_url).'/pay.php');
 define('REFUND_NOTIFY_URL', dirname($self_url) . '/refund_notify_url.php');
 // =====================================================================================================================
 
-
 // 海淘天下接口地址
 // Test development environment,Globalshopper API interface address.
-// define('GS_API', 'http://test.globalshopper.com.cn/');
-define('GS_API', 'http://192.168.0.107:8080/');
+define('GS_API', 'http://test.globalshopper.com.cn/');
+// define('GS_API', 'http://192.168.0.100:8080/');
+
+// 海淘天下订单页
+define('GS_ORDER_LIST', 'http://test.globalshopper.com.cn/member/order/list.jhtml');
 
 // 查询与退款接口新增配置项 ============================================================================================
 // The new additional configuration items about order query and refund APIs
 //
 // =====================================================================================================================
-
-// GS商城订单页
-define('GS_ORDER_LIST', 'http://test.globalshopper.com.cn/member/order/list.jhtml');
 
 
 // 银联相关配置 ========================================================================================================
@@ -92,7 +92,6 @@ $shopperpay_config['PageRetUrl'] = RETURN_URL;
 // browser will redirect to specific page when GateId is assigned to other specified values.
 $shopperpay_config['GateId'] = '8613';
 
-
 // 境外商户标识，默认为00，必填
 // oversea merchant tag , default = '00'
 $shopperpay_config['ExtFlag'] = '00';
@@ -100,5 +99,3 @@ $shopperpay_config['ExtFlag'] = '00';
 // 启用日志
 // Log switch
 define('LOGS_ENABLED', true);
-
-

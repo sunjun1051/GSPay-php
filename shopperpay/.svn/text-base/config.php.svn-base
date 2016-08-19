@@ -1,4 +1,8 @@
 <?php
+/*
+ * 商户配置文件
+ * Merchant configuration file
+ */
 
 // CHINAPAY 环境切换 (true: 生产环境 | false: 测试环境)
 define('ENV_SWITCH', false);
@@ -25,11 +29,11 @@ define('CHINAPAY_PRIVKEY', dirname(__FILE__) . '/key/thenatural/MerPrK_808080071
 
 // GS公钥配置
 //public key configuration
-define('GS_PUBKEY', dirname(__FILE__) . '/key/publicKey.keystore');
+define('GS_PUBKEY', dirname(__FILE__) . '/key/sign/GS_Pubkey.key');
 
 // GS私钥配置
 //private key configuration
-define('GS_PRIVKEY', dirname(__FILE__) . '/key/sign/privateKey_5020001.keystore');
+define('GS_PRIVKEY', dirname(__FILE__) . '/key/sign/GS_MerPrk_5020001.key');
 
 // 设置时区
 // Timezone setting

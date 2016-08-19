@@ -34,12 +34,15 @@ $order_data = array(
 );
 
 // 对相关数据进行签名
-$sign_data = array($order_session['MerOrdId'],
+$sign_data = array(
+              $order_session['MerOrdId'],
               $order_data['GSMerId'],
               $order_data['LogisticsId'],
               $order_session['ProTotalAmt'],
-              $order_data['CuryId']
+              $order_data['CuryId'],
+              $order_data['PayInfoUrl']
     );
+
 $order_data['GSChkValue'] = $sp->get_signed_data($sign_data);
 
 // 合并数据， 准备提交

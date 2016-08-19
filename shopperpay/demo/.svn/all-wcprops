@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/svn/Documents/!svn/ver/588/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/demo
+/svn/Documents/!svn/ver/592/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/demo
 END
 order_test.php
 K 25
@@ -9,27 +9,21 @@ svn:wc:ra_dav:version-url
 V 96
 /svn/Documents/!svn/ver/588/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/demo/order_test.php
 END
-gs_order_info.php
-K 25
-svn:wc:ra_dav:version-url
-V 99
-/svn/Documents/!svn/ver/588/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/demo/gs_order_info.php
-END
 order_demo.php
 K 25
 svn:wc:ra_dav:version-url
 V 96
-/svn/Documents/!svn/ver/588/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/demo/order_demo.php
+/svn/Documents/!svn/ver/591/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/demo/order_demo.php
 END
 seller_api.php
 K 25
 svn:wc:ra_dav:version-url
 V 96
-/svn/Documents/!svn/ver/588/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/demo/seller_api.php
+/svn/Documents/!svn/ver/591/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/demo/seller_api.php
 END
 return_url.php
 K 25
 svn:wc:ra_dav:version-url
 V 96
-/svn/Documents/!svn/ver/588/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/demo/return_url.php
+/svn/Documents/!svn/ver/591/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/demo/return_url.php
 END

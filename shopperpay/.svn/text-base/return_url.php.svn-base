@@ -3,7 +3,6 @@
  * 支付成功跳转地址
  * return address for payment success
  */
-header('Content-type:text/html; charset=utf-8');
 // 载入配置文件
 // Load configuration file
 require 'init.php';
@@ -49,17 +48,14 @@ $shopper_sync_data = array(
 	'gsOrdId' => $pay_result_data['orderno'],
 	'orderInfo' => json_encode($pay_result_data),
 );
-//GS密钥签名
+
+// GS密钥签名
 $shopper_sync_data['gsChkValue'] = $sp->get_signed_data($shopper_sync_data);
 $shopper_sync_data['pluginVersion'] = $shopperpay_config['plugin_version'];
 
 $package_data = $shopper_api->call('pay_plugin/update_order.jhtml', $shopper_sync_data);
-
 $sign_data = $package_data['merOrdId'].$package_data['gsOrdId'].json_encode($package_data['ordPackageInfo']).json_encode($package_data['consigneeInfo']);
-
-
 $shopper_api->verify($package_data['gsChkValue'], $sign_data) or $sp->sendError('910', '验证签名失败！');
-
 
 $package_data and $package_data['isSuccess'] == '1'
     or $cps->showReturnError('向海淘天下同步支付状态失败', array('req' => $shopper_sync_data, 'res' => $package_data));
@@ -73,6 +69,7 @@ $seller_sync_data = array(
 	'PackageInfo' => $package_data['ordPackageInfo'],
 	'consigneeInfo' => $package_data['consigneeInfo'],
 );
+
 $seller_data = $seller_api->onPaid($seller_sync_data);
 $seller_data and $seller_data['isSuccess'] == '1' 
     or $cps->showReturnError('向商户同步支付状态失败', array('req' => $seller_sync_data, 'res' => $seller_data));

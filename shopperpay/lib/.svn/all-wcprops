@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/svn/Documents/!svn/ver/588/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/lib
+/svn/Documents/!svn/ver/591/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/lib
 END
 chinapayapi.class.php
 K 25
@@ -13,7 +13,7 @@ shopperapi.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 101
-/svn/Documents/!svn/ver/588/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/lib/shopperapi.class.php
+/svn/Documents/!svn/ver/591/GSPayPlugin/V2.0/05%E5%BC%80%E5%8F%91/shopperpay/lib/shopperapi.class.php
 END
 shopperpay.class.php
 K 25
