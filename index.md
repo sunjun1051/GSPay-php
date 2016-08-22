@@ -9,7 +9,7 @@ GSPay Service SDK support payment, refund, single transaction results query, sin
 ##Environment requirements
 - PHP 5.5 and above
 - Session mechanisms need to be on the same server
-- Extension of mcrypt 、bcmath and curl are required；
+- Extension of mcrypt 、bcmath 、curl and openssl are required；
 - Payment plugin use the mcrypt_cbc function，this function are deprecated in the php version 5.5. So you need to shut down the error warning of Deprecated
 
 ##Configuration Items in config.php
