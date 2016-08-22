@@ -29,9 +29,10 @@ $cps = new ChinaPaySubmit();
 // 接收GS返回订单信息
 $payRequest = $_POST or $sp->sendError('101', 'Access Deny！Parameters Is Incorrect');
 
+// logResult('GS PAY SUBMIT SIGN RESPONSE', $payRequest);
 // 验证签名
 $sign_data = $payRequest['GSOrdId'].$payRequest['TransAmt'].$payRequest['Priv1'].$payRequest['Priv2'].$payRequest['TransDate'].$payRequest['TransTime'];
-$shopper_api->verify($payRequest['GSChkValue'], $sign_data) or $sp->sendError('103', 'Verify Sign Failture！');
+$shopper_api->verify($payRequest['GSChkValue'], $sign_data, $payRequest) or $sp->sendError('103', 'Verify Sign Failture！');
 
 // ChinaPay付款所需数据
 $pay_data = array(

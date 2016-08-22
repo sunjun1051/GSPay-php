@@ -34,12 +34,6 @@ $order = array(
    
 	// 交易金额
 	'ProTotalAmt' => '240',
-    
-    // 交易日期，电商下单时间，表示格式为：YYYYMMDD
-    'TransDate' => date('Ymd'),
-    
-    // 交易时间：表示格式为：HHIISS
-    'TransTime' => date('His'),
 
 	// 商品信息,
 	'ProductInfo' => $product_info,
