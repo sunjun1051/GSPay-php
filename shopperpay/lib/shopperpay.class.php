@@ -154,47 +154,57 @@ class ShopperPay
 		);
 	}
 	
+
 	/**
-	 * 获得商户订单数据，转换成标准格式
-	 * @return Array
+	 * 从GS商城中获得订单返回数据
+	 * get pay information from GS query
 	 */
-	public function getOrderForm() {
-	    if ($_POST['china_pay']){
-	        $data = $_POST;
-	        foreach ($data as $value) {
-	            for ($i=0; $i<count($value);$i++) {
-	                $product_info[$i] = array(
-	                    // 可以是多条商品数据
-	                    // 商品名称
-	                    'productName' => $_POST['productName'][$i],
-	                    // 商品属性，包含name和value的json数组字符串格式
-	                    'productAttr' => $_POST['productAttr'][$i],
-	                    // 商品图片链接地址
-	                    'imageUrl' => $_POST['imageUrl'][$i],
-	                    // 商品类别
-	                    'categoryName' => $_POST['categoryName'][$i],
-	                    // 商品单价
-	                    'perPrice' => $_POST['perPrice'][$i],
-	                    // 货币代码, 例如，人民币取值为"156"，日元取值为“JPY”,美元取值为“USD”
-	                    'curyId' => $_POST['perPrice'][$i],
-	                    // 商品数量
-	                    'quantity' => $_POST['quantity'][$i],
-	                    // 单件商品重量，包括小数点和小数位（4位）一共18位
-	                    'perWeight' => $_POST['perWeight'][$i],
-	                    // 单件商品体积，包括小数点和小数位（4位）一共18位
-	                    'perVolume' => $_POST['perVolume'][$i],
-	                    // 单件商品小计
-	                    'perTotalAmt' => $_POST['perTotalAmt'][$i],
-	                    // 商品备案号
-	                    'filingNumber' => $_POST['filingNumber'][$i],
-	                    // 商品SKU
-	                    'SKU' => $_POST['SKU'][$i],
-	                );
-	            }
-	        }
-	        return $product_info;
-	    }
+	public function getSignData($payRequest) {
+	   logResult('Shopper Pay Submit Response FROM GS', $payRequest);
+	   return $payRequest['GSOrdId'].$payRequest['TransAmt'].$payRequest['Priv1'].$payRequest['Priv2'].$payRequest['TransDate'].$payRequest['TransTime'];
 	}
+	
+// 	/**
+// 	 * 获得商户订单数据，转换成标准格式
+// 	 * @return Array
+// 	 */
+// 	public function getOrderForm() {
+// 	    if ($_POST['china_pay']){
+// 	        $data = $_POST;
+// 	        foreach ($data as $value) {
+// 	            for ($i=0; $i<count($value);$i++) {
+// 	                $product_info[$i] = array(
+// 	                    // 可以是多条商品数据
+// 	                    // 商品名称
+// 	                    'productName' => $_POST['productName'][$i],
+// 	                    // 商品属性，包含name和value的json数组字符串格式
+// 	                    'productAttr' => $_POST['productAttr'][$i],
+// 	                    // 商品图片链接地址
+// 	                    'imageUrl' => $_POST['imageUrl'][$i],
+// 	                    // 商品类别
+// 	                    'categoryName' => $_POST['categoryName'][$i],
+// 	                    // 商品单价
+// 	                    'perPrice' => $_POST['perPrice'][$i],
+// 	                    // 货币代码, 例如，人民币取值为"156"，日元取值为“JPY”,美元取值为“USD”
+// 	                    'curyId' => $_POST['perPrice'][$i],
+// 	                    // 商品数量
+// 	                    'quantity' => $_POST['quantity'][$i],
+// 	                    // 单件商品重量，包括小数点和小数位（4位）一共18位
+// 	                    'perWeight' => $_POST['perWeight'][$i],
+// 	                    // 单件商品体积，包括小数点和小数位（4位）一共18位
+// 	                    'perVolume' => $_POST['perVolume'][$i],
+// 	                    // 单件商品小计
+// 	                    'perTotalAmt' => $_POST['perTotalAmt'][$i],
+// 	                    // 商品备案号
+// 	                    'filingNumber' => $_POST['filingNumber'][$i],
+// 	                    // 商品SKU
+// 	                    'SKU' => $_POST['SKU'][$i],
+// 	                );
+// 	            }
+// 	        }
+// 	        return $product_info;
+// 	    }
+// 	}
 	
 	/**
 	 * 订单相关数据加密

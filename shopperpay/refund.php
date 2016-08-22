@@ -40,27 +40,37 @@ $order_date = $_POST['order_date'];
 $refund_amount = $_POST['refund_amount'];
 $priv1 = $_POST['priv1'];
 
-$order_id_query_data = array(
-    'gsMerId' => $shopperpay_config['GSMerId'],
-	'merOrdId' => $merOrdId,
-	'gsOrdId' => $gsOrdId,
-);
+// 如果商户提交数据中没有GS订单号， 则调用GS API接口查找GS订单号
+if (!$gsOrdId || empty($gsOrdId)) {
+    // GS签名数据
+    $order_id_query_data = array(
+        'gsMerId' => $shopperpay_config['GSMerId'],
+        'merOrdId' => $merOrdId,
+        // 	'gsOrdId' => $gsOrdId,
+    );
+    
+    // GS密钥签名
+    $order_id_query_data['gsChkValue'] = $sp->get_signed_data($order_id_query_data);
+    $order_id_query_data['pluginVersion'] = $shopperpay_config['plugin_version'];
+    
+    // 通过商户订单号获取GS订单号
+    $order_id_query_result = $shopper_api->call('pay_plugin/gs_mer_order.jhtml', $order_id_query_data);
+    
+    // 无返回值则连接GS API失败
+    !empty($order_id_query_result) or $sp->sendError('110', 'Connect GS API Failture！');
+    
+    // 返回确认值不为1， 则返回GS返回的错误代码
+    $order_id_query_result['isSuccess'] == '1' or $sp->sendError($order_id_query_result['errorCode'], $order_id_query_result['errorMessage']);
+    
+    // 获得GS订单号
+    $gsOrdId = $order_id_query_result['gsOrdId'];
+    
+    // 验证GS返回数据签名
+    $sign_data = $order_id_query_result['merOrdId'].$order_id_query_result['gsOrdId'];
+    $shopper_api->verify($order_id_query_result['gsChkValue'], $sign_data) or $sp->sendError('103', '验证签名失败！');
+}
 
-//GS密钥签名
-$order_id_query_data['gsChkValue'] = $sp->get_signed_data($order_id_query_data);
-$order_id_query_data['pluginVersion'] = $shopperpay_config['plugin_version'];
-
-$order_id_query_result = $shopper_api->call('pay_plugin/gs_mer_order.jhtml', $order_id_query_data);
-
-$sign_data = $order_id_query_result['merOrdId'].$order_id_query_result['gsOrdId'];
-$shopper_api->verify($order_id_query_result['gsChkValue'], $sign_data) or $sp->sendError('910', '验证签名失败！');
-
-!empty($order_id_query_result['isSuccess']) and $order_id_query_result['isSuccess'] == '1' or $sp->sendError('929', '转换订单ID失败！');
-$order_id_origin = $merOrdId;
-$gsOrderId = $order_id_query_result['gsOrdId'];
-
-
-// 组合退款参数
+// 组合退款参数准备提交至CHINAPAY
 // combine refund parameters
 $order_refund_data = array(
 	'MerID' => $shopperpay_config['MerId'],
@@ -73,20 +83,20 @@ $order_refund_data = array(
 	'Priv1' => $priv1,
 );
 
-// // 发起退款请求
-// // send refund request
+// 向CHINAPAY发起退款请求, 签名，CURL提交至CHINAPAY
+// send refund request
 $refund_result = $chinapay_api->refund($order_refund_data);
-$refund_result or $sp->sendError('921', "退款请求失败！");
+$refund_result or $sp->sendError('111', "退款请求失败！");
 
 
 // 退款失败
 // refund failure
-isset($refund_result['ResponseCode']) or $sp->sendError('922', "服务器返回错误！");
+isset($refund_result['ResponseCode']) or $sp->sendError('111', "服务器返回错误！");
 if ($refund_result['ResponseCode'] !== '0') {
 	$refund_gs_notify_data = array(
 		"merId" => $shopperpay_config['MerId'],
 	    'gsMerId' => $shopperpay_config['GSMerId'],
-		"ordId" => $gsOrderId,
+		"ordId" => $gsOrdId,
 		"transtype" => '0002',
 	);
 	
@@ -105,14 +115,14 @@ if ($refund_result['ResponseCode'] !== '0') {
 // 校验退款结果数据
 // verify refund result sign is valid or not
 $refund_result_verify = $chinapay_api->verifyRefundResultData($refund_result);
-$refund_result_verify or $sp->sendError('924', "退款数据校验错误！");
+$refund_result_verify or $sp->sendError('', "退款数据校验错误！");
 
 // 调用海淘天下退款结果通知接口
 // Call GlobalShopper refund result notification interface
 $refund_gs_notify_data = array(
 	"merId" => $shopperpay_config['MerId'],
     "gsMerId"=> $shopperpay_config['GSMerId'],
-	"ordId" => $gsOrderId,
+	"ordId" => $gsOrdId,
 	"processDate" => $refund_result['ProcessDate'],
 	"sendTime" => $refund_result['SendTime'],
 	"transtype" => "0002",
@@ -147,8 +157,8 @@ $refund_seller_notify_order_data = array(
 	'checkvalue' => $refund_result['CheckValue'],
 );
 $refund_seller_notify_data = array(
-	'MerOrdId' => $order_id_origin,
-    'GSOrdId' => $gsOrderId,
+	'MerOrdId' => $merOrdId,
+    'GSOrdId' => $gsOrdId,
 	'OrderInfo' => $refund_seller_notify_order_data
 );
 

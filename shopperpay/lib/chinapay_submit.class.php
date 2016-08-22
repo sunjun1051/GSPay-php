@@ -40,24 +40,24 @@ class ChinaPaySubmit
 		return str_pad($formatted_amount, 12, '0', STR_PAD_LEFT);
 	}
 
-	/*
-	 * 分格式转金额
-	 * cent format pay amount transform to normal, the reversed to method formatAmt
-	 *
-	 * @param string $currencyId the currency code
-	 * @param string $amount cent format pay amount
-	 * @return string normal format amount
-	 */
-	public function unformatAmt($currencyId, $amount)
-	{
-		$amount = ltrim($amount, '0');
-		if ($currencyId == 'JPY') {
-			return sprintf('%d', $amount / 100);
-		} else {
-			return sprintf('%.2f', $amount / 100);
-		}
+// 	/*
+// 	 * 分格式转金额
+// 	 * cent format pay amount transform to normal, the reversed to method formatAmt
+// 	 *
+// 	 * @param string $currencyId the currency code
+// 	 * @param string $amount cent format pay amount
+// 	 * @return string normal format amount
+// 	 */
+// 	public function unformatAmt($currencyId, $amount)
+// 	{
+// 		$amount = ltrim($amount, '0');
+// 		if ($currencyId == 'JPY') {
+// 			return sprintf('%d', $amount / 100);
+// 		} else {
+// 			return sprintf('%.2f', $amount / 100);
+// 		}
 
-	}
+// 	}
 
 	/**
 	 * 生成交易数据签名
@@ -109,7 +109,7 @@ class ChinaPaySubmit
 			$pay_result[$result_key] = empty($_POST[$result_key]) ? '' : $_POST[$result_key];
 		}
 		self::$pay_result_data = $pay_result;
-		logResult('ChinaPay Result Data', array(
+		logResult('China Pay Submit Response', array(
 			'uri' => $_SERVER["REQUEST_URI"],
 			'data' => $this->getPayResult(),
 		));
@@ -151,6 +151,7 @@ class ChinaPaySubmit
 	 */
 	public function buildFormSubmit($params)
 	{
+	    logResult("China Pay Submit Request", array('url' => CHINAPAY_PAY_URL, 'data' => $params));
 	    $sHtml = "<form id='submit' name='submit' action='" . CHINAPAY_PAY_URL . "' method='POST'>";
         if (is_array($params)) {
             while (!!list($key, $val) = each($params)) {

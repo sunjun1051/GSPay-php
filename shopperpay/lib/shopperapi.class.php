@@ -110,7 +110,7 @@ class ShopperAPI
 	 */
 	public function buildFormSubmit($params, $url)
 	{
-	    logResult("Shopper Payment Request Submit", array('url' => $url, 'data' => $params));
+	    logResult("Shopper Pay Submit Request to GS", array('url' => $url, 'data' => $params));
 	    $sHtml = "<form id='submit' name='submit' action='" . $url . "' method='POST'>";
 	    if (is_array($params)) {
 	        while (!!list($key, $val) = each($params)) {
@@ -143,8 +143,7 @@ class ShopperAPI
 	 * 海淘天下验证签名
 	 * @return string
 	 */
-	function verify($sign, $data, $paydata) {
-	    logResult('Verify GS SIGN RESPONSE', $paydata);
+	function verify($sign, $data) {
 	    file_exists(GS_PUBKEY) or die('The path of the GS public key is incorrect');
 	    $fp=fopen(GS_PUBKEY,"r");
 	    $public_key=fread($fp,8192);   

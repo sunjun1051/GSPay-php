@@ -284,24 +284,24 @@ class ChinaPayAPI
 		return str_pad($formatted_amount, 12, '0', STR_PAD_LEFT);
 	}
 
-	/**
-	 * 分格式转金额
-	 * cent format pay amount transform to normal, the reversed to method formatAmt
-	 *
-	 * @param string $currencyId the currency code
-	 * @param string $amount cent format pay amount
-	 * @return string normal format amount
-	 */
-	public function unformatAmt($currencyId, $amount)
-	{
-		$amount = ltrim($amount, '0');
-		if ($currencyId == 'JPY') {
-			return sprintf('%d', $amount / 100);
-		} else {
-			return sprintf('%.2f', $amount / 100);
-		}
+// 	/**
+// 	 * 分格式转金额
+// 	 * cent format pay amount transform to normal, the reversed to method formatAmt
+// 	 *
+// 	 * @param string $currencyId the currency code
+// 	 * @param string $amount cent format pay amount
+// 	 * @return string normal format amount
+// 	 */
+// 	public function unformatAmt($currencyId, $amount)
+// 	{
+// 		$amount = ltrim($amount, '0');
+// 		if ($currencyId == 'JPY') {
+// 			return sprintf('%d', $amount / 100);
+// 		} else {
+// 			return sprintf('%.2f', $amount / 100);
+// 		}
 
-	}
+// 	}
 
 	/**
 	 * 显示返回页错误

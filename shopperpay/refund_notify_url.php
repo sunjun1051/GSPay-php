@@ -83,8 +83,7 @@ $refund_gs_notify_data['pluginVersion'] = $shopperpay_config['plugin_version'];
 $refund_gs_notify_data["responseCode"] = $refund_result['ResponseCode'];
 $refund_gs_notify_data["message"] = '';
 
-$url = 'http://192.168.0.101:8080/pay_plugin/refund_result_notification.jhtml';
-$notify_result = $shopper_api->call($url, $refund_gs_notify_data);
+$notify_result = $shopper_api->call('pay_plugin/refund_result_notification.jhtml', $refund_gs_notify_data);
 
 $sign_data = $notify_result['merOrdId'].$notify_result['gsOrdId'];
 $shopper_api->verify($notify_result['gsChkValue'], $sign_data) or $sp->sendError('910', '验证签名失败！');

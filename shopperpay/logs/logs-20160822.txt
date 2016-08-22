@@ -1,231 +1,776 @@
-==== Shopper Payment Request Submit: 2016-08-22 03:46:50 ===========
+==== Shopper Pay Submit Request to GS: 2016-08-22 05:42:34 ===========
 ==== IP: ::1
 array (
   'url' => 'http://test.globalshopper.com.cn/pay_plugin/validate_merchant.jhtml',
   'data' => 
   array (
-    'MerOrdId' => '2016082203465050',
+    'MerOrdId' => '2016082205423436',
     'ProTotalAmt' => '240',
-    'TransDate' => '20160822',
-    'TransTime' => '034650',
     'ProductInfo' => '[{"productName":"Anti Aging Eye Cream","productAttr":"","imageUrl":"","perPrice":"240.00","quantity":"1","perWeight":"0.5","perVolume":"300","perTotalAmt":"240.00","SKU":"123456789000"}]',
+    'TransDate' => '20160822',
+    'TransTime' => '054234',
     'GSMerId' => '5020001',
     'LogisticsId' => '808080071198022',
     'PluginVersion' => 'v2.0.3',
     'CuryId' => 'USD',
     'PayInfoUrl' => 'http://localhost/shopperpay/pay.php',
-    'GSChkValue' => 'UAXbr7bhyZpMuystbIG8nfJM2NNhRXFGcmVr97eZWR9mlJyNOysH2TTdiV5qORis5lKkRHjCzhKYGCP7EobSY5iU15h8UKXL7aFvMj+Br4ngOXp6iqY2ejQhKsQuYnkyNW1zKpkckF7v7ZP5hQVY0GFO9ww+Se2Pzi8kUTEyVQs=',
+    'GSChkValue' => 'fSxlhyYJBLCZl81vyh0rRFXOuJ6rbe3mAfbnzX+qd+kVauWP44oaXnQphnTqO/oucp1C6pXVo9ZDWbEBXnKJGLpeXO2QDQakpN2Ea4cxV2qxgqXQuVWbEKj/j3oldXH3MuFE3cyX6ce8JZnaoEIBjpEpmtBP9cmPZPyI1u/OJwA=',
   ),
 )
-==== GS PAY SUBMIT SIGN RESPONSE: 2016-08-22 03:47:08 ===========
+==== Shopper Pay Submit Response FROM GS: 2016-08-22 05:42:38 ===========
 ==== IP: ::1
 array (
-  'GSOrdId' => '1471852023659897',
+  'GSOrdId' => '1471858953699855',
   'TransAmt' => '000000024000',
   'Priv1' => '000000003844',
-  'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471852023659897',
+  'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471858953699855',
   'TransDate' => '20160822',
-  'TransTime' => '034650',
-  'GSChkValue' => 'tEPXE7K0Iy7DphGK+rCDaGNpObGeFea7tiYJtzvW+0Jz2tbvps/l0TBPFVjzqmFy9tVmvfM0+jXGCgr5BmlfRm63WsxF3jXZOGxvxM/R2iOnJmfkOmOduiCl6AtoQ5Ajs2CnNwEGcUhSgFeY+wtFnzPxSkYjBPm/YolO7tUHEYc=',
+  'TransTime' => '054234',
+  'GSChkValue' => 'vC3HpbI5WhNrJuYdpTHWEUif0JGFQicfwhknYKar0dI5o1Q4TK2axMOEfrHTTmeaebhpwSXMKJkRMoa0a4ohX+YqFAgwtdnM7NYa67S54czsgSVplejehwdbR/P0QI/sWTKkuQA/zAO4cTK2uxoREipCXUkVfRYU4q6q2UOu10w=',
 )
-==== Shopper Payment Request Submit: 2016-08-22 03:52:49 ===========
+==== China Pay Submit Request: 2016-08-22 05:42:39 ===========
 ==== IP: ::1
 array (
-  'url' => 'http://test.globalshopper.com.cn/pay_plugin/validate_merchant.jhtml',
+  'url' => 'http://payment-test.chinapay.com/pay/TransGet',
   'data' => 
   array (
-    'MerOrdId' => '2016082203524940',
-    'ProTotalAmt' => '240',
-    'TransDate' => '20160822',
-    'TransTime' => '035249',
-    'ProductInfo' => '[{"productName":"Anti Aging Eye Cream","productAttr":"","imageUrl":"","perPrice":"240.00","quantity":"1","perWeight":"0.5","perVolume":"300","perTotalAmt":"240.00","SKU":"123456789000"}]',
-    'GSMerId' => '5020001',
-    'LogisticsId' => '808080071198022',
-    'PluginVersion' => 'v2.0.3',
+    'MerId' => '808080071198021',
+    'OrdId' => '1471858953699855',
+    'TransAmt' => '000000024000',
     'CuryId' => 'USD',
-    'PayInfoUrl' => 'http://localhost/shopperpay/pay.php',
-    'GSChkValue' => 'mfBnI2R1t8uXGX5dn1Cc7KVynLhcDAfr0PpO5E5SDAC5hxoLTOZpTC9nvDuWHOE60Nu99ElpE1iHCBSsD6FblltXGxB2YeVlDffWUy973MI3253bGriaJhmebTv4UVr0mSqEylrEnvcI3DkESOiDkHWV08qxRucEQKozD2scu8A=',
+    'CountryId' => '0001',
+    'TransDate' => '20160822',
+    'TransType' => '0001',
+    'Version' => '20080515',
+    'BgRetUrl' => 'http://localhost/shopperpay/notify_url.php',
+    'PageRetUrl' => 'http://localhost/shopperpay/return_url.php',
+    'GateId' => '8613',
+    'Priv1' => '000000003844',
+    'TimeZone' => '-05',
+    'TransTime' => '054234',
+    'DSTFlag' => '0',
+    'ExtFlag' => '00',
+    'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471858953699855',
+    'ChkValue' => 'ADA8614C7BE21EE1D923671E88BC8B2B4D2178F73C22DFA4BD2A5F154F97002EF38700EE099F85C59D37252EABA3D916E3518CEB5AE15C419154A8213113087AFCF84A152D4D823C8CCF8367DD700F14405509978D41F77A53D937910537B1AA03446857B2E1084307971C6954D6393F4EA91C4242E44A740066E3E5F76D3473',
   ),
 )
-==== Verify GS SIGN RESPONSE: 2016-08-22 03:52:54 ===========
-==== IP: ::1
-array (
-  'GSOrdId' => '1471852369527185',
-  'TransAmt' => '000000024000',
-  'Priv1' => '000000003844',
-  'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471852369527185',
-  'TransDate' => '20160822',
-  'TransTime' => '035249',
-  'GSChkValue' => 'DPAlVAQwJ9h9dByk4vG2zwbxXLjT1gnUARRnMD8RuvUJqB9e3lsUgwf4EPMccWzfB6YaGy7RlkjIS02AXuGKfHDazIjF3rWoe0p4wI2SZhhM+D6n+fcOTYT4R12ERbo6PiUt+iiKg5hQfKI1LUIyed2AUMotpJ5ey2gEIb0QtCs=',
-)
-==== Shopper Payment Request Submit: 2016-08-22 03:58:55 ===========
-==== IP: ::1
-array (
-  'url' => 'http://test.globalshopper.com.cn/pay_plugin/validate_merchant.jhtml',
-  'data' => 
-  array (
-    'MerOrdId' => '2016082203585540',
-    'ProTotalAmt' => '240',
-    'ProductInfo' => '[{"productName":"Anti Aging Eye Cream","productAttr":"","imageUrl":"","perPrice":"240.00","quantity":"1","perWeight":"0.5","perVolume":"300","perTotalAmt":"240.00","SKU":"123456789000"}]',
-    'TransDate' => '20160822',
-    'TransTime' => '035855',
-    'GSMerId' => '5020001',
-    'LogisticsId' => '808080071198022',
-    'PluginVersion' => 'v2.0.3',
-    'CuryId' => 'USD',
-    'PayInfoUrl' => 'http://localhost/shopperpay/pay.php',
-    'GSChkValue' => 'PyuKarg0xMLThxeXPPBu1fpym6JLGb6LeTIM7HHcz21jFL45u8mbF4gxa7d8JVrTq5D0zxoeOpFaGADFU2+JYHCJEp27o2I8dhO1R22Ts6fXOO17ePIsJT29YepwjK2bQ8TxzIWG6z3gNfsyrBciDCYRiOorhh64u383j80wMX4=',
-  ),
-)
-==== Verify GS SIGN RESPONSE: 2016-08-22 03:58:58 ===========
-==== IP: ::1
-array (
-  'GSOrdId' => '1471852733503299',
-  'TransAmt' => '000000024000',
-  'Priv1' => '000000003844',
-  'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471852733503299',
-  'TransDate' => '20160822',
-  'TransTime' => '035855',
-  'GSChkValue' => 'Vo6/fg6PcSVfOxWF6RX+QEbXDN/cizarktcC6wGkTc9IecWptir+hBo//6nDZOGZNjNHRjK8AfQSEHYx2OSt5GD5LTuhf20nUH/Oe12zUkQeZN6/EKeenPyADM7FlTdKbQCg9xqZrl84Z5mSIRg+J1ZIk4Xuv4tum+u+Zhg/7TQ=',
-)
-==== Verify GS SIGN RESPONSE: 2016-08-22 03:59:32 ===========
-==== IP: ::1
-array (
-  'GSOrdId' => '1471852767692919',
-  'TransAmt' => '000000024000',
-  'Priv1' => '000000003844',
-  'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471852767692919',
-  'TransDate' => '20160822',
-  'TransTime' => '035855',
-  'GSChkValue' => 'YSmsijyLVI10ePIocqDtqQasGhwYEl73tFt1kwEwzArK1xTDjyTsxdsWU5YxBZDEWUM7mHFogaWh05ah7Gipkej7BfNyUXJD0cdvMqHTapyhbDIh6a2FC1rszLsGCZYhpW0nIirWTKH29Rw5f2DdlsoyPQVqpkFlxIF1liVdwx8=',
-)
-==== Shopper Payment Request Submit: 2016-08-22 04:00:28 ===========
-==== IP: ::1
-array (
-  'url' => 'http://test.globalshopper.com.cn/pay_plugin/validate_merchant.jhtml',
-  'data' => 
-  array (
-    'MerOrdId' => '2016082204002865',
-    'ProTotalAmt' => '240',
-    'ProductInfo' => '[{"productName":"Anti Aging Eye Cream","productAttr":"","imageUrl":"","perPrice":"240.00","quantity":"1","perWeight":"0.5","perVolume":"300","perTotalAmt":"240.00","SKU":"123456789000"}]',
-    'TransDate' => '20160822',
-    'TransTime' => '040028',
-    'GSMerId' => '5020001',
-    'LogisticsId' => '808080071198022',
-    'PluginVersion' => 'v2.0.3',
-    'CuryId' => 'USD',
-    'PayInfoUrl' => 'http://localhost/shopperpay/pay.php',
-    'GSChkValue' => 'OBCHfOU0LVp9xzfRmY870307N270H9PlbsnKI8ydd5W3ZNHDY60GaYn8MXN0iHwpeihSx1bZKt99tVABD965LSM9YUoTKacy/YsRRc+iEUyLDC4QQQaBByC4W2og9o0gZDM9S6uAMaIO2Rrb8OqKVWMs9/fsLCtxpbS6ofn2o7Q=',
-  ),
-)
-==== Verify GS SIGN RESPONSE: 2016-08-22 04:00:32 ===========
-==== IP: ::1
-array (
-  'GSOrdId' => '1471852828037135',
-  'TransAmt' => '000000024000',
-  'Priv1' => '000000003844',
-  'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471852828037135',
-  'TransDate' => '20160822',
-  'TransTime' => '040028',
-  'GSChkValue' => 'B9LjDEMeEtrQhS0jSuvgdNpt2UkZ7N7zHzENiO/7mBgZKcPCQUgEbvMmru4WpbtcsvChE95NqOteiBjfhBYUTPEukR74idMi2F682/cgROa3DFboS0P9rO6ClWrUOzFJYbXxSLItnNp7jVyYsvFS3mpfoIgHAZCAwqmWDQacIUI=',
-)
-==== Shopper Payment Request Submit: 2016-08-22 04:00:57 ===========
-==== IP: ::1
-array (
-  'url' => 'http://test.globalshopper.com.cn/pay_plugin/validate_merchant.jhtml',
-  'data' => 
-  array (
-    'MerOrdId' => '2016082204005787',
-    'ProTotalAmt' => '240',
-    'ProductInfo' => '[{"productName":"Anti Aging Eye Cream","productAttr":"","imageUrl":"","perPrice":"240.00","quantity":"1","perWeight":"0.5","perVolume":"300","perTotalAmt":"240.00","SKU":"123456789000"}]',
-    'TransDate' => '20160822',
-    'TransTime' => '040057',
-    'GSMerId' => '5020001',
-    'LogisticsId' => '808080071198022',
-    'PluginVersion' => 'v2.0.3',
-    'CuryId' => 'USD',
-    'PayInfoUrl' => 'http://localhost/shopperpay/pay.php',
-    'GSChkValue' => 'IUXvXdA2U4lVPluBazrBaLB2oiV+Duc4sIXwgH92jYFv+tYGEyAw7hGDSKSYwOthSEMFxyWApcJ+NQY3WQB0faD7fvmcGk91021IAJKxFGWj/H8wu4IUKicyoRMNvOhadtVbWEdElaAe04wyxxnC4pNGtG4HI1ICifonIXsWuv0=',
-  ),
-)
-==== Verify GS SIGN RESPONSE: 2016-08-22 04:01:02 ===========
-==== IP: ::1
-array (
-  'GSOrdId' => '1471852857397437',
-  'TransAmt' => '000000024000',
-  'Priv1' => '000000003844',
-  'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471852857397437',
-  'TransDate' => '20160822',
-  'TransTime' => '040057',
-  'GSChkValue' => 'IdaV8b1FARmTWt+UkSsgQDHzCnQe6x0hxGf1D2Oxtn5yAKlD5/XuCO06b27wTe42an23w69x6dQcPb/1qUTZ708uUNwh+p8te5bw3nR/d9j9dEP8CbAfayJHJKiRKfHs84FEliDlxnW3wBvsKQwxXl1hdDu9FfS6Au+MgzCbQug=',
-)
-==== ChinaPay Result Data: 2016-08-22 04:01:17 ===========
+==== China Pay Submit Response: 2016-08-22 05:43:01 ===========
 ==== IP: ::1
 array (
   'uri' => '/shopperpay/return_url.php',
   'data' => 
   array (
     'merid' => '808080071198021',
-    'orderno' => '1471852857397437',
+    'orderno' => '1471858953699855',
     'transdate' => '20160822',
     'amount' => '000000024000',
     'currencycode' => 'USD',
     'transtype' => '0001',
     'status' => '1001',
-    'checkvalue' => '821FD993C75D9F9AF68D82CCA9E367E3E379ED5AE99EF3147574D10F4B3C8F38435DB823449FDE4700613F8BC11A2A4E6153DCA0E54A1EF49F065AD00E658786F05A2D8770752C520E89920993F336529D9D13DB654896D3485CE117163FE709263DC180E94EED59C98582A326E22EC2C05019830506EEBC8E7BEC4FB6587AAA',
+    'checkvalue' => '527999D741ED49EFE115D51C12CAD4BA73989ADCA2B2A3AF92C072E488B5A0F2563D87B907FC5F150A3F1280C13153D156B7096B5EE595095D0D6EA3BA35FA400988777DC3AC4511F4DC0951A6CF8C3938E1D9D423C6B8401C4435068474F3056DC2BF1C2236A0B9E09D388BE1FC940437535152375276C92014F762E9BEA6DE',
     'GateId' => '8613',
     'Priv1' => '000000003844',
   ),
 )
-==== Shopper Request: 2016-08-22 04:01:17 ===========
+==== Shopper Request: 2016-08-22 05:43:02 ===========
 ==== IP: ::1
 array (
   'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
   'data' => 
   array (
-    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471852857397437","orderInfo":"{\\"merid\\":\\"808080071198021\\",\\"orderno\\":\\"1471852857397437\\",\\"transdate\\":\\"20160822\\",\\"amount\\":\\"000000024000\\",\\"currencycode\\":\\"USD\\",\\"transtype\\":\\"0001\\",\\"status\\":\\"1001\\",\\"checkvalue\\":\\"821FD993C75D9F9AF68D82CCA9E367E3E379ED5AE99EF3147574D10F4B3C8F38435DB823449FDE4700613F8BC11A2A4E6153DCA0E54A1EF49F065AD00E658786F05A2D8770752C520E89920993F336529D9D13DB654896D3485CE117163FE709263DC180E94EED59C98582A326E22EC2C05019830506EEBC8E7BEC4FB6587AAA\\",\\"GateId\\":\\"8613\\",\\"Priv1\\":\\"000000003844\\"}","gsChkValue":"NQyRRbAisk3PxeYg8JfBgSBMwL\\/0orDb\\/5DHTqwcO4Ym9s+G2GEfMs+OhYJ6AGfQGu34il2tFZFmznwaW1U1HbKeGer542Q9NByJ3lenWoo1FLBHYxYOuxFGwhPhZbNyiPgoVJzclZkOkL8WGRm+0Yk24xY0V9AhudLFEg8qwGA=","pluginVersion":"v2.0.3"}',
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471858953699855","orderInfo":"{\\"merid\\":\\"808080071198021\\",\\"orderno\\":\\"1471858953699855\\",\\"transdate\\":\\"20160822\\",\\"amount\\":\\"000000024000\\",\\"currencycode\\":\\"USD\\",\\"transtype\\":\\"0001\\",\\"status\\":\\"1001\\",\\"checkvalue\\":\\"527999D741ED49EFE115D51C12CAD4BA73989ADCA2B2A3AF92C072E488B5A0F2563D87B907FC5F150A3F1280C13153D156B7096B5EE595095D0D6EA3BA35FA400988777DC3AC4511F4DC0951A6CF8C3938E1D9D423C6B8401C4435068474F3056DC2BF1C2236A0B9E09D388BE1FC940437535152375276C92014F762E9BEA6DE\\",\\"GateId\\":\\"8613\\",\\"Priv1\\":\\"000000003844\\"}","gsChkValue":"mXZl2rOzMrOodji6TDLCaz779JQhzlLD7U6X6qnuaKb0gXdILxNkGvDntWLKY2JJf5CZltgDvCKgk94\\/WWCC2HfoNT+PE\\/c5CWwSAPjttMYky5nyB5STVNudBEWu5QdoojdklVIisWLvxvtC0P5ZRRuUzZC2Fwvtsja2\\/HCf\\/gQ=","pluginVersion":"v2.0.3"}',
   ),
 )
-==== Shopper Response: 2016-08-22 04:01:18 ===========
+==== Shopper Response: 2016-08-22 05:43:02 ===========
 ==== IP: ::1
 array (
   'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
-  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"2016082204005787","gsOrdId":"1471852857397437","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"孙君","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市黄浦区甜爱路","detailAddress2":""},"gsChkValue":"i2hSQMpE2ZVjvGZZYjfDxPc+ZnxO08xhXWlrNMm76TWhrBf/19uRQdVE6ss69Aw+SaUnJkcGgpVY6OO4SO60q0Xo+YW6FL/3n83Xo4k2Ui6hskVIFH6HNgmW0cvtIeltsrQGzwcGyrz7OPLVkGadzigVw/GF71cohP0iyBtuNfE="}',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"2016082205423436","gsOrdId":"1471858953699855","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"孙君","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市黄浦区甜爱路","detailAddress2":""},"gsChkValue":"NsS1Dbpbij4UwNVepTzfqjPGQ/JvimOfHLBedl8OIcTbXeoN+KM/S4AHrdiZmF8w0Y8250ctUFgAtAyIVQKBfVOwGl91uq1+fLoQ1UdZ9LRCVscBytGa5QPvsY10yeVfjZ+pCrEbVlmMPn8qhk/kSe0WYRXKilafKsc+1+A7Grw="}',
 )
-==== Verify GS SIGN RESPONSE: 2016-08-22 04:01:18 ===========
-==== IP: ::1
-NULL
-==== Seller Request: 2016-08-22 04:01:18 ===========
+==== Seller Request: 2016-08-22 05:43:02 ===========
 ==== IP: ::1
 array (
   'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api_demo.php',
   'data' => 
   array (
-    'MerOrdId' => '2016082204005787',
-    'OrderInfo' => '{"merid":"808080071198021","orderno":"1471852857397437","transdate":"20160822","amount":"000000024000","currencycode":"USD","transtype":"0001","status":"1001","checkvalue":"821FD993C75D9F9AF68D82CCA9E367E3E379ED5AE99EF3147574D10F4B3C8F38435DB823449FDE4700613F8BC11A2A4E6153DCA0E54A1EF49F065AD00E658786F05A2D8770752C520E89920993F336529D9D13DB654896D3485CE117163FE709263DC180E94EED59C98582A326E22EC2C05019830506EEBC8E7BEC4FB6587AAA","GateId":"8613","Priv1":"000000003844"}',
-    'GSOrdId' => '1471852857397437',
+    'MerOrdId' => '2016082205423436',
+    'OrderInfo' => '{"merid":"808080071198021","orderno":"1471858953699855","transdate":"20160822","amount":"000000024000","currencycode":"USD","transtype":"0001","status":"1001","checkvalue":"527999D741ED49EFE115D51C12CAD4BA73989ADCA2B2A3AF92C072E488B5A0F2563D87B907FC5F150A3F1280C13153D156B7096B5EE595095D0D6EA3BA35FA400988777DC3AC4511F4DC0951A6CF8C3938E1D9D423C6B8401C4435068474F3056DC2BF1C2236A0B9E09D388BE1FC940437535152375276C92014F762E9BEA6DE","GateId":"8613","Priv1":"000000003844"}',
+    'GSOrdId' => '1471858953699855',
     'PackageInfo' => '{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""}',
     'consigneeInfo' => '{"contactName":"\\u5b59\\u541b","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"\\u4e0a\\u6d77\\u5e02\\u9ec4\\u6d66\\u533a\\u751c\\u7231\\u8def","detailAddress2":""}',
   ),
 )
-==== Seller Response: 2016-08-22 04:01:19 ===========
+==== Seller Response: 2016-08-22 05:43:02 ===========
 ==== IP: ::1
 array (
   'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api_demo.php',
   'data' => '{"isSuccess":"1","errno":"","errMessage":""}',
 )
-==== Shopper Request: 2016-08-22 04:01:19 ===========
+==== Shopper Request: 2016-08-22 05:43:02 ===========
 ==== IP: ::1
 array (
   'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
   'data' => 
   array (
-    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471852857397437","isSuccess":"1","gsChkValue":"bGfXFfkquwc2gqh9cDHz\\/N9WK2oy5rXJ3Ps5Fs7PN5X9zxN0GopDjPXqoEZmyDRaLO8gznMSe0V30n3w1FNiRnucu6FrDOkv5bVGA+LmhL0fHNflwFjmVTF+ShD9j68ILl2dMYELZH9MgRLS9aCQ+5x1oqeIk76Oaud\\/EINi4vg=","pluginVersion":"v2.0.3"}',
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471858953699855","isSuccess":"1","gsChkValue":"ZQ\\/VQFmJx86a9xO4790qi7R4GZDIAJc2kYMvsBarMgDhGrI0GmZB6lKRn4XBClC\\/4mIX6WaxRNnmmxa8fYEdaiuMceJ5v2YrWIuGWrmyVLvFXkjqcpmBUWmNaIlYt1V3VBkPo5s0FlMY3PvE+FoyguzcMF0E3OELyFago8jWie4=","pluginVersion":"v2.0.3"}',
   ),
 )
-==== Shopper Response: 2016-08-22 04:01:19 ===========
+==== Shopper Response: 2016-08-22 05:43:02 ===========
 ==== IP: ::1
 array (
   'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
   'data' => '{"isSuccess":"1","errorCode":"","errorMessage":""}',
+)
+==== Shopper Pay Submit Request to GS: 2016-08-22 06:06:46 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/validate_merchant.jhtml',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082206064689',
+    'ProTotalAmt' => '240',
+    'ProductInfo' => '[{"productName":"Anti Aging Eye Cream","productAttr":"","imageUrl":"","perPrice":"240.00","quantity":"1","perWeight":"0.5","perVolume":"300","perTotalAmt":"240.00","SKU":"123456789000"}]',
+    'GSMerId' => '5020001',
+    'LogisticsId' => '808080071198022',
+    'PluginVersion' => 'v2.0.3',
+    'CuryId' => 'USD',
+    'PayInfoUrl' => 'http://localhost/shopperpay/pay.php',
+    'GSChkValue' => 'kYJv3zi5rq3Jnl9ivs1CKpGH2uKUBPW8BH8rePq8slJP1AKHAchwOzorVmQGUFsYHZRRbRiKVIYJPAmZUL5o4OX89uG5hgulRMqrk4eCtibZX2SUumdbHGBvQpJNBuc0KtjfWy3nwDuOc/m9CJHo0/6Ng74dbsaDCeVgnZGoecE=',
+  ),
+)
+==== Shopper Pay Submit Response FROM GS: 2016-08-22 06:06:50 ===========
+==== IP: ::1
+array (
+  'GSOrdId' => '1471860405449507',
+  'TransAmt' => '000000024000',
+  'Priv1' => '000000003844',
+  'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471860405449507',
+  'TransDate' => '',
+  'TransTime' => '',
+  'GSChkValue' => 'Tjrkdif7tY4BU4okfJcdwvEpRMEP4V8DCdpFNsW58FJNKzksWYXuuTY8FOx7ubOttgf2uAnsaVl+UCZqlZAh+vnWtJpBlxGHntsHN2zio8ynLUPA5+sw4rNFqW0Uqb+SWDHI7C/y3rDSJcgOaLepoL1Uj9Uo57oCM2LFQHe+Kl4=',
+)
+==== Shopper Pay Submit Request to GS: 2016-08-22 06:07:21 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/validate_merchant.jhtml',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082206072142',
+    'ProTotalAmt' => '240',
+    'ProductInfo' => '[{"productName":"Anti Aging Eye Cream","productAttr":"","imageUrl":"","perPrice":"240.00","quantity":"1","perWeight":"0.5","perVolume":"300","perTotalAmt":"240.00","SKU":"123456789000"}]',
+    'GSMerId' => '5020001',
+    'LogisticsId' => '808080071198022',
+    'PluginVersion' => 'v2.0.3',
+    'CuryId' => 'USD',
+    'PayInfoUrl' => 'http://localhost/shopperpay/pay.php',
+    'GSChkValue' => 'DVlJfch/IE6mF3O3Qk654KS3sJ53fg7ULHc27NRk7obvBZ1YJJV64f66sd5FHS8wUCx4UiJdImwLNeVqPktRuijmombmqbKAogu2NLbzmftuBDtJCIIeejWzWQjqAmXr5YUBgwrKypPxy/7RFpL4sCzb4jaSgdjnCl6gxNCMoMU=',
+  ),
+)
+==== Shopper Pay Submit Response FROM GS: 2016-08-22 06:07:24 ===========
+==== IP: ::1
+array (
+  'GSOrdId' => '1471860439575264',
+  'TransAmt' => '000000024000',
+  'Priv1' => '000000003844',
+  'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471860439575264',
+  'TransDate' => '',
+  'TransTime' => '',
+  'GSChkValue' => 'iIHV1eLJ/paJsbFVVNYPGrLXfp1O/ci8J+i2PAOKHDlrvEjRnOw+B0aqCWIVamJqpjVkdCTnfa4OJAXqkS2b8MSfG7uR94VPa8KI5f4BYO7oYkCZK+qgw5G55IYzaszBn9rNdCjSEvy81nCe542BnVUc/umm9n3gQT2N0yJirzc=',
+)
+==== Shopper Pay Submit Request to GS: 2016-08-22 06:09:41 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/validate_merchant.jhtml',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082206094168',
+    'ProTotalAmt' => '240',
+    'ProductInfo' => '[{"productName":"Anti Aging Eye Cream","productAttr":"","imageUrl":"","perPrice":"240.00","quantity":"1","perWeight":"0.5","perVolume":"300","perTotalAmt":"240.00","SKU":"123456789000"}]',
+    'TransDate' => '20160822',
+    'TransTime' => '060941',
+    'GSMerId' => '5020001',
+    'LogisticsId' => '808080071198022',
+    'PluginVersion' => 'v2.0.3',
+    'CuryId' => 'USD',
+    'PayInfoUrl' => 'http://localhost/shopperpay/pay.php',
+    'GSChkValue' => 'LT94EFW/xt/6Yv1nKjbWIWIFQPL2SWOpVPZC2KzCQUD5Vj17zy0s9SGMq4AQg32lwz7b4d6yIBOZOUd11K+aJII1nM1fW8cPpCfxrY0zeB6/TKAKjeicryZ55kemWOf+IINHuv8D8s2HBZrqzn0iDo7S84ApalXY9Mu3l1yiBp0=',
+  ),
+)
+==== Shopper Pay Submit Response FROM GS: 2016-08-22 06:09:44 ===========
+==== IP: ::1
+array (
+  'GSOrdId' => '1471860579312328',
+  'TransAmt' => '000000024000',
+  'Priv1' => '000000003844',
+  'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471860579312328',
+  'TransDate' => '20160822',
+  'TransTime' => '060941',
+  'GSChkValue' => 'uLpYkE44m8M3qeS2Yrgs1/aKcqimL/pUjp2RWtI4BpSrBuAFf2zA00BqXFyQ13uDeZD3nclidbZp0nf1XHFwcKHiUrFMtbr7VgmLygMskRM/TkE7ZD+gXMUtDcw1lHbjWKVGvNPATzaJXPISXn8IUInMVJrInblK+lFBXqZfmWI=',
+)
+==== China Pay Submit Request: 2016-08-22 06:09:44 ===========
+==== IP: ::1
+array (
+  'url' => 'http://payment-test.chinapay.com/pay/TransGet',
+  'data' => 
+  array (
+    'MerId' => '808080071198021',
+    'OrdId' => '1471860579312328',
+    'TransAmt' => '000000024000',
+    'CuryId' => 'USD',
+    'CountryId' => '0001',
+    'TransDate' => '20160822',
+    'TransType' => '0001',
+    'Version' => '20080515',
+    'BgRetUrl' => 'http://localhost/shopperpay/notify_url.php',
+    'PageRetUrl' => 'http://localhost/shopperpay/return_url.php',
+    'GateId' => '8613',
+    'Priv1' => '000000003844',
+    'TimeZone' => '-05',
+    'TransTime' => '060941',
+    'DSTFlag' => '0',
+    'ExtFlag' => '00',
+    'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471860579312328',
+    'ChkValue' => '4D160FFC050F40013A7BBF8C3E5E43EF50EBF0194F193D837D615D6180C49E9CC244B3458C8968CF1891718CA7021B4567F641D407C1C3A64412BC7E0E505D3EF1CBFF17FDE4BDEB9DD22DA65E2EAFB1ACA269E85395AC058FDD034BBE795D76F437209CD0780053FFFDDC99043C6A46A598F101DE6DA9B31E5CB4933A32141A',
+  ),
+)
+==== Shopper Pay Submit Request to GS: 2016-08-22 06:20:39 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/validate_merchant.jhtml',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082206203933',
+    'ProTotalAmt' => '240',
+    'ProductInfo' => '[{"productName":"Anti Aging Eye Cream","productAttr":"","imageUrl":"","perPrice":"240.00","quantity":"1","perWeight":"0.5","perVolume":"300","perTotalAmt":"240.00","SKU":"123456789000"}]',
+    'GSMerId' => '5020001',
+    'LogisticsId' => '808080071198022',
+    'PluginVersion' => 'v2.0.3',
+    'CuryId' => 'USD',
+    'PayInfoUrl' => 'http://localhost/shopperpay/pay.php',
+    'GSChkValue' => 'NP56CE75KQNVMnZShe6MSJGEd2RbGtyVMcs5D7Xh96fy9A+WoClpZE1N3kYDyg/BWRZ123oKytO0dP096DKW7R/f3OoJ79e2ct4g3IDXIuHPGsGRDV++xphaS5JCIzztERNAjGmCnMrF72vleAv9Uvk4E9YQpIcRCUEITV8mrHM=',
+  ),
+)
+==== Shopper Pay Submit Response FROM GS: 2016-08-22 06:20:42 ===========
+==== IP: ::1
+array (
+  'GSOrdId' => '1471861237654759',
+  'TransAmt' => '000000024000',
+  'Priv1' => '000000003844',
+  'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471861237654759',
+  'TransDate' => '',
+  'TransTime' => '',
+  'GSChkValue' => 'bM7L0O+XdHsYIXzyoBZNQrZq3iPHcb8PxL1go01fHG2zVGBi0WXBPnrRkJ92XWUzBGd2Wkrvd4HmefUmoAvJ+wBcy3467iNTPX+uzqHynraIrTD2aRcFGwOYXZ2ewj9LFOIJD1TRBA1hyOlAuSJ7lNcg2ntCzooDp09hezHDukw=',
+)
+==== Shopper Pay Submit Request to GS: 2016-08-22 06:21:35 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/validate_merchant.jhtml',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082206213560',
+    'ProTotalAmt' => '240',
+    'ProductInfo' => '[{"productName":"Anti Aging Eye Cream","productAttr":"","imageUrl":"","perPrice":"240.00","quantity":"1","perWeight":"0.5","perVolume":"300","perTotalAmt":"240.00","SKU":"123456789000"}]',
+    'GSMerId' => '5020001',
+    'LogisticsId' => '808080071198022',
+    'PluginVersion' => 'v2.0.3',
+    'CuryId' => 'USD',
+    'PayInfoUrl' => 'http://localhost/shopperpay/pay.php',
+    'GSChkValue' => 'cB5MSeUWE7y5RwnB7pxCQRpRurMRLDhlbCjpTDD9poDnGsHvOz81U2Ss/jQA9hMH556zqP6iV53Kf+Wf8gcrF2I1bsoOsdUg3/ZRdxH4Bo5+yXyygy9shzvMJY79br9raGWLnMdVy+2uwWWmJ6PBhnLXnSh7x1Eb0IloqIctKfY=',
+  ),
+)
+==== Shopper Pay Submit Response FROM GS: 2016-08-22 06:21:42 ===========
+==== IP: ::1
+array (
+  'GSOrdId' => '1471861297359998',
+  'TransAmt' => '000000024000',
+  'Priv1' => '000000003844',
+  'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471861297359998',
+  'TransDate' => '',
+  'TransTime' => '',
+  'GSChkValue' => 'Ow40/BJig95P3jzvJOE2/qLvPkkE7SmdcQYErk58oRLzkR/KQpT8CAg4qAlH5Yp30IaJ258pQd78xdi8AXPXeHOUhKl3hPeg6SmcJPyS07vPw0spN4xzAvZ+aVmMMZS20zlk7RYsa7r55ZX8rH//G1Va0oIjnF3odlzy9InykOM=',
+)
+==== Shopper Pay Submit Request to GS: 2016-08-22 06:22:32 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/validate_merchant.jhtml',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082206223244',
+    'ProTotalAmt' => '240',
+    'ProductInfo' => '[{"productName":"Anti Aging Eye Cream","productAttr":"","imageUrl":"","perPrice":"240.00","quantity":"1","perWeight":"0.5","perVolume":"300","perTotalAmt":"240.00","SKU":"123456789000"}]',
+    'GSMerId' => '5020001',
+    'LogisticsId' => '808080071198022',
+    'PluginVersion' => 'v2.0.3',
+    'CuryId' => 'USD',
+    'PayInfoUrl' => 'http://localhost/shopperpay/pay.php',
+    'GSChkValue' => 'G/lNTn2Pcy2r9FVwEbwI2zQdsqnQnsSfpDSIYc+EKX++X66s02QWeDvl4b36oqQnE6bctfpacvJEDS3fkzvRjaaLno8Gc4qdFTxRH0RUPtAJ8+W8rAVwt+Up4OOZG8gaPt28Bk8JQhvH/T+a6Zg57f1wMGNZ3I1r92mMv5U5ri8=',
+  ),
+)
+==== Shopper Pay Submit Response FROM GS: 2016-08-22 06:22:34 ===========
+==== IP: ::1
+array (
+  'GSOrdId' => '1471861349625325',
+  'TransAmt' => '000000024000',
+  'Priv1' => '000000003844',
+  'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471861349625325',
+  'TransDate' => '',
+  'TransTime' => '',
+  'GSChkValue' => 'kbNSmSfFVb2lRUmRPtfVB5rlIJVRJ+kpDcPQmlm4PWL57YDxCuekO+1ePpQwRpmBbvy5THXq3lncWpVcFLQhatqV92728E5PUdA+ABxJdSA/0pgY4kDnxTCyax3XnX3omyOMyCWxHeBnjkIXZsalu9U7CLfc62JyXpy89kizlow=',
+)
+==== Shopper Pay Submit Request to GS: 2016-08-22 06:22:42 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/validate_merchant.jhtml',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082206224262',
+    'ProTotalAmt' => '240',
+    'ProductInfo' => '[{"productName":"Anti Aging Eye Cream","productAttr":"","imageUrl":"","perPrice":"240.00","quantity":"1","perWeight":"0.5","perVolume":"300","perTotalAmt":"240.00","SKU":"123456789000"}]',
+    'GSMerId' => '5020001',
+    'LogisticsId' => '808080071198022',
+    'PluginVersion' => 'v2.0.3',
+    'CuryId' => 'USD',
+    'PayInfoUrl' => 'http://localhost/shopperpay/pay.php',
+    'GSChkValue' => 'e1xhja/g0mUKeWxAelOo/zO2riqQSjD1W4mJJBpp5JB7FvrWkR4HmB1zpDMKgytFpmEeZ4S+6NpSl/HKmV/gVkcPvCS6Aq/3dvC3TNjZ1rJ+JzluVR3dQ8yo64FzWb+u7iJAEe9jL7hsHg9H9aPPkA9INWnAsVG1CVmEeZQxErY=',
+  ),
+)
+==== Shopper Pay Submit Response FROM GS: 2016-08-22 06:22:45 ===========
+==== IP: ::1
+array (
+  'GSOrdId' => '1471861360860699',
+  'TransAmt' => '000000024000',
+  'Priv1' => '000000003844',
+  'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471861360860699',
+  'TransDate' => '',
+  'TransTime' => '',
+  'GSChkValue' => 'IG/Y+m2wDzDOFmQ0ZX6ZqIJKDzw//NDcFEwZjb86fzdf1YRGneokmkm9WKHK8y/wHJm4E4rKfpltTznyzLainDQnBoLTnpd5ya6HsNaA186J+5XclAjX8jrGvee+1eFf7I2WyFNzGQ/6QaW1/Ov7XxFpW3OVRW4udI0xZuq3vuY=',
+)
+==== Shopper Pay Submit Request to GS: 2016-08-22 06:24:10 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/validate_merchant.jhtml',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082206241028',
+    'ProTotalAmt' => '240',
+    'ProductInfo' => '[{"productName":"Anti Aging Eye Cream","productAttr":"","imageUrl":"","perPrice":"240.00","quantity":"1","perWeight":"0.5","perVolume":"300","perTotalAmt":"240.00","SKU":"123456789000"}]',
+    'GSMerId' => '5020001',
+    'LogisticsId' => '808080071198022',
+    'PluginVersion' => 'v2.0.3',
+    'CuryId' => 'USD',
+    'PayInfoUrl' => 'http://localhost/shopperpay/pay.php',
+    'GSChkValue' => 'ai5NYhAnKGC4K6WGn5+p/3+Y8OZLppKU84UywqZ7oeZurwQS7u9W2bp+OCMPPNxavpAQQD5qRAfhbp5mwct11GM0YxaN7YffZLaQ6WCqzevsSTlGp+RF07S9p3To4p9FPO3tvquh0MtoLZ0aJ06XfCsxN5xgxyhyRdgkRiFivZM=',
+  ),
+)
+==== Shopper Pay Submit Response FROM GS: 2016-08-22 06:24:13 ===========
+==== IP: ::1
+array (
+  'GSOrdId' => '1471861448924596',
+  'TransAmt' => '000000024000',
+  'Priv1' => '000000003844',
+  'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471861448924596',
+  'TransDate' => '',
+  'TransTime' => '',
+  'GSChkValue' => 'EwIKEVfi+0Sn0IaxDzH7/KoXkCFwR+BpfHOu2Bc6789UQlHLv7zE+gqTHjXSlbjpY1KCrHP323pXmgZ0QxlV5voOSlE7mHPxtE72s8Ueoz17SrDMS4RZYmCo9O9r13tWIEohBqmIxEVW03INsO6Nrst5boLWotuSszIaF1Y51Mc=',
+)
+==== Shopper Pay Submit Request to GS: 2016-08-22 06:27:03 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/validate_merchant.jhtml',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082206270344',
+    'ProTotalAmt' => '240',
+    'ProductInfo' => '[{"productName":"Anti Aging Eye Cream","productAttr":"","imageUrl":"","perPrice":"240.00","quantity":"1","perWeight":"0.5","perVolume":"300","perTotalAmt":"240.00","SKU":"123456789000"}]',
+    'GSMerId' => '5020001',
+    'LogisticsId' => '808080071198022',
+    'PluginVersion' => 'v2.0.3',
+    'CuryId' => 'USD',
+    'PayInfoUrl' => 'http://localhost/shopperpay/pay.php',
+    'GSChkValue' => 'Ze8YXeVL8xPYODtBCAIpLT4RBOpZ32Hhka/K/gcQvbVbCngD4BsvGa0kI/NnPapx4RLAdhL358r4Lz9rzW+mhjf6ODtnWVvdmkcBti6TDMA9Sdz2OKCDQwmW7ZuZiJKWk7arNDPsfvgKjWeXWhBBSnSm79Ggd+s0FUxVAPk3yM0=',
+  ),
+)
+==== Shopper Pay Submit Request to GS: 2016-08-22 06:27:35 ===========
+==== IP: ::1
+array (
+  'url' => 'http://192.168.0.100:8080/pay_plugin/validate_merchant.jhtml',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082206273557',
+    'ProTotalAmt' => '240',
+    'ProductInfo' => '[{"productName":"Anti Aging Eye Cream","productAttr":"","imageUrl":"","perPrice":"240.00","quantity":"1","perWeight":"0.5","perVolume":"300","perTotalAmt":"240.00","SKU":"123456789000"}]',
+    'GSMerId' => '5020001',
+    'LogisticsId' => '808080071198022',
+    'PluginVersion' => 'v2.0.3',
+    'CuryId' => 'USD',
+    'PayInfoUrl' => 'http://localhost/shopperpay/pay.php',
+    'GSChkValue' => 'DurgLU1aU0HpVVyFxK3C+6OlLLjy4W8ZbBq4Z6H31uLV7mPe75GuLaisF/5BgWOcVyHboIAaedreIrExx3RRrVH/bM9lshS90rYjsGDe90yeEfNjoHC9R+4XkgIX6bIq2pkV4H26bStvGQKjjp/Z6oTSl5Ls5Uo3ZCyqkQj05bQ=',
+  ),
+)
+==== Shopper Pay Submit Request to GS: 2016-08-22 06:29:54 ===========
+==== IP: ::1
+array (
+  'url' => 'http://192.168.0.100:8080/pay_plugin/validate_merchant.jhtml',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082206295417',
+    'ProTotalAmt' => '240',
+    'ProductInfo' => '[{"productName":"Anti Aging Eye Cream","productAttr":"","imageUrl":"","perPrice":"240.00","quantity":"1","perWeight":"0.5","perVolume":"300","perTotalAmt":"240.00","SKU":"123456789000"}]',
+    'GSMerId' => '5020001',
+    'LogisticsId' => '808080071198022',
+    'PluginVersion' => 'v2.0.3',
+    'CuryId' => 'USD',
+    'PayInfoUrl' => 'http://localhost/shopperpay/pay.php',
+    'GSChkValue' => 'iaA+zEmir6MiT2kVC3JrxZiGfYS4CFDn06H82ja+IelCSPVfN+zNyMzd0fGqF6Ouo/YQRigRPaxrt++z/AppWGgtRmA+cZtK7dNzHlxuGVOuXHEk3ez+ukPcOh2JHwpiTmUUsemOxV4X7SkCTce+sQJ7936QHR1Wxlq+k5VeCfM=',
+  ),
+)
+==== Shopper Pay Submit Request to GS: 2016-08-22 06:32:40 ===========
+==== IP: ::1
+array (
+  'url' => 'http://192.168.0.100:8080/pay_plugin/validate_merchant.jhtml',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082206324033',
+    'ProTotalAmt' => '240',
+    'ProductInfo' => '[{"productName":"Anti Aging Eye Cream","productAttr":"","imageUrl":"","perPrice":"240.00","quantity":"1","perWeight":"0.5","perVolume":"300","perTotalAmt":"240.00","SKU":"123456789000"}]',
+    'GSMerId' => '5020001',
+    'LogisticsId' => '808080071198022',
+    'PluginVersion' => 'v2.0.3',
+    'CuryId' => 'USD',
+    'PayInfoUrl' => 'http://localhost/shopperpay/pay.php',
+    'GSChkValue' => 'Dm7CgOHDAkYHzZVqV9btEEVx+FEFoU2JfEdj4LRpfIE27e3Z1wVVHC7PlXmgaK2wO9OWp3PsdsUywH6X/VIr+WHObZwq4uR3diObW0iJN+3cGk1JgzbWNqwAQByhEjOW85Qj0elMsqdM88sc3UphQ12ET6crUdf5Sq5v1k+uylI=',
+  ),
+)
+==== Shopper Pay Submit Request to GS: 2016-08-22 06:33:19 ===========
+==== IP: ::1
+array (
+  'url' => 'http://192.168.0.100:8080/pay_plugin/validate_merchant.jhtml',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082206331915',
+    'ProTotalAmt' => '240',
+    'ProductInfo' => '[{"productName":"Anti Aging Eye Cream","productAttr":"","imageUrl":"","perPrice":"240.00","quantity":"1","perWeight":"0.5","perVolume":"300","perTotalAmt":"240.00","SKU":"123456789000"}]',
+    'TransDate' => '20160822',
+    'TransTime' => '063319',
+    'GSMerId' => '5020001',
+    'LogisticsId' => '808080071198022',
+    'PluginVersion' => 'v2.0.3',
+    'CuryId' => 'USD',
+    'PayInfoUrl' => 'http://localhost/shopperpay/pay.php',
+    'GSChkValue' => 'eled73eBw4Us+UToLEC39Ttkop3HJFin9mZWP2pqZp1zP2iLBDUkeZlZW5JwgMJ5GfaJf0cQ3ITo4pVw2HiQ4gfIhFCT1nk8qCNIxjIb1QNfW93S0rsBcDssYXeaK1xa8y06syJKLs+GIhx8KRa+N6YBiGI8pWW/N32XQnUAUdc=',
+  ),
+)
+==== Shopper Pay Submit Response FROM GS: 2016-08-22 06:33:24 ===========
+==== IP: ::1
+array (
+  'GSOrdId' => '1471861995751770',
+  'TransAmt' => '000000024000',
+  'Priv1' => '000000003844',
+  'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471861995751770',
+  'TransDate' => '20160822',
+  'TransTime' => '063319',
+  'GSChkValue' => 'k6CO8Z9EEJbE8dcrHA3LxAfVZgfzIX1BeDykTjGs7X+7vupOHO+w83W/hrJUnqzj/e+LVvPBNzuS34kHTo0bL+3xHOFaeL9rblfAmeSOSyDRWSO9ekKvnAao2FLVWctnqoEgEJf6VqzxvCCVvIClVHQf2rj4lBm5V5xozNRAuU8=',
+)
+==== China Pay Submit Request: 2016-08-22 06:33:24 ===========
+==== IP: ::1
+array (
+  'url' => 'http://payment-test.chinapay.com/pay/TransGet',
+  'data' => 
+  array (
+    'MerId' => '808080071198021',
+    'OrdId' => '1471861995751770',
+    'TransAmt' => '000000024000',
+    'CuryId' => 'USD',
+    'CountryId' => '0001',
+    'TransDate' => '20160822',
+    'TransType' => '0001',
+    'Version' => '20080515',
+    'BgRetUrl' => 'http://localhost/shopperpay/notify_url.php',
+    'PageRetUrl' => 'http://localhost/shopperpay/return_url.php',
+    'GateId' => '8613',
+    'Priv1' => '000000003844',
+    'TimeZone' => '-05',
+    'TransTime' => '063319',
+    'DSTFlag' => '0',
+    'ExtFlag' => '00',
+    'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471861995751770',
+    'ChkValue' => '021A988A385FE866209B9B65E25009078736ECAA6D2CDE93FA58AD251A2658DD86CBD900EF7F4228FAFACB5E79B80EA25575BA20DBD8B2F2EC4C628229F1BC1A3D8C9D385B12F096A97129664EBAEAAC16458C517F6D4F4F8899C80ACAF8481301EE40B36BE1BC59728E7410E5F0689E21BB818F6E18526C07ED19A2EEB745F4',
+  ),
+)
+==== Shopper Request: 2016-08-22 06:53:53 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471681439851441","merOrdId":"2016082016211324","gsChkValue":"kzOS5SK9ZEyONr7j9sA7SsYmyr1H1puJp7g1EeIgKk2u0SL9BS999S8O\\/spboubO1wcJwb71m913QVg\\/tzPgu4T3Yw7K0bsbGWHNoVDoOO6szi7cxt3D31VMyG0DChofktZkLVudK2jKYMpjLZb09vngqizDAIMFOGAyuL3ev4I=","pluginVersion":"v2.0.3"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 06:53:54 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"2016082016211324","gsOrdId":"1471681439851441","gsOrdStatus":"","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"孙君","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市黄浦区甜爱路","detailAddress2":""},"gsChkValue":"cRsYYvBsRdwGriDwsBpOprUU5etEbqQBMDwRHDP8KQtvFKIiAGomVqYHn9/8obbaS+8TKczhL6VXdGbfttkGFiFpoYzGw8zQZ7M9tX7w1p68AQUOwe5iipeBB4kb089aq8OcY2LqYvdPn7NOfcAaGl3ermYALK9Q9SZNjaHyBpY="}',
+)
+==== Shopper Request: 2016-08-22 06:55:51 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471681439851441","merOrdId":"2016082016211324","gsChkValue":"kzOS5SK9ZEyONr7j9sA7SsYmyr1H1puJp7g1EeIgKk2u0SL9BS999S8O\\/spboubO1wcJwb71m913QVg\\/tzPgu4T3Yw7K0bsbGWHNoVDoOO6szi7cxt3D31VMyG0DChofktZkLVudK2jKYMpjLZb09vngqizDAIMFOGAyuL3ev4I=","pluginVersion":"v2.0.3"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 06:55:51 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"2016082016211324","gsOrdId":"1471681439851441","gsOrdStatus":"","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"孙君","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市黄浦区甜爱路","detailAddress2":""},"gsChkValue":"cRsYYvBsRdwGriDwsBpOprUU5etEbqQBMDwRHDP8KQtvFKIiAGomVqYHn9/8obbaS+8TKczhL6VXdGbfttkGFiFpoYzGw8zQZ7M9tX7w1p68AQUOwe5iipeBB4kb089aq8OcY2LqYvdPn7NOfcAaGl3ermYALK9Q9SZNjaHyBpY="}',
+)
+==== Shopper Request: 2016-08-22 07:01:44 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":null,"merOrdId":"2016082016211324","gsChkValue":"LrzO18zJCpyUkTapujadg5V\\/JUEpwxbjbOp1azCNjdXKtOYSR71S4OwxBkETJCqoYoubpsq3DUUyr766KYgMCfbMgcIrq9HGfZll\\/jZt58akBhFYLg45katSXCGSwinadGwbj1BQivIAhmySy9BU\\/TSNmLRgF1+euIOpK5t0j9A=","pluginVersion":"v2.0.3"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 07:01:44 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"0","errorCode":"1020","errorMessage":"验签失败"}',
+)
+==== Shopper Pay Submit Request to GS: 2016-08-22 07:04:55 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/validate_merchant.jhtml',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082207045522',
+    'ProTotalAmt' => '240',
+    'ProductInfo' => '[{"productName":"Anti Aging Eye Cream","productAttr":"","imageUrl":"","perPrice":"240.00","quantity":"1","perWeight":"0.5","perVolume":"300","perTotalAmt":"240.00","SKU":"123456789000"}]',
+    'TransDate' => '20160822',
+    'TransTime' => '070455',
+    'GSMerId' => '5020001',
+    'LogisticsId' => '808080071198022',
+    'PluginVersion' => 'v2.0.3',
+    'CuryId' => 'USD',
+    'PayInfoUrl' => 'http://localhost/shopperpay/pay.php',
+    'GSChkValue' => 'MF5dw0D1z3FA7iYNb/4m0lZr1YBYT3wWe2ei2NzhqBYc4e7CrbEfHe/kJkd15HZDoijBcpSE4CCL0U5f41PqKxtJY38Ius6lDB/1m5dSg/MOQ9rjpmxik1jQwJo+A4PI2JCNwVt3xPwJATyM77aTF16UWvdxPptPEdL1BE8Wmjs=',
+  ),
+)
+==== Shopper Pay Submit Request to GS: 2016-08-22 07:05:02 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/validate_merchant.jhtml',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082207050265',
+    'ProTotalAmt' => '240',
+    'ProductInfo' => '[{"productName":"Anti Aging Eye Cream","productAttr":"","imageUrl":"","perPrice":"240.00","quantity":"1","perWeight":"0.5","perVolume":"300","perTotalAmt":"240.00","SKU":"123456789000"}]',
+    'TransDate' => '20160822',
+    'TransTime' => '070502',
+    'GSMerId' => '5020001',
+    'LogisticsId' => '808080071198022',
+    'PluginVersion' => 'v2.0.3',
+    'CuryId' => 'USD',
+    'PayInfoUrl' => 'http://localhost/shopperpay/pay.php',
+    'GSChkValue' => 'jgJgb+G5Xh+VrLiYdTgN97Jqh1Q87qgd7uC73tnthV2nhTGnaQbz5TcSUwJLAKyBoZAvJ2lr6vIr8V8LL6ZXWKZIQtudYPIfXKgMAeyGk23LkqxrZ8owu9EhVI/myJyQRv2K7r6RQ0cwsu07yq9wvLzkTyXf9icCPq2fvaI5Obg=',
+  ),
+)
+==== Shopper Pay Submit Response FROM GS: 2016-08-22 07:05:06 ===========
+==== IP: ::1
+array (
+  'GSOrdId' => '1471863901727590',
+  'TransAmt' => '000000024000',
+  'Priv1' => '000000003844',
+  'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471863901727590',
+  'TransDate' => '20160822',
+  'TransTime' => '070502',
+  'GSChkValue' => 'U3hxebM3r3STIE3mW0U+9cGpPW/VrE0FBIi1D7vb8qmQs4cMH1HnRed9ava0Rqc3CL5Djvrz53xgshRbeCEQO1CYXuteA88QI1RVP5GhbTopEMBj/1o8H51xSRp+TekXLb+fhZqanYE8p/c2ENnVMGXNOBokhWqQu/gQ8QfVYqk=',
+)
+==== China Pay Submit Request: 2016-08-22 07:05:07 ===========
+==== IP: ::1
+array (
+  'url' => 'http://payment-test.chinapay.com/pay/TransGet',
+  'data' => 
+  array (
+    'MerId' => '808080071198021',
+    'OrdId' => '1471863901727590',
+    'TransAmt' => '000000024000',
+    'CuryId' => 'USD',
+    'CountryId' => '0001',
+    'TransDate' => '20160822',
+    'TransType' => '0001',
+    'Version' => '20080515',
+    'BgRetUrl' => 'http://localhost/shopperpay/notify_url.php',
+    'PageRetUrl' => 'http://localhost/shopperpay/return_url.php',
+    'GateId' => '8613',
+    'Priv1' => '000000003844',
+    'TimeZone' => '-05',
+    'TransTime' => '070502',
+    'DSTFlag' => '0',
+    'ExtFlag' => '00',
+    'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471863901727590',
+    'ChkValue' => '6A6906FEF1405294E295045F181999C179B22F4C2B0C5CD2A0D91D47C24BD8F3ECB57C7E1BAD3A624171A5910130CD803FB56D785BFDED5EF1E070F2DB91B90879FF6BCB18957C2B824BB3F3F180C8DC3FD8BBAE8620B46245033022BEF567D7705BF8DDA69857C8A4B53F409D0922D8E250F3780F8AEF6BD0B7A7AC4DA13371',
+  ),
+)
+==== Shopper Pay Submit Request to GS: 2016-08-22 07:05:19 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/validate_merchant.jhtml',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082207051955',
+    'ProTotalAmt' => '240',
+    'ProductInfo' => '[{"productName":"Anti Aging Eye Cream","productAttr":"","imageUrl":"","perPrice":"240.00","quantity":"1","perWeight":"0.5","perVolume":"300","perTotalAmt":"240.00","SKU":"123456789000"}]',
+    'TransDate' => '20160822',
+    'TransTime' => '070519',
+    'GSMerId' => '5020001',
+    'LogisticsId' => '808080071198022',
+    'PluginVersion' => 'v2.0.3',
+    'CuryId' => 'USD',
+    'PayInfoUrl' => 'http://localhost/shopperpay/pay.php',
+    'GSChkValue' => 'Wm2FF73e5HTgQKA2vV2jD4lfi4cKkM342z26LK5vjisLUa1gOWjkCvwrK0JwKvhY4jsu5vBdKcD1X77/uDxy9XCuBgwnoP89jZGyCjtIVvcljagGdzxrhfoxQAEvO81FzcROot7gJBqrQB9zsUKef7OPQGkrrmePLBvtcZ7HfUQ=',
+  ),
+)
+==== Shopper Pay Submit Response FROM GS: 2016-08-22 07:05:25 ===========
+==== IP: ::1
+array (
+  'GSOrdId' => '1471863920477720',
+  'TransAmt' => '000000024000',
+  'Priv1' => '000000003844',
+  'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471863920477720',
+  'TransDate' => '20160822',
+  'TransTime' => '070519',
+  'GSChkValue' => 'thjxn5o4fg7Wc2jhUSLADokqYUuopsLfi7G9dxAgRRYh42M6qgRjbzahWGepWHeDHBGzmvftPZQ1DwJYOw+VpSMHErBGK3t8N9Z1ABapQVylh5AjZwW+9a45/ssEmJkDJQamkTp8wVYjnGnZNsbpnDiy6SG0L6yDa0lFli+cL3A=',
+)
+==== China Pay Submit Request: 2016-08-22 07:05:25 ===========
+==== IP: ::1
+array (
+  'url' => 'http://payment-test.chinapay.com/pay/TransGet',
+  'data' => 
+  array (
+    'MerId' => '808080071198021',
+    'OrdId' => '1471863920477720',
+    'TransAmt' => '000000024000',
+    'CuryId' => 'USD',
+    'CountryId' => '0001',
+    'TransDate' => '20160822',
+    'TransType' => '0001',
+    'Version' => '20080515',
+    'BgRetUrl' => 'http://localhost/shopperpay/notify_url.php',
+    'PageRetUrl' => 'http://localhost/shopperpay/return_url.php',
+    'GateId' => '8613',
+    'Priv1' => '000000003844',
+    'TimeZone' => '-05',
+    'TransTime' => '070519',
+    'DSTFlag' => '0',
+    'ExtFlag' => '00',
+    'Priv2' => '808080071198022|000000003844|USD|\\u5218\\u6797\\u67ab|320382198812231333|184682|552|159187|18943|6000|1471863920477720',
+    'ChkValue' => '6EA60962462909B0CED76585E8D886AB264932457EE38003F478FF863247D3D1D39CB47B01335005257AC94F2BFF4021D91506CA086C966DD2472DC5238837FB4D5EA8B5EDCD8C1E7F1365084551A041410C9F5214FE41291DC1FFC1B96CB45D9EE87C052BF9FC8A1D271B385FD93A463F43127A11FE803ACDE22D7421AFCDF3',
+  ),
+)
+==== China Pay Submit Response: 2016-08-22 07:05:51 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '808080071198021',
+    'orderno' => '1471863920477720',
+    'transdate' => '20160822',
+    'amount' => '000000024000',
+    'currencycode' => 'USD',
+    'transtype' => '0001',
+    'status' => '1001',
+    'checkvalue' => '847611653D03C9C7C781E4338125F7E2343D1C69DC38B5B5B6F549E76CD295F66364D17BF0B7DA8999F257C392DC3F4278835688C3415C13B3B9021F44CEA0EFD5B9F046EAB8C087C4F1018B879598FBAE53E75392D64437029AF93D5CDFDE6AC2FBB13DD4430DAD8EF03CBE6EAFB53825B6143168F002AC01540CE86876E4D1',
+    'GateId' => '8613',
+    'Priv1' => '000000003844',
+  ),
+)
+==== Shopper Request: 2016-08-22 07:05:51 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471863920477720","orderInfo":"{\\"merid\\":\\"808080071198021\\",\\"orderno\\":\\"1471863920477720\\",\\"transdate\\":\\"20160822\\",\\"amount\\":\\"000000024000\\",\\"currencycode\\":\\"USD\\",\\"transtype\\":\\"0001\\",\\"status\\":\\"1001\\",\\"checkvalue\\":\\"847611653D03C9C7C781E4338125F7E2343D1C69DC38B5B5B6F549E76CD295F66364D17BF0B7DA8999F257C392DC3F4278835688C3415C13B3B9021F44CEA0EFD5B9F046EAB8C087C4F1018B879598FBAE53E75392D64437029AF93D5CDFDE6AC2FBB13DD4430DAD8EF03CBE6EAFB53825B6143168F002AC01540CE86876E4D1\\",\\"GateId\\":\\"8613\\",\\"Priv1\\":\\"000000003844\\"}","gsChkValue":"HHpepj1LYbWkjwFcJhm2BahMurkGptekW8twimJysbGRCYNRUpuH0Lma4XXI9F1O9EO4TdzbBapcPy3u8J6v+KU2F+aDaVkXfKOhhqbOVTEoN5XadcdqA52fZq8fjkYCbgvPZnvyY1xjUiFwuKOsyqcg6hfs8SWj1pe07mF96ZU=","pluginVersion":"v2.0.3"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 07:05:51 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"2016082207051955","gsOrdId":"1471863920477720","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"孙君","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市黄浦区甜爱路","detailAddress2":""},"gsChkValue":"rzHezuXRAEprCY31TivzgtETw05CYFAe5yPYAHe92Hti1LMi/xn5jCON56Y65OtGHxReIm8aBupPfpX71pn6x5FfN6FFISyAhonxm0kmJ6FZAc28m7cWCcVVOoZfRMUHYfsVTWrx+VCT7AQD6CjvrYLRe749BZTtvv8AO39Xyuw="}',
+)
+==== Seller Request: 2016-08-22 07:05:51 ===========
+==== IP: ::1
+array (
+  'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api_demo.php',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082207051955',
+    'OrderInfo' => '{"merid":"808080071198021","orderno":"1471863920477720","transdate":"20160822","amount":"000000024000","currencycode":"USD","transtype":"0001","status":"1001","checkvalue":"847611653D03C9C7C781E4338125F7E2343D1C69DC38B5B5B6F549E76CD295F66364D17BF0B7DA8999F257C392DC3F4278835688C3415C13B3B9021F44CEA0EFD5B9F046EAB8C087C4F1018B879598FBAE53E75392D64437029AF93D5CDFDE6AC2FBB13DD4430DAD8EF03CBE6EAFB53825B6143168F002AC01540CE86876E4D1","GateId":"8613","Priv1":"000000003844"}',
+    'GSOrdId' => '1471863920477720',
+    'PackageInfo' => '{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""}',
+    'consigneeInfo' => '{"contactName":"\\u5b59\\u541b","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"\\u4e0a\\u6d77\\u5e02\\u9ec4\\u6d66\\u533a\\u751c\\u7231\\u8def","detailAddress2":""}',
+  ),
+)
+==== Seller Response: 2016-08-22 07:05:52 ===========
+==== IP: ::1
+array (
+  'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api_demo.php',
+  'data' => '{"isSuccess":"1","errno":"","errMessage":""}',
+)
+==== Shopper Request: 2016-08-22 07:05:52 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471863920477720","isSuccess":"1","gsChkValue":"ImozPTYZnBv5ZoC9yQawGZFN\\/V8EVo4BrZAkivIxNuPdGox274GQNkVx3VDLQyIpvs+LuSSmFvNcOB+x2LUkR3V27XIheke48lHOwxO0YSUHRyT+8P\\/CIQWXjaLXiGBBH10aa078+Q8Rdtm6sgEJb7yDUsOJBw8w4f+mRpbfSQE=","pluginVersion":"v2.0.3"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 07:05:52 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":""}',
+)
+==== Shopper Pay Submit Request to GS: 2016-08-22 07:06:26 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/validate_merchant.jhtml',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082207062682',
+    'ProTotalAmt' => '240',
+    'ProductInfo' => '[{"productName":"Anti Aging Eye Cream","productAttr":"","imageUrl":"","perPrice":"240.00","quantity":"1","perWeight":"0.5","perVolume":"300","perTotalAmt":"240.00","SKU":"123456789000"}]',
+    'TransDate' => '20160822',
+    'TransTime' => '070626',
+    'GSMerId' => '5020001',
+    'LogisticsId' => '808080071198022',
+    'PluginVersion' => 'v2.0.3',
+    'CuryId' => 'USD',
+    'PayInfoUrl' => 'http://localhost/shopperpay/pay.php',
+    'GSChkValue' => 'ABVL0puBB0/pU5BamgtkXAxqwNhbFsPo7Zy0guE4SE4/EPaERH9e3h7Q/B3h1HYotj2WmIgamiLuT69HqGwvz11w6m2n85pLRbC8uDikOevXaohJwmyRgRYQtdM7KBnyXT+FkomEsXm9lKJex8PghHIWgkuQQ/RYWRkOH8TI7Is=',
+  ),
+)
+==== Shopper Request: 2016-08-22 07:06:38 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471681439851441","merOrdId":"2016082016211324","gsChkValue":"kzOS5SK9ZEyONr7j9sA7SsYmyr1H1puJp7g1EeIgKk2u0SL9BS999S8O\\/spboubO1wcJwb71m913QVg\\/tzPgu4T3Yw7K0bsbGWHNoVDoOO6szi7cxt3D31VMyG0DChofktZkLVudK2jKYMpjLZb09vngqizDAIMFOGAyuL3ev4I=","pluginVersion":"v2.0.3"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 07:06:38 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"2016082016211324","gsOrdId":"1471681439851441","gsOrdStatus":"","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"孙君","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市黄浦区甜爱路","detailAddress2":""},"gsChkValue":"cRsYYvBsRdwGriDwsBpOprUU5etEbqQBMDwRHDP8KQtvFKIiAGomVqYHn9/8obbaS+8TKczhL6VXdGbfttkGFiFpoYzGw8zQZ7M9tX7w1p68AQUOwe5iipeBB4kb089aq8OcY2LqYvdPn7NOfcAaGl3ermYALK9Q9SZNjaHyBpY="}',
 )
