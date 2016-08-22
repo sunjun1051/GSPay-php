@@ -25,22 +25,15 @@ $sp = new ShopperPay();
 $shopper_api = new ShopperAPI();
 $cps = new ChinaPaySubmit();
 
-$payRequest = $_POST or $sp->sendError('920', '非法访问！');
 
+// 接收GS返回订单信息
+$payRequest = $_POST or $sp->sendError('101', 'Access Deny！Parameters Is Incorrect');
 
 // 验证签名
-$sign_data = array(
-    $payRequest['GSOrdId'],
-    $payRequest['TransAmt'],
-    $payRequest['Priv1'],
-    $payRequest['Priv2'],
-    $payRequest['TransDate'],
-    $payRequest['TransTime']
-);
-
 $sign_data = $payRequest['GSOrdId'].$payRequest['TransAmt'].$payRequest['Priv1'].$payRequest['Priv2'].$payRequest['TransDate'].$payRequest['TransTime'];
-$shopper_api->verify($payRequest['GSChkValue'], $sign_data) or $sp->sendError('910', '验证签名失败！');
+$shopper_api->verify($payRequest['GSChkValue'], $sign_data) or $sp->sendError('103', 'Verify Sign Failture！');
 
+// ChinaPay付款所需数据
 $pay_data = array(
 	'MerId' => $shopperpay_config['MerId'],
 	'OrdId' => $payRequest['GSOrdId'], // 更改为GS订单号

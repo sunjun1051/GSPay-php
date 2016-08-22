@@ -37,15 +37,15 @@ define('GS_PRIVKEY', dirname(__FILE__) . '/key/sign/GS_MerPrk_5020001.key');
 
 // 设置时区
 // Timezone setting
-date_default_timezone_set('Asia/Shanghai');
+date_default_timezone_set('America/New_York');
 
 // 时区，东时区表示为正，西时区表示为负，长度3个字节，必填
 // time zone, Eastren time zone means '+ ', western time zone means '- '.Less than 3 bytes.
-$shopperpay_config['TimeZone'] = '+08';
+$shopperpay_config['TimeZone'] = '-05';
 
 // 国家代码，4位长度，电话代码编码，必填 (美国=0001，日本=0081， 中国=0086)
 // Country Code, length 4, area code phone code.
-$shopperpay_config['CountryId'] = '0086';
+$shopperpay_config['CountryId'] = '0001';
 
 // 货币代码, 例如，人民币取值为"156"，日元取值为“JPY”,美元取值为“USD”,在商户入网的时候就已经规定,不可修改
 // Currency ID, ex:RMB = '156', Japanese yen = 'JPY', Dollar = 'USD'.
@@ -60,11 +60,11 @@ $shopperpay_config['DSTFlag'] = '0';
 
 // 商户状态回传API
 // Merchant order payment result call back address.
-define('SELLER_API', 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api.php');
+define('SELLER_API', 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api_demo.php');
 
 // 支付成功前端返回到商户的地址
 // Merchant order payment result call back interface API private key.
-define('SELLER_RETURN_URL', 'http://www.pujiangzhen.cn/shopperpay/demo/return_url.php');
+define('SELLER_RETURN_URL', '');
 
 // 商户退款状态回传API
 // Merchant refund result call back address.

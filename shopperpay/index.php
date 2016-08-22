@@ -8,31 +8,29 @@ session_start();
 // Load configuration file
 require 'init.php';
 
-// 载入银联提交处理类
-// Load ChinaPay Submit process class
-require 'lib/chinapay_submit.class.php';
+// 载入海淘天下接口类
+// Load GlobalShopper interface class
+require 'lib/shopperapi.class.php';
 
 // 载入插件处理类
 // Load payment plugin process class
 require 'lib/shopperpay.class.php';
 
-$cps = new ChinaPaySubmit();
+$shopper_api = new ShopperAPI();
 $sp = new ShopperPay();
 
-$order_session = $_SESSION['SHOPPER_PAY_ORDER'] ?: $sp->sendError('101', '订单未找到');
+$order_session = $_SESSION['SHOPPER_PAY_ORDER'] ?: $sp->sendError('102', 'The Order Is Not Found');
 
 // 接受并处理session数据
 $order_session ['ProductInfo'] = json_encode($order_session['ProductInfo']);
 
-// 添加config内的必要的支付数据
+// 添加config内的必要支付数据
 $order_data = array(
     'GSMerId' => $shopperpay_config['GSMerId'],
     'LogisticsId' => $shopperpay_config['LogisticsId'],
     'PluginVersion' => $shopperpay_config['plugin_version'],
     'CuryId' => $shopperpay_config['CuryId'],
     'PayInfoUrl' => dirname($self_url).'/pay.php',
-    'TransDate' => date('Ymd'),
-    'TransTime' => date('His')
 );
 
 // 对相关数据进行签名
@@ -50,5 +48,7 @@ $order_data['GSChkValue'] = $sp->get_signed_data($sign_data);
 // 合并数据， 准备提交
 $shopper_pay_order = $order_session + $order_data;
 
+// var_dump($shopper_pay_order);return;
+
 // Form表单提交到GS商城
-$cps->buildFormSubmit($shopper_pay_order, GS_API.'pay_plugin/validate_merchant.jhtml');
+$shopper_api->buildFormSubmit($shopper_pay_order, GS_API.'pay_plugin/validate_merchant.jhtml');

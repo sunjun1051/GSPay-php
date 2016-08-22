@@ -1,0 +1,1697 @@
+==== ChinaPay Result Data: 2016-08-22 11:07:58 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Return Error: 2016-08-22 11:07:58 ===========
+==== IP: ::1
+array (
+  'error' => '支付失败',
+  'detail' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Result Data: 2016-08-22 11:09:06 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Return Error: 2016-08-22 11:09:06 ===========
+==== IP: ::1
+array (
+  'error' => '支付失败',
+  'detail' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Result Data: 2016-08-22 11:09:07 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Return Error: 2016-08-22 11:09:07 ===========
+==== IP: ::1
+array (
+  'error' => '支付失败',
+  'detail' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Result Data: 2016-08-22 11:10:25 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Result Data: 2016-08-22 12:04:41 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '808080071198021',
+    'orderno' => '1471838659716991',
+    'transdate' => '20160822',
+    'amount' => '000000024000',
+    'currencycode' => 'USD',
+    'transtype' => '0001',
+    'status' => '1001',
+    'checkvalue' => '1D1FA9763BE3DA3F00362D2ABFF74D5A06A791DA0D7674114BC8C4278AD3A7AB62EDAF87266DDD9FB0E9F681797FD7D9C9582E495A3C19CE6CD65A20E1AF8B5BF103914553183C6E2A5E7A8F8045B458ECB1A5AEC2C9A2BCD08BF8AC9341F829D322A0ECB4E9C1FB08AF8300056F6D3BE9919F56517F2329952BE9F5CE4CD409',
+    'GateId' => '8613',
+    'Priv1' => '000000003844',
+  ),
+)
+==== Shopper Request: 2016-08-22 12:04:41 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471838659716991","orderInfo":"{\\"merid\\":\\"808080071198021\\",\\"orderno\\":\\"1471838659716991\\",\\"transdate\\":\\"20160822\\",\\"amount\\":\\"000000024000\\",\\"currencycode\\":\\"USD\\",\\"transtype\\":\\"0001\\",\\"status\\":\\"1001\\",\\"checkvalue\\":\\"1D1FA9763BE3DA3F00362D2ABFF74D5A06A791DA0D7674114BC8C4278AD3A7AB62EDAF87266DDD9FB0E9F681797FD7D9C9582E495A3C19CE6CD65A20E1AF8B5BF103914553183C6E2A5E7A8F8045B458ECB1A5AEC2C9A2BCD08BF8AC9341F829D322A0ECB4E9C1FB08AF8300056F6D3BE9919F56517F2329952BE9F5CE4CD409\\",\\"GateId\\":\\"8613\\",\\"Priv1\\":\\"000000003844\\"}","gsChkValue":"c5ltOEvsoJNROnzgbxfdZd0EFnCdMFv7tWmHn\\/QRe6pij\\/pjbMzxemZqm9WDCzFaYWFysBtuP6hUTqmZHkch+jw7yl9XADw20O3TeNMxT78Wk9TDlZ4U54ZsfgIsl6jvU4xlop2ToCfQv\\/KpMLcAr+Gq6JwkXkpIUZupOh8YOXI=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 12:04:41 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"2016082212034590","gsOrdId":"1471838659716991","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"孙君","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市黄浦区甜爱路","detailAddress2":""},"gsChkValue":"RSlGah3CntwO+N6rO8sFksJN9l6N4MJZBsI/Tn/M93tKSFbvK1x937n8TpNGppigwsH0bsEU1OZzLaedV0Y1cwysKG+vNxwFsxH+0tnTzAQ231Mg5JNX5Q8epmjr28dULoMTFLU3sTxFfDlwiehBVhcijChyG0dXj9TjCBPGnAc="}',
+)
+==== Seller Request: 2016-08-22 12:04:41 ===========
+==== IP: ::1
+array (
+  'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api.php',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082212034590',
+    'OrderInfo' => '{"merid":"808080071198021","orderno":"1471838659716991","transdate":"20160822","amount":"000000024000","currencycode":"USD","transtype":"0001","status":"1001","checkvalue":"1D1FA9763BE3DA3F00362D2ABFF74D5A06A791DA0D7674114BC8C4278AD3A7AB62EDAF87266DDD9FB0E9F681797FD7D9C9582E495A3C19CE6CD65A20E1AF8B5BF103914553183C6E2A5E7A8F8045B458ECB1A5AEC2C9A2BCD08BF8AC9341F829D322A0ECB4E9C1FB08AF8300056F6D3BE9919F56517F2329952BE9F5CE4CD409","GateId":"8613","Priv1":"000000003844"}',
+    'GSOderId' => '1471838659716991',
+    'PackageInfo' => '{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""}',
+    'consigneeInfo' => '{"contactName":"\\u5b59\\u541b","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"\\u4e0a\\u6d77\\u5e02\\u9ec4\\u6d66\\u533a\\u751c\\u7231\\u8def","detailAddress2":""}',
+  ),
+)
+==== Seller Response: 2016-08-22 12:04:42 ===========
+==== IP: ::1
+array (
+  'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api.php',
+  'data' => '{"isSuccess":"1","errno":"","errMessage":""}',
+)
+==== Shopper Request: 2016-08-22 12:04:42 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471838659716991","isSuccess":"1","gsChkValue":"BhSo7ZSSu8IYw3gY0w0gpbf0B9OG5hJHWdTTnhvD0IFLJNY4aqV6ax5Zb5GUq9dgWoIdUuf8xtvzQ3gm3ZFTfENY7TuHajYLFDawIH\\/mTS3zdb5ZDPZMRHIbGcgDWRKCbkWZT1j05ZCs\\/eZFw09U2xMboOjwvm6Hl71cIZKG3B4=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 12:04:42 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":""}',
+)
+==== ChinaPay Result Data: 2016-08-22 12:06:29 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '808080071198021',
+    'orderno' => '1471838755000714',
+    'transdate' => '20160822',
+    'amount' => '000000024000',
+    'currencycode' => 'USD',
+    'transtype' => '0001',
+    'status' => '1001',
+    'checkvalue' => '6C5FC482D351D1C7570A22FDAFC5E42CE20D9BC50BBBF06E2AA4B2940E09AF143CBE637DF8C6699734F82A4618D7F83CE6D107F60890216700D90A61EF8161BDB19F809C4F74DCA200485DDBBDBEAF541ABB3BCA705107CB55358C853D8FAD49778CA68090955F862AB0E070FB0F3366CF88E9BD43A66DFE6BA68E30CC36043F',
+    'GateId' => '8613',
+    'Priv1' => '000000003844',
+  ),
+)
+==== Shopper Request: 2016-08-22 12:06:30 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471838755000714","orderInfo":"{\\"merid\\":\\"808080071198021\\",\\"orderno\\":\\"1471838755000714\\",\\"transdate\\":\\"20160822\\",\\"amount\\":\\"000000024000\\",\\"currencycode\\":\\"USD\\",\\"transtype\\":\\"0001\\",\\"status\\":\\"1001\\",\\"checkvalue\\":\\"6C5FC482D351D1C7570A22FDAFC5E42CE20D9BC50BBBF06E2AA4B2940E09AF143CBE637DF8C6699734F82A4618D7F83CE6D107F60890216700D90A61EF8161BDB19F809C4F74DCA200485DDBBDBEAF541ABB3BCA705107CB55358C853D8FAD49778CA68090955F862AB0E070FB0F3366CF88E9BD43A66DFE6BA68E30CC36043F\\",\\"GateId\\":\\"8613\\",\\"Priv1\\":\\"000000003844\\"}","gsChkValue":"H\\/hmcf8\\/Bj0LD6cHSv9kh6Hkvl1fiPuSePRmdXAdWpYnpwSwivXbJBVO2XwDEcHVRFjatlQ\\/ipxOJTi8rA6gucdDBkjaFcL0NLY7ECa2sQLKa7Un2JeCrhxCBnsF69N\\/8bAsAPRQbZNqxxwc8HHGbZkmanrDQNvdCOkfqQqdP7Q=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 12:06:30 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"2016082212055544","gsOrdId":"1471838755000714","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"孙君","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市黄浦区甜爱路","detailAddress2":""},"gsChkValue":"RHms6GUfKvy/7zT0P6hFNlfM1O2Rq6k1Dnpv9BQJ9+ojYMO3XoHrvwFU2zZt4OwwzjBt+wGohoMZz3Mp9yywU8ravgVOhKSSC4BxkEXrFbaJ354n2LdIg0gHZQo/qGLWo6v/ezkKdi+gOqOmRpw3+9/cjZpLVZ0qnA6j1JmBb40="}',
+)
+==== Seller Request: 2016-08-22 12:06:30 ===========
+==== IP: ::1
+array (
+  'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api.php',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082212055544',
+    'OrderInfo' => '{"merid":"808080071198021","orderno":"1471838755000714","transdate":"20160822","amount":"000000024000","currencycode":"USD","transtype":"0001","status":"1001","checkvalue":"6C5FC482D351D1C7570A22FDAFC5E42CE20D9BC50BBBF06E2AA4B2940E09AF143CBE637DF8C6699734F82A4618D7F83CE6D107F60890216700D90A61EF8161BDB19F809C4F74DCA200485DDBBDBEAF541ABB3BCA705107CB55358C853D8FAD49778CA68090955F862AB0E070FB0F3366CF88E9BD43A66DFE6BA68E30CC36043F","GateId":"8613","Priv1":"000000003844"}',
+    'GSOderId' => '1471838755000714',
+    'PackageInfo' => '{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""}',
+    'consigneeInfo' => '{"contactName":"\\u5b59\\u541b","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"\\u4e0a\\u6d77\\u5e02\\u9ec4\\u6d66\\u533a\\u751c\\u7231\\u8def","detailAddress2":""}',
+  ),
+)
+==== Seller Response: 2016-08-22 12:06:30 ===========
+==== IP: ::1
+array (
+  'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api.php',
+  'data' => '{"isSuccess":"1","errno":"","errMessage":""}',
+)
+==== Shopper Request: 2016-08-22 12:06:30 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471838755000714","isSuccess":"1","gsChkValue":"IlJ9ptfwX7+Baw4N5T44dw+bfuXqN6eoHGtVIXioOYy1VaGWSm+XPAx7iiKBSmba3YcpV+d9ll4PGHUJDSWwSjSvzFleKiAuUmw6XnjKZUdgwiHqxrMNpcvl4Pe+BALvRjps7zJaLZNlzv7JBBdZU6OTqESdR1pZECmhakUTSU0=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 12:06:30 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":""}',
+)
+==== Shopper Request: 2016-08-22 12:06:56 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471838755000714","merOrdId":"","gsChkValue":"gCViCVIhW+n5nlcEQzvzeCXs2lfoJ\\/twx1qG5DDH2Hcm+rEXhv33Y4ykEURbp+l2JyJFrFIt9d+LHSNu4SFeCNtUCCJgm6py\\/WSfwK1KqCVYg0KDLDZYsynefMNfuggmdPk8IU02X3IS4mUNHvJe9KDJufB3MQJZ4LeZ9xz0bY8=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 12:06:56 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"","gsOrdId":"1471838755000714","gsOrdStatus":"","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"孙君","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市黄浦区甜爱路","detailAddress2":""},"gsChkValue":"RV9aEYvCER4PS+2V8iCtUlC44dUt1LvxpbFpY0o6Qv8g0ChzES9soEL63O07w18VLUKknx7uGsVSP/44QBSN6CvbRaXsGKGq85C3ydeF4lizB/+4Lf70pdCAdHK9l0tgT1s82OaJor43eUnI/XZLTxLiGt8lmT2P12X5tSIcFMM="}',
+)
+==== ChinaPay Result Data: 2016-08-22 12:12:12 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Return Error: 2016-08-22 12:12:12 ===========
+==== IP: ::1
+array (
+  'error' => '支付失败',
+  'detail' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Result Data: 2016-08-22 12:15:16 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Return Error: 2016-08-22 12:15:16 ===========
+==== IP: ::1
+array (
+  'error' => '支付失败',
+  'detail' => 'Pay Failture!',
+)
+==== ChinaPay Result Data: 2016-08-22 12:15:21 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Return Error: 2016-08-22 12:15:21 ===========
+==== IP: ::1
+array (
+  'error' => 'Verify Failture！',
+  'detail' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Result Data: 2016-08-22 12:19:21 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Return Error: 2016-08-22 12:19:21 ===========
+==== IP: ::1
+array (
+  'error' => 'Pay Failture！',
+  'detail' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Result Data: 2016-08-22 12:19:29 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Return Error: 2016-08-22 12:19:29 ===========
+==== IP: ::1
+array (
+  'error' => 'Verify ChinaPay Sign Failture！',
+  'detail' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Result Data: 2016-08-22 12:19:40 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== Shopper Request: 2016-08-22 12:19:41 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"","orderInfo":"{\\"merid\\":\\"\\",\\"orderno\\":\\"\\",\\"transdate\\":\\"\\",\\"amount\\":\\"\\",\\"currencycode\\":\\"\\",\\"transtype\\":\\"\\",\\"status\\":\\"\\",\\"checkvalue\\":\\"\\",\\"GateId\\":\\"\\",\\"Priv1\\":\\"\\"}","gsChkValue":"UPPL4qnxYL8rTJD6eEYG6Zex1vpAjem2m662y3bWfWcaDEBsjctwArcygDULgW9gXhSVcjWoUhfQs2XytL8jIEGa5VLK+AUBmYZYkuCYZUDBcQ0n5UWWR9bVKeIvLCZbI1w\\/tJzao9DPYgI0gkcbczf\\/rw\\/u7YZvBgm06gF8SDs=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 12:19:41 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => '{"isSuccess":"0","errorCode":"1017","errorMessage":"所传参数格式不正确"}',
+)
+==== ChinaPay Result Data: 2016-08-22 12:19:57 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== Shopper Request: 2016-08-22 12:19:57 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"","orderInfo":"{\\"merid\\":\\"\\",\\"orderno\\":\\"\\",\\"transdate\\":\\"\\",\\"amount\\":\\"\\",\\"currencycode\\":\\"\\",\\"transtype\\":\\"\\",\\"status\\":\\"\\",\\"checkvalue\\":\\"\\",\\"GateId\\":\\"\\",\\"Priv1\\":\\"\\"}","gsChkValue":"UPPL4qnxYL8rTJD6eEYG6Zex1vpAjem2m662y3bWfWcaDEBsjctwArcygDULgW9gXhSVcjWoUhfQs2XytL8jIEGa5VLK+AUBmYZYkuCYZUDBcQ0n5UWWR9bVKeIvLCZbI1w\\/tJzao9DPYgI0gkcbczf\\/rw\\/u7YZvBgm06gF8SDs=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 12:19:57 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => '{"isSuccess":"0","errorCode":"1017","errorMessage":"所传参数格式不正确"}',
+)
+==== ChinaPay Return Error: 2016-08-22 12:19:57 ===========
+==== IP: ::1
+array (
+  'error' => '向海淘天下同步支付状态失败',
+  'detail' => 
+  array (
+    'req' => 
+    array (
+      'gsMerId' => '5020001',
+      'gsOrdId' => '',
+      'orderInfo' => '{"merid":"","orderno":"","transdate":"","amount":"","currencycode":"","transtype":"","status":"","checkvalue":"","GateId":"","Priv1":""}',
+      'gsChkValue' => 'UPPL4qnxYL8rTJD6eEYG6Zex1vpAjem2m662y3bWfWcaDEBsjctwArcygDULgW9gXhSVcjWoUhfQs2XytL8jIEGa5VLK+AUBmYZYkuCYZUDBcQ0n5UWWR9bVKeIvLCZbI1w/tJzao9DPYgI0gkcbczf/rw/u7YZvBgm06gF8SDs=',
+      'pluginVersion' => 'v2.0.2',
+    ),
+    'res' => 
+    array (
+      'isSuccess' => '0',
+      'errorCode' => '1017',
+      'errorMessage' => '所传参数格式不正确',
+    ),
+  ),
+)
+==== ChinaPay Result Data: 2016-08-22 00:32:57 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '808080071198021',
+    'orderno' => '1471840355331664',
+    'transdate' => '20160822',
+    'amount' => '000000024000',
+    'currencycode' => 'USD',
+    'transtype' => '0001',
+    'status' => '1001',
+    'checkvalue' => '7FC1EDF15EC9FF85DF4EBBE289BCFB03B196501534377631BAC3F8FBF7769B11FFF5341FE9A23744E3252FABF1799A94B235637BE490F9D5A8CEDCE33D2E030950BA4A7A6879FED9830134B5BCB6F99F58C5EB63D9C6DF58DA747B03F47E8049AD335159D2CEA2F8EE0C770B9C0462EF29F9918D7C57FF9786174112FC8DA2DD',
+    'GateId' => '8613',
+    'Priv1' => '000000003844',
+  ),
+)
+==== Shopper Request: 2016-08-22 00:32:57 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471840355331664","orderInfo":"{\\"merid\\":\\"808080071198021\\",\\"orderno\\":\\"1471840355331664\\",\\"transdate\\":\\"20160822\\",\\"amount\\":\\"000000024000\\",\\"currencycode\\":\\"USD\\",\\"transtype\\":\\"0001\\",\\"status\\":\\"1001\\",\\"checkvalue\\":\\"7FC1EDF15EC9FF85DF4EBBE289BCFB03B196501534377631BAC3F8FBF7769B11FFF5341FE9A23744E3252FABF1799A94B235637BE490F9D5A8CEDCE33D2E030950BA4A7A6879FED9830134B5BCB6F99F58C5EB63D9C6DF58DA747B03F47E8049AD335159D2CEA2F8EE0C770B9C0462EF29F9918D7C57FF9786174112FC8DA2DD\\",\\"GateId\\":\\"8613\\",\\"Priv1\\":\\"000000003844\\"}","gsChkValue":"jKodzk+TRphvfJ2GH6e8mEeFmHkA6lmhQFwiGpsP0XkXU\\/epYuQRl5C+Dmsi\\/7bxJA\\/rilNkfwIqodWW0RrhEHPJ8po82E34hsgiaRg8DuBUR4LdlWey8Ig+0xUaNdGPH4if1kMcVkDUhAEkkYzlw2aseclTGOCzd2EMXxUb2fw=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 00:32:57 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"2016082200323656","gsOrdId":"1471840355331664","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"孙君","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市黄浦区甜爱路","detailAddress2":""},"gsChkValue":"tvqHjGHFpLT/TRxyBFnRKGRwx/Pn2OeflGh1M7BFSah0rw6SSLMsy3fx7m4zV8WnZ7J4l+QjRgOgCrElQXPD13pbsGNarvLAR6i663gpCWLk5hJixcXWWA0dHbk6+Bbnt6hagA4q75ODMmhR86u+z5HB5KfCGj724tUq7lXwCbc="}',
+)
+==== Seller Request: 2016-08-22 00:32:57 ===========
+==== IP: ::1
+array (
+  'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api.php',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082200323656',
+    'OrderInfo' => '{"merid":"808080071198021","orderno":"1471840355331664","transdate":"20160822","amount":"000000024000","currencycode":"USD","transtype":"0001","status":"1001","checkvalue":"7FC1EDF15EC9FF85DF4EBBE289BCFB03B196501534377631BAC3F8FBF7769B11FFF5341FE9A23744E3252FABF1799A94B235637BE490F9D5A8CEDCE33D2E030950BA4A7A6879FED9830134B5BCB6F99F58C5EB63D9C6DF58DA747B03F47E8049AD335159D2CEA2F8EE0C770B9C0462EF29F9918D7C57FF9786174112FC8DA2DD","GateId":"8613","Priv1":"000000003844"}',
+    'GSOderId' => '1471840355331664',
+    'PackageInfo' => '{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""}',
+    'consigneeInfo' => '{"contactName":"\\u5b59\\u541b","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"\\u4e0a\\u6d77\\u5e02\\u9ec4\\u6d66\\u533a\\u751c\\u7231\\u8def","detailAddress2":""}',
+  ),
+)
+==== Seller Response: 2016-08-22 00:32:57 ===========
+==== IP: ::1
+array (
+  'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api.php',
+  'data' => '{"isSuccess":"1","errno":"","errMessage":""}',
+)
+==== Shopper Request: 2016-08-22 00:32:57 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471840355331664","isSuccess":"1","gsChkValue":"Vm5QwyceD27CCzwP3NWAC5\\/8fJtZDtmlrRKMa9xLxNsT4yKFiw8QvEf0\\/cN7PpAWGRzjTAYR5+tOzWE+36+Uxx9CYApxu4vjLqNSq39\\/SFxSquKxXJAuTLgbSkMexgv0cvyZyZjAN1OYxUP5GqU+AYN6kO2qKS9gS64kP\\/p3AS4=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 00:32:57 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":""}',
+)
+==== ChinaPay Result Data: 2016-08-22 00:42:18 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Return Error: 2016-08-22 00:42:18 ===========
+==== IP: ::1
+array (
+  'error' => 'Pay Failture！',
+  'detail' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Result Data: 2016-08-22 00:42:27 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Return Error: 2016-08-22 00:42:27 ===========
+==== IP: ::1
+array (
+  'error' => 'Verify ChinaPay Sign Failture！',
+  'detail' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Result Data: 2016-08-22 00:42:45 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== Shopper Request: 2016-08-22 00:42:45 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"","orderInfo":"{\\"merid\\":\\"\\",\\"orderno\\":\\"\\",\\"transdate\\":\\"\\",\\"amount\\":\\"\\",\\"currencycode\\":\\"\\",\\"transtype\\":\\"\\",\\"status\\":\\"\\",\\"checkvalue\\":\\"\\",\\"GateId\\":\\"\\",\\"Priv1\\":\\"\\"}","gsChkValue":"UPPL4qnxYL8rTJD6eEYG6Zex1vpAjem2m662y3bWfWcaDEBsjctwArcygDULgW9gXhSVcjWoUhfQs2XytL8jIEGa5VLK+AUBmYZYkuCYZUDBcQ0n5UWWR9bVKeIvLCZbI1w\\/tJzao9DPYgI0gkcbczf\\/rw\\/u7YZvBgm06gF8SDs=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 00:42:45 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => '{"isSuccess":"0","errorCode":"1017","errorMessage":"所传参数格式不正确"}',
+)
+==== ChinaPay Return Error: 2016-08-22 00:42:45 ===========
+==== IP: ::1
+array (
+  'error' => 'GS API Sync PayInfo Failure',
+  'detail' => 
+  array (
+    'req' => 
+    array (
+      'gsMerId' => '5020001',
+      'gsOrdId' => '',
+      'orderInfo' => '{"merid":"","orderno":"","transdate":"","amount":"","currencycode":"","transtype":"","status":"","checkvalue":"","GateId":"","Priv1":""}',
+      'gsChkValue' => 'UPPL4qnxYL8rTJD6eEYG6Zex1vpAjem2m662y3bWfWcaDEBsjctwArcygDULgW9gXhSVcjWoUhfQs2XytL8jIEGa5VLK+AUBmYZYkuCYZUDBcQ0n5UWWR9bVKeIvLCZbI1w/tJzao9DPYgI0gkcbczf/rw/u7YZvBgm06gF8SDs=',
+      'pluginVersion' => 'v2.0.2',
+    ),
+    'res' => 
+    array (
+      'isSuccess' => '0',
+      'errorCode' => '1017',
+      'errorMessage' => '所传参数格式不正确',
+    ),
+  ),
+)
+==== ChinaPay Result Data: 2016-08-22 00:43:05 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== Shopper Request: 2016-08-22 00:43:05 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"","orderInfo":"{\\"merid\\":\\"\\",\\"orderno\\":\\"\\",\\"transdate\\":\\"\\",\\"amount\\":\\"\\",\\"currencycode\\":\\"\\",\\"transtype\\":\\"\\",\\"status\\":\\"\\",\\"checkvalue\\":\\"\\",\\"GateId\\":\\"\\",\\"Priv1\\":\\"\\"}","gsChkValue":"UPPL4qnxYL8rTJD6eEYG6Zex1vpAjem2m662y3bWfWcaDEBsjctwArcygDULgW9gXhSVcjWoUhfQs2XytL8jIEGa5VLK+AUBmYZYkuCYZUDBcQ0n5UWWR9bVKeIvLCZbI1w\\/tJzao9DPYgI0gkcbczf\\/rw\\/u7YZvBgm06gF8SDs=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 00:43:05 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => '{"isSuccess":"0","errorCode":"1017","errorMessage":"所传参数格式不正确"}',
+)
+==== ChinaPay Result Data: 2016-08-22 00:43:39 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== Shopper Request: 2016-08-22 00:43:39 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"","orderInfo":"{\\"merid\\":\\"\\",\\"orderno\\":\\"\\",\\"transdate\\":\\"\\",\\"amount\\":\\"\\",\\"currencycode\\":\\"\\",\\"transtype\\":\\"\\",\\"status\\":\\"\\",\\"checkvalue\\":\\"\\",\\"GateId\\":\\"\\",\\"Priv1\\":\\"\\"}","gsChkValue":"UPPL4qnxYL8rTJD6eEYG6Zex1vpAjem2m662y3bWfWcaDEBsjctwArcygDULgW9gXhSVcjWoUhfQs2XytL8jIEGa5VLK+AUBmYZYkuCYZUDBcQ0n5UWWR9bVKeIvLCZbI1w\\/tJzao9DPYgI0gkcbczf\\/rw\\/u7YZvBgm06gF8SDs=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 00:43:39 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => '{"isSuccess":"0","errorCode":"1017","errorMessage":"所传参数格式不正确"}',
+)
+==== Seller Request: 2016-08-22 00:43:39 ===========
+==== IP: ::1
+array (
+  'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api.php',
+  'data' => 
+  array (
+    'MerOrdId' => NULL,
+    'OrderInfo' => '{"merid":"","orderno":"","transdate":"","amount":"","currencycode":"","transtype":"","status":"","checkvalue":"","GateId":"","Priv1":""}',
+    'GSOderId' => NULL,
+    'PackageInfo' => NULL,
+    'consigneeInfo' => NULL,
+  ),
+)
+==== Seller Response: 2016-08-22 00:43:39 ===========
+==== IP: ::1
+array (
+  'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api.php',
+  'data' => '{"isSuccess":"1","errno":"","errMessage":""}',
+)
+==== Shopper Request: 2016-08-22 00:43:39 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":null,"isSuccess":"1","gsChkValue":"DKiDH5kqetiFICY\\/r4cpzjf5NB+un4Kn3fJqNsiiI+IHkBji0j0GWNM2iSWQ7zUjTYDOoJMn3Z4tDEZaK\\/jWnXTb62vLCtABFyUBWNumw5MdXXzwpJIlUx5CfUeZMSiArm2o84udnzeQx6sQsRQ4G4Zp+7XROLCQ81mC7D6cOTs=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 00:43:39 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
+  'data' => '{"isSuccess":"0","errorCode":"1020","errorMessage":"验签失败"}',
+)
+==== ChinaPay Return Error: 2016-08-22 00:43:39 ===========
+==== IP: ::1
+array (
+  'error' => 'GS API Sync Merchant Confirm Failture',
+  'detail' => 
+  array (
+    'req' => 
+    array (
+      'gsMerId' => '5020001',
+      'gsOrdId' => NULL,
+      'isSuccess' => '1',
+      'gsChkValue' => 'DKiDH5kqetiFICY/r4cpzjf5NB+un4Kn3fJqNsiiI+IHkBji0j0GWNM2iSWQ7zUjTYDOoJMn3Z4tDEZaK/jWnXTb62vLCtABFyUBWNumw5MdXXzwpJIlUx5CfUeZMSiArm2o84udnzeQx6sQsRQ4G4Zp+7XROLCQ81mC7D6cOTs=',
+      'pluginVersion' => 'v2.0.2',
+    ),
+    'res' => 
+    array (
+      'isSuccess' => '0',
+      'errorCode' => '1020',
+      'errorMessage' => '验签失败',
+    ),
+  ),
+)
+==== ChinaPay Result Data: 2016-08-22 00:44:21 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== Shopper Request: 2016-08-22 00:44:21 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"","orderInfo":"{\\"merid\\":\\"\\",\\"orderno\\":\\"\\",\\"transdate\\":\\"\\",\\"amount\\":\\"\\",\\"currencycode\\":\\"\\",\\"transtype\\":\\"\\",\\"status\\":\\"\\",\\"checkvalue\\":\\"\\",\\"GateId\\":\\"\\",\\"Priv1\\":\\"\\"}","gsChkValue":"UPPL4qnxYL8rTJD6eEYG6Zex1vpAjem2m662y3bWfWcaDEBsjctwArcygDULgW9gXhSVcjWoUhfQs2XytL8jIEGa5VLK+AUBmYZYkuCYZUDBcQ0n5UWWR9bVKeIvLCZbI1w\\/tJzao9DPYgI0gkcbczf\\/rw\\/u7YZvBgm06gF8SDs=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 00:44:21 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => '{"isSuccess":"0","errorCode":"1017","errorMessage":"所传参数格式不正确"}',
+)
+==== Seller Request: 2016-08-22 00:44:21 ===========
+==== IP: ::1
+array (
+  'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api.php',
+  'data' => 
+  array (
+    'MerOrdId' => NULL,
+    'OrderInfo' => '{"merid":"","orderno":"","transdate":"","amount":"","currencycode":"","transtype":"","status":"","checkvalue":"","GateId":"","Priv1":""}',
+    'GSOderId' => NULL,
+    'PackageInfo' => NULL,
+    'consigneeInfo' => NULL,
+  ),
+)
+==== Seller Response: 2016-08-22 00:44:21 ===========
+==== IP: ::1
+array (
+  'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api.php',
+  'data' => '{"isSuccess":"1","errno":"","errMessage":""}',
+)
+==== Shopper Request: 2016-08-22 00:44:21 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":null,"isSuccess":"1","gsChkValue":"DKiDH5kqetiFICY\\/r4cpzjf5NB+un4Kn3fJqNsiiI+IHkBji0j0GWNM2iSWQ7zUjTYDOoJMn3Z4tDEZaK\\/jWnXTb62vLCtABFyUBWNumw5MdXXzwpJIlUx5CfUeZMSiArm2o84udnzeQx6sQsRQ4G4Zp+7XROLCQ81mC7D6cOTs=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 00:44:21 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
+  'data' => '{"isSuccess":"0","errorCode":"1020","errorMessage":"验签失败"}',
+)
+==== ChinaPay Return Error: 2016-08-22 00:44:21 ===========
+==== IP: ::1
+array (
+  'error' => 'GS API Sync Merchant Confirm Failture',
+  'detail' => 
+  array (
+    'req' => 
+    array (
+      'gsMerId' => '5020001',
+      'gsOrdId' => NULL,
+      'isSuccess' => '1',
+      'gsChkValue' => 'DKiDH5kqetiFICY/r4cpzjf5NB+un4Kn3fJqNsiiI+IHkBji0j0GWNM2iSWQ7zUjTYDOoJMn3Z4tDEZaK/jWnXTb62vLCtABFyUBWNumw5MdXXzwpJIlUx5CfUeZMSiArm2o84udnzeQx6sQsRQ4G4Zp+7XROLCQ81mC7D6cOTs=',
+      'pluginVersion' => 'v2.0.2',
+    ),
+    'res' => 
+    array (
+      'isSuccess' => '0',
+      'errorCode' => '1020',
+      'errorMessage' => '验签失败',
+    ),
+  ),
+)
+==== ChinaPay Result Data: 2016-08-22 00:44:30 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== Shopper Request: 2016-08-22 00:44:30 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"","orderInfo":"{\\"merid\\":\\"\\",\\"orderno\\":\\"\\",\\"transdate\\":\\"\\",\\"amount\\":\\"\\",\\"currencycode\\":\\"\\",\\"transtype\\":\\"\\",\\"status\\":\\"\\",\\"checkvalue\\":\\"\\",\\"GateId\\":\\"\\",\\"Priv1\\":\\"\\"}","gsChkValue":"UPPL4qnxYL8rTJD6eEYG6Zex1vpAjem2m662y3bWfWcaDEBsjctwArcygDULgW9gXhSVcjWoUhfQs2XytL8jIEGa5VLK+AUBmYZYkuCYZUDBcQ0n5UWWR9bVKeIvLCZbI1w\\/tJzao9DPYgI0gkcbczf\\/rw\\/u7YZvBgm06gF8SDs=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 00:44:30 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => '{"isSuccess":"0","errorCode":"1017","errorMessage":"所传参数格式不正确"}',
+)
+==== ChinaPay Return Error: 2016-08-22 00:44:30 ===========
+==== IP: ::1
+array (
+  'error' => 'Merchant API Sync PayInfo Failture',
+  'detail' => 
+  array (
+    'req' => 
+    array (
+      'MerOrdId' => NULL,
+      'OrderInfo' => 
+      array (
+        'merid' => '',
+        'orderno' => '',
+        'transdate' => '',
+        'amount' => '',
+        'currencycode' => '',
+        'transtype' => '',
+        'status' => '',
+        'checkvalue' => '',
+        'GateId' => '',
+        'Priv1' => '',
+      ),
+      'GSOderId' => NULL,
+      'PackageInfo' => NULL,
+      'consigneeInfo' => NULL,
+    ),
+    'res' => NULL,
+  ),
+)
+==== ChinaPay Result Data: 2016-08-22 00:44:43 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== Shopper Request: 2016-08-22 00:44:43 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"","orderInfo":"{\\"merid\\":\\"\\",\\"orderno\\":\\"\\",\\"transdate\\":\\"\\",\\"amount\\":\\"\\",\\"currencycode\\":\\"\\",\\"transtype\\":\\"\\",\\"status\\":\\"\\",\\"checkvalue\\":\\"\\",\\"GateId\\":\\"\\",\\"Priv1\\":\\"\\"}","gsChkValue":"UPPL4qnxYL8rTJD6eEYG6Zex1vpAjem2m662y3bWfWcaDEBsjctwArcygDULgW9gXhSVcjWoUhfQs2XytL8jIEGa5VLK+AUBmYZYkuCYZUDBcQ0n5UWWR9bVKeIvLCZbI1w\\/tJzao9DPYgI0gkcbczf\\/rw\\/u7YZvBgm06gF8SDs=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 00:44:43 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => '{"isSuccess":"0","errorCode":"1017","errorMessage":"所传参数格式不正确"}',
+)
+==== Seller Request: 2016-08-22 00:44:43 ===========
+==== IP: ::1
+array (
+  'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api.php',
+  'data' => 
+  array (
+    'MerOrdId' => NULL,
+    'OrderInfo' => '{"merid":"","orderno":"","transdate":"","amount":"","currencycode":"","transtype":"","status":"","checkvalue":"","GateId":"","Priv1":""}',
+    'GSOderId' => NULL,
+    'PackageInfo' => NULL,
+    'consigneeInfo' => NULL,
+  ),
+)
+==== Seller Response: 2016-08-22 00:44:43 ===========
+==== IP: ::1
+array (
+  'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api.php',
+  'data' => '{"isSuccess":"1","errno":"","errMessage":""}',
+)
+==== Shopper Request: 2016-08-22 00:44:43 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":null,"isSuccess":"1","gsChkValue":"DKiDH5kqetiFICY\\/r4cpzjf5NB+un4Kn3fJqNsiiI+IHkBji0j0GWNM2iSWQ7zUjTYDOoJMn3Z4tDEZaK\\/jWnXTb62vLCtABFyUBWNumw5MdXXzwpJIlUx5CfUeZMSiArm2o84udnzeQx6sQsRQ4G4Zp+7XROLCQ81mC7D6cOTs=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 00:44:43 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
+  'data' => '{"isSuccess":"0","errorCode":"1020","errorMessage":"验签失败"}',
+)
+==== ChinaPay Return Error: 2016-08-22 00:44:43 ===========
+==== IP: ::1
+array (
+  'error' => 'GS API Sync Merchant Confirm Failture',
+  'detail' => 
+  array (
+    'req' => 
+    array (
+      'gsMerId' => '5020001',
+      'gsOrdId' => NULL,
+      'isSuccess' => '1',
+      'gsChkValue' => 'DKiDH5kqetiFICY/r4cpzjf5NB+un4Kn3fJqNsiiI+IHkBji0j0GWNM2iSWQ7zUjTYDOoJMn3Z4tDEZaK/jWnXTb62vLCtABFyUBWNumw5MdXXzwpJIlUx5CfUeZMSiArm2o84udnzeQx6sQsRQ4G4Zp+7XROLCQ81mC7D6cOTs=',
+      'pluginVersion' => 'v2.0.2',
+    ),
+    'res' => 
+    array (
+      'isSuccess' => '0',
+      'errorCode' => '1020',
+      'errorMessage' => '验签失败',
+    ),
+  ),
+)
+==== ChinaPay Result Data: 2016-08-22 00:46:48 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '808080071198021',
+    'orderno' => '1471841149020624',
+    'transdate' => '20160822',
+    'amount' => '000000024000',
+    'currencycode' => 'USD',
+    'transtype' => '0001',
+    'status' => '1001',
+    'checkvalue' => '31AFE0F7C3869FDBEC30F7583FD0F595AA53DEE657616A5633F168DBEC1E8E0B04EDD69D16B61589B8AAD38196E5385C100B9E107DC823DBF3A907D2AEBFDEC04C51D4D4B7CE5C7DDBFBB5171F0F585E0CDFBF09AAB6E07C352D85DA60F2687F4B638E529357768154822104A2B3F66FED7BF8C77C1D4377BE89616F9C8AF5BD',
+    'GateId' => '8613',
+    'Priv1' => '000000003844',
+  ),
+)
+==== Shopper Request: 2016-08-22 00:46:48 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471841149020624","orderInfo":"{\\"merid\\":\\"808080071198021\\",\\"orderno\\":\\"1471841149020624\\",\\"transdate\\":\\"20160822\\",\\"amount\\":\\"000000024000\\",\\"currencycode\\":\\"USD\\",\\"transtype\\":\\"0001\\",\\"status\\":\\"1001\\",\\"checkvalue\\":\\"31AFE0F7C3869FDBEC30F7583FD0F595AA53DEE657616A5633F168DBEC1E8E0B04EDD69D16B61589B8AAD38196E5385C100B9E107DC823DBF3A907D2AEBFDEC04C51D4D4B7CE5C7DDBFBB5171F0F585E0CDFBF09AAB6E07C352D85DA60F2687F4B638E529357768154822104A2B3F66FED7BF8C77C1D4377BE89616F9C8AF5BD\\",\\"GateId\\":\\"8613\\",\\"Priv1\\":\\"000000003844\\"}","gsChkValue":"ctW0GIGM\\/n3QvkFmFfHxD1I8kS9HMw\\/\\/9\\/zcT7TrvM\\/ELHsd\\/+M8lym131mzbytaYvc5d57QEiMcPV2DAUCE76HQD7N\\/G1KRTunVsTZ6yU4YT\\/HtQxWuAlvweaTM2JFCtXDFkFoIJJxIImGNP26lcfnD4nUPpTibcs9PtFVqVvA=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 00:46:48 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"2016082200451429","gsOrdId":"1471841149020624","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"孙君","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市黄浦区甜爱路","detailAddress2":""},"gsChkValue":"uHEsUHjynCWZbRdwUUQQ7V1b0Z6RyEBSF18tGZfKXX8vtfVs+8JAGep1vVw+nz4GvuZ2fdCybwZP2MB1eGFhdMIsKfAiqB8Vi3wUlMk//K0ALq9vLsGf2Li3kGI0lyQhhPfBqErFrzM/ZHqVizxAZFJSrfoBVt60mPZ29w+Gs2Q="}',
+)
+==== Seller Request: 2016-08-22 00:46:48 ===========
+==== IP: ::1
+array (
+  'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api.php',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082200451429',
+    'OrderInfo' => '{"merid":"808080071198021","orderno":"1471841149020624","transdate":"20160822","amount":"000000024000","currencycode":"USD","transtype":"0001","status":"1001","checkvalue":"31AFE0F7C3869FDBEC30F7583FD0F595AA53DEE657616A5633F168DBEC1E8E0B04EDD69D16B61589B8AAD38196E5385C100B9E107DC823DBF3A907D2AEBFDEC04C51D4D4B7CE5C7DDBFBB5171F0F585E0CDFBF09AAB6E07C352D85DA60F2687F4B638E529357768154822104A2B3F66FED7BF8C77C1D4377BE89616F9C8AF5BD","GateId":"8613","Priv1":"000000003844"}',
+    'GSOderId' => '1471841149020624',
+    'PackageInfo' => '{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""}',
+    'consigneeInfo' => '{"contactName":"\\u5b59\\u541b","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"\\u4e0a\\u6d77\\u5e02\\u9ec4\\u6d66\\u533a\\u751c\\u7231\\u8def","detailAddress2":""}',
+  ),
+)
+==== Seller Response: 2016-08-22 00:46:48 ===========
+==== IP: ::1
+array (
+  'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api.php',
+  'data' => '{"isSuccess":"1","errno":"","errMessage":""}',
+)
+==== Shopper Request: 2016-08-22 00:46:48 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471841149020624","isSuccess":"1","gsChkValue":"dvFc8Nw9mZ6aaM\\/AfPeRFITTLqMsDSs6tuW8c\\/KvHFlf6mDjACOmGliyv\\/jpxqO54ttPsR01tG0WrI8YTFLSiH4\\/JxqHVzXiEyyS\\/aQDdcS8\\/+JxZz2MH\\/vZI43wUFX6j8VAAnnyIXtFPW2EimKzEUuTNRah8+hVZ2OUgnTftFU=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 00:46:48 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":""}',
+)
+==== ChinaPay Result Data: 2016-08-22 00:47:13 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Return Error: 2016-08-22 00:47:13 ===========
+==== IP: ::1
+array (
+  'error' => 'Pay Failture！',
+  'detail' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Result Data: 2016-08-22 00:47:45 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== ChinaPay Return Error: 2016-08-22 00:47:45 ===========
+==== IP: ::1
+array (
+  'error' => 'Pay Failture！',
+  'detail' => 
+  array (
+    'merid' => '',
+    'orderno' => '',
+    'transdate' => '',
+    'amount' => '',
+    'currencycode' => '',
+    'transtype' => '',
+    'status' => '',
+    'checkvalue' => '',
+    'GateId' => '',
+    'Priv1' => '',
+  ),
+)
+==== Shopper Request: 2016-08-22 00:53:55 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471681439851441","merOrdId":"2016082016211324","gsChkValue":"kzOS5SK9ZEyONr7j9sA7SsYmyr1H1puJp7g1EeIgKk2u0SL9BS999S8O\\/spboubO1wcJwb71m913QVg\\/tzPgu4T3Yw7K0bsbGWHNoVDoOO6szi7cxt3D31VMyG0DChofktZkLVudK2jKYMpjLZb09vngqizDAIMFOGAyuL3ev4I=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 00:53:55 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"2016082016211324","gsOrdId":"1471681439851441","gsOrdStatus":"","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"孙君","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市黄浦区甜爱路","detailAddress2":""},"gsChkValue":"cRsYYvBsRdwGriDwsBpOprUU5etEbqQBMDwRHDP8KQtvFKIiAGomVqYHn9/8obbaS+8TKczhL6VXdGbfttkGFiFpoYzGw8zQZ7M9tX7w1p68AQUOwe5iipeBB4kb089aq8OcY2LqYvdPn7NOfcAaGl3ermYALK9Q9SZNjaHyBpY="}',
+)
+==== Shopper Request: 2016-08-22 00:54:00 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"","merOrdId":"2016082016211324","gsChkValue":"LrzO18zJCpyUkTapujadg5V\\/JUEpwxbjbOp1azCNjdXKtOYSR71S4OwxBkETJCqoYoubpsq3DUUyr766KYgMCfbMgcIrq9HGfZll\\/jZt58akBhFYLg45katSXCGSwinadGwbj1BQivIAhmySy9BU\\/TSNmLRgF1+euIOpK5t0j9A=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 00:54:00 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"0","errorCode":"1008","errorMessage":"该订单不存在"}',
+)
+==== Shopper Request: 2016-08-22 00:54:13 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471681439851441","merOrdId":"","gsChkValue":"ab2uQlBvJeLxAPxRBhX4nO9YwoTFSbw6MkIIdp\\/OSWiDUd8sV4KScLwvu38YkHmNp+XwgQW4P5EVHWjNJe\\/kw+VELVjXwAmx9tl5DcAr00e3LUdBpcYMcgc+1lqwE\\/e4n6rtPYiExFlrWT3AerwPWgZqKtqEwZtpYdA7FQc5fWE=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 00:54:13 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"","gsOrdId":"1471681439851441","gsOrdStatus":"","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"孙君","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市黄浦区甜爱路","detailAddress2":""},"gsChkValue":"f5j+C6LKO9U3y+tOZMAcTfFPz6cS0PJIWrZ66yRcJp7Z2kel1dvjbaUOlYmjbBHe/+YvUBMi1MltTv+/jjK8Gfzfq1pGRHNw9uNG6WS7s0hW0t1F92Xaj/bn7klQCGYrm7GVXEf8O7qvP0rjQovJzsDp/IENIyKYkpykKFzkwe4="}',
+)
+==== ChinaPay Result Data: 2016-08-22 00:55:19 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '808080071198021',
+    'orderno' => '1471841688390955',
+    'transdate' => '20160822',
+    'amount' => '000000024000',
+    'currencycode' => 'USD',
+    'transtype' => '0001',
+    'status' => '1001',
+    'checkvalue' => '217CF07F40982861377211A0E26D8A59BB9B4509623B5C47DCAC7CBC2572A031722FC34CA3A1716F179357D702F579BEE05A8BF3A1AAB006D0B4DBE3F2E361D78700D6872188131ED49AAF73AD8FA43276A28CFA9785EC779F414E39E9AAFD6A1B41D3EE15E5626CABFF09D7A2F10A69239E2E458658E7DC2F116660054B67B1',
+    'GateId' => '8613',
+    'Priv1' => '000000003844',
+  ),
+)
+==== Shopper Request: 2016-08-22 00:55:19 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471841688390955","orderInfo":"{\\"merid\\":\\"808080071198021\\",\\"orderno\\":\\"1471841688390955\\",\\"transdate\\":\\"20160822\\",\\"amount\\":\\"000000024000\\",\\"currencycode\\":\\"USD\\",\\"transtype\\":\\"0001\\",\\"status\\":\\"1001\\",\\"checkvalue\\":\\"217CF07F40982861377211A0E26D8A59BB9B4509623B5C47DCAC7CBC2572A031722FC34CA3A1716F179357D702F579BEE05A8BF3A1AAB006D0B4DBE3F2E361D78700D6872188131ED49AAF73AD8FA43276A28CFA9785EC779F414E39E9AAFD6A1B41D3EE15E5626CABFF09D7A2F10A69239E2E458658E7DC2F116660054B67B1\\",\\"GateId\\":\\"8613\\",\\"Priv1\\":\\"000000003844\\"}","gsChkValue":"DZrZM1CJzVnLSxSu8am2opvYj4S\\/ireUYwsLH2SfOz2EOsgu7HW9BJIW0QWVtNzqdDxPC6F5Q5zvUwkVBTorbLvLGlICAcv9d36FD6uDZyZN3sq4ZJPJ88v8f\\/kNihi9j1mblLQtIPIvXxif1ktNJMcYBGF3O6Qx+bFXztScyaI=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 00:55:19 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"2016082200544831","gsOrdId":"1471841688390955","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"孙君","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市黄浦区甜爱路","detailAddress2":""},"gsChkValue":"ENfJ2r07M1zLi23TSWuJaH9MpOexZf/U6V4lr27Q16RMHsZiZfOLeOqPAzg/f9W8rEi8Fj/3l6w2l9yeT9qB0fngx6CaVVEqzP2sfRFD3PTNGEifLAh+qfJjtgiqBrRT6fg3fFJNPX5OpUxThUlIaMjzVhVwOW3pcnP8X//fcmo="}',
+)
+==== Seller Request: 2016-08-22 00:55:19 ===========
+==== IP: ::1
+array (
+  'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api.php',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082200544831',
+    'OrderInfo' => '{"merid":"808080071198021","orderno":"1471841688390955","transdate":"20160822","amount":"000000024000","currencycode":"USD","transtype":"0001","status":"1001","checkvalue":"217CF07F40982861377211A0E26D8A59BB9B4509623B5C47DCAC7CBC2572A031722FC34CA3A1716F179357D702F579BEE05A8BF3A1AAB006D0B4DBE3F2E361D78700D6872188131ED49AAF73AD8FA43276A28CFA9785EC779F414E39E9AAFD6A1B41D3EE15E5626CABFF09D7A2F10A69239E2E458658E7DC2F116660054B67B1","GateId":"8613","Priv1":"000000003844"}',
+    'GSOderId' => '1471841688390955',
+    'PackageInfo' => '{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""}',
+    'consigneeInfo' => '{"contactName":"\\u5b59\\u541b","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"\\u4e0a\\u6d77\\u5e02\\u9ec4\\u6d66\\u533a\\u751c\\u7231\\u8def","detailAddress2":""}',
+  ),
+)
+==== Seller Response: 2016-08-22 00:55:19 ===========
+==== IP: ::1
+array (
+  'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api.php',
+  'data' => '{"isSuccess":"1","errno":"","errMessage":""}',
+)
+==== Shopper Request: 2016-08-22 00:55:19 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471841688390955","isSuccess":"1","gsChkValue":"USIzNrlz\\/AL4S9eIkBtdz7ZCqvCaoEV9xiYoXkQnbstziWa8lZbLkZQsjb9P5Cw1esHZHCvZYkcdS63tCB4MtsFlRSc7u1RwJPj77rAAPOEHFzdcUgKYyZWWslc93n6L84kGW4R+m33LvPB26bamKkidIM\\/wSgg7MBu4Dsn+kNw=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 00:55:19 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":""}',
+)
+==== Shopper Request: 2016-08-22 01:01:09 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1111111","merOrdId":"","gsChkValue":"HlEUyz1QHhTbNIOGHEm\\/zds86kkEVlsARcNq4gcUbQVkhDMLrkQBexd3dssfibjlyc6+Xxo7DQ25sXZVsF3VNztFRIoaO+z0TMQ6483VUPAfZFhj9fq2dKKnSncfDgB2o6\\/fL2DyoD7OKURptmr7oXgZjN7VKaB9icpi3XQpJy4=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 01:01:09 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"0","errorCode":"1008","errorMessage":"该订单不存在"}',
+)
+==== Shopper Request: 2016-08-22 01:12:23 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471841680530136","merOrdId":"","gsChkValue":"Vh4yKH589sx7uKcsGheX0Y6gy\\/uZmPcP3u9UnWDRNCC8o9n0Ehyfg24f+n1sLg8+l\\/\\/1Jbd3dX0YZ0XyPF35qBY1Mmr8slBH2Qg4vuYLP\\/zkuSBFjDCi8ym9RNPhmWxxLPNEmGcvNUYP9LsoqdMjRfLEQs8cTFsJ60hfsc2WVAk=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 01:12:23 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"","gsOrdId":"1471841680530136","gsOrdStatus":"","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"尹莎莎","contactPhone":"136****6346","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市浦东新区祖冲之路2288号展讯中心3号楼610室","detailAddress2":""},"gsChkValue":"qrmws0+8cgNS637NxGBFR5WNmvBSC8R4ehgQDHxDDidgY70FQyio+ElPxwOBYDfOmfMeIj5FTe/yitOjGqG0HGytiXyh6Xz8mvklLdHvgJ2K+lFX124+QDcShWC4y56mM46RFcVc43mNH+d68e2HRiTYBMhjX8ZWj+oi5rHTIyI="}',
+)
+==== Shopper Request: 2016-08-22 01:12:47 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471841680530136","merOrdId":"2016082200542869","gsChkValue":"Mq4bLURfIkgs8oaTrwTrcZEG1FJ7B1p6tk2V4B4TryTFabaVNlRK2adJLN\\/4dbBEwzRwbR4HY5RF5uvvEq6uu5ZKIu\\/XSc2fgvsLdRNMwT\\/mNFM0x2S4S15+hCSNs5SAQ0TAWT8HjezpPqBgxXmPcHiYG02f4TmuCfWCe4+dceM=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 01:12:48 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"2016082200542869","gsOrdId":"1471841680530136","gsOrdStatus":"","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"尹莎莎","contactPhone":"136****6346","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市浦东新区祖冲之路2288号展讯中心3号楼610室","detailAddress2":""},"gsChkValue":"Rj8KLpD4jfcD12rCsOq9hqbxOAIN3wm4gI+/n4YubmGUQ/qpqcTvap/aOSH1R16krJwmGBqPsC3XtZ8+BZOS5SUoRBa7MRDVWEiXT0ufis0JGj/UC4zPgEMJlFl6Hv5B4KNU/rqM5JbYmnRFZN6b2DFvKrt0NbF+hjwXE13AEh8="}',
+)
+==== Shopper Request: 2016-08-22 01:13:05 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471841680530136","merOrdId":"","gsChkValue":"Vh4yKH589sx7uKcsGheX0Y6gy\\/uZmPcP3u9UnWDRNCC8o9n0Ehyfg24f+n1sLg8+l\\/\\/1Jbd3dX0YZ0XyPF35qBY1Mmr8slBH2Qg4vuYLP\\/zkuSBFjDCi8ym9RNPhmWxxLPNEmGcvNUYP9LsoqdMjRfLEQs8cTFsJ60hfsc2WVAk=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 01:13:05 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"","gsOrdId":"1471841680530136","gsOrdStatus":"","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"尹莎莎","contactPhone":"136****6346","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市浦东新区祖冲之路2288号展讯中心3号楼610室","detailAddress2":""},"gsChkValue":"qrmws0+8cgNS637NxGBFR5WNmvBSC8R4ehgQDHxDDidgY70FQyio+ElPxwOBYDfOmfMeIj5FTe/yitOjGqG0HGytiXyh6Xz8mvklLdHvgJ2K+lFX124+QDcShWC4y56mM46RFcVc43mNH+d68e2HRiTYBMhjX8ZWj+oi5rHTIyI="}',
+)
+==== Shopper Request: 2016-08-22 01:18:54 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471841680530","merOrdId":"","gsChkValue":"KixISiKY0XdQycdjgRR+NlDnWHOm1EsQdY\\/FHLxLdH2ckO0A+P2wm6RGjsYa870zqjAHM\\/daVUJIaKGPLZkfCZ6UhnuPR2ShSRiro6LKK0VQv0klYPAn3+Rn94B81z4oFHMWAYc7E6rmQhJeSrybi9qwKHmsqbmuvMLsUukTuvI=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 01:18:54 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"0","errorCode":"1008","errorMessage":"该订单不存在"}',
+)
+==== Shopper Request: 2016-08-22 01:19:33 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471841680530","merOrdId":"","gsChkValue":"KixISiKY0XdQycdjgRR+NlDnWHOm1EsQdY\\/FHLxLdH2ckO0A+P2wm6RGjsYa870zqjAHM\\/daVUJIaKGPLZkfCZ6UhnuPR2ShSRiro6LKK0VQv0klYPAn3+Rn94B81z4oFHMWAYc7E6rmQhJeSrybi9qwKHmsqbmuvMLsUukTuvI=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 01:19:33 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"0","errorCode":"1008","errorMessage":"该订单不存在"}',
+)
+==== Shopper Request: 2016-08-22 01:20:07 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471841680530","merOrdId":"","gsChkValue":"KixISiKY0XdQycdjgRR+NlDnWHOm1EsQdY\\/FHLxLdH2ckO0A+P2wm6RGjsYa870zqjAHM\\/daVUJIaKGPLZkfCZ6UhnuPR2ShSRiro6LKK0VQv0klYPAn3+Rn94B81z4oFHMWAYc7E6rmQhJeSrybi9qwKHmsqbmuvMLsUukTuvI=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 01:20:07 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"0","errorCode":"1008","errorMessage":"该订单不存在"}',
+)
+==== Shopper Request: 2016-08-22 01:20:33 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471841680530","merOrdId":"","gsChkValue":"KixISiKY0XdQycdjgRR+NlDnWHOm1EsQdY\\/FHLxLdH2ckO0A+P2wm6RGjsYa870zqjAHM\\/daVUJIaKGPLZkfCZ6UhnuPR2ShSRiro6LKK0VQv0klYPAn3+Rn94B81z4oFHMWAYc7E6rmQhJeSrybi9qwKHmsqbmuvMLsUukTuvI=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 01:20:33 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"0","errorCode":"1008","errorMessage":"该订单不存在"}',
+)
+==== Shopper Request: 2016-08-22 01:21:02 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471841680530","merOrdId":"","gsChkValue":"KixISiKY0XdQycdjgRR+NlDnWHOm1EsQdY\\/FHLxLdH2ckO0A+P2wm6RGjsYa870zqjAHM\\/daVUJIaKGPLZkfCZ6UhnuPR2ShSRiro6LKK0VQv0klYPAn3+Rn94B81z4oFHMWAYc7E6rmQhJeSrybi9qwKHmsqbmuvMLsUukTuvI=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 01:21:02 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"0","errorCode":"1008","errorMessage":"该订单不存在"}',
+)
+==== Shopper Request: 2016-08-22 01:21:32 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471681439851441","merOrdId":"2016082016211324","gsChkValue":"kzOS5SK9ZEyONr7j9sA7SsYmyr1H1puJp7g1EeIgKk2u0SL9BS999S8O\\/spboubO1wcJwb71m913QVg\\/tzPgu4T3Yw7K0bsbGWHNoVDoOO6szi7cxt3D31VMyG0DChofktZkLVudK2jKYMpjLZb09vngqizDAIMFOGAyuL3ev4I=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 01:21:33 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"2016082016211324","gsOrdId":"1471681439851441","gsOrdStatus":"","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"孙君","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市黄浦区甜爱路","detailAddress2":""},"gsChkValue":"cRsYYvBsRdwGriDwsBpOprUU5etEbqQBMDwRHDP8KQtvFKIiAGomVqYHn9/8obbaS+8TKczhL6VXdGbfttkGFiFpoYzGw8zQZ7M9tX7w1p68AQUOwe5iipeBB4kb089aq8OcY2LqYvdPn7NOfcAaGl3ermYALK9Q9SZNjaHyBpY="}',
+)
+==== Shopper Request: 2016-08-22 01:21:37 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471681439851","merOrdId":"2016082016211324","gsChkValue":"k4zxtfDDSFU5q24AUVuoo8zwPznUd+mgcC4zTwy23CnjzSIlxeb\\/6I+SqKwepErgVyg7Q\\/vmJlErF7eq0o9sFxUIbHuqeJOC\\/6vAMT3Csr0GBwpbyUO4z7E+TiU3zZLEqZfjHzp+kpkIu9Cv1e++N4pPPzfcLJ+lcXcL5ORhDwQ=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 01:21:37 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"0","errorCode":"1008","errorMessage":"该订单不存在"}',
+)
+==== Shopper Request: 2016-08-22 01:22:15 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471681439851","merOrdId":"2016082016211324","gsChkValue":"k4zxtfDDSFU5q24AUVuoo8zwPznUd+mgcC4zTwy23CnjzSIlxeb\\/6I+SqKwepErgVyg7Q\\/vmJlErF7eq0o9sFxUIbHuqeJOC\\/6vAMT3Csr0GBwpbyUO4z7E+TiU3zZLEqZfjHzp+kpkIu9Cv1e++N4pPPzfcLJ+lcXcL5ORhDwQ=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 01:22:15 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"0","errorCode":"1008","errorMessage":"该订单不存在"}',
+)
+==== Shopper Request: 2016-08-22 01:24:49 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471681439851441","merOrdId":"2016082016211324","gsChkValue":"kzOS5SK9ZEyONr7j9sA7SsYmyr1H1puJp7g1EeIgKk2u0SL9BS999S8O\\/spboubO1wcJwb71m913QVg\\/tzPgu4T3Yw7K0bsbGWHNoVDoOO6szi7cxt3D31VMyG0DChofktZkLVudK2jKYMpjLZb09vngqizDAIMFOGAyuL3ev4I=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 01:24:49 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"2016082016211324","gsOrdId":"1471681439851441","gsOrdStatus":"","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"孙君","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市黄浦区甜爱路","detailAddress2":""},"gsChkValue":"cRsYYvBsRdwGriDwsBpOprUU5etEbqQBMDwRHDP8KQtvFKIiAGomVqYHn9/8obbaS+8TKczhL6VXdGbfttkGFiFpoYzGw8zQZ7M9tX7w1p68AQUOwe5iipeBB4kb089aq8OcY2LqYvdPn7NOfcAaGl3ermYALK9Q9SZNjaHyBpY="}',
+)
+==== ChinaPay Result Data: 2016-08-22 01:25:46 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '808080071198021',
+    'orderno' => '1471843526493575',
+    'transdate' => '20160822',
+    'amount' => '000000024000',
+    'currencycode' => 'USD',
+    'transtype' => '0001',
+    'status' => '1001',
+    'checkvalue' => '01B95F33B6C18F135B7089F2F8626E5594CB590586EB234F6F5A7D945D337B89CD083ACF16CD8C1CEA14EE2EC83B6FCB266A9390030383B2C7988A9BCBB223D54DF5AF529A91C7C67048BF8DCB5CA116FD0CD3F8AEDEB9A881B972E1DD0423BC79801B4B8767179812CDF73E3C94E3522726DDABD6FB7F75A598A455C4654E89',
+    'GateId' => '8613',
+    'Priv1' => '000000003844',
+  ),
+)
+==== Shopper Request: 2016-08-22 01:25:46 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471843526493575","orderInfo":"{\\"merid\\":\\"808080071198021\\",\\"orderno\\":\\"1471843526493575\\",\\"transdate\\":\\"20160822\\",\\"amount\\":\\"000000024000\\",\\"currencycode\\":\\"USD\\",\\"transtype\\":\\"0001\\",\\"status\\":\\"1001\\",\\"checkvalue\\":\\"01B95F33B6C18F135B7089F2F8626E5594CB590586EB234F6F5A7D945D337B89CD083ACF16CD8C1CEA14EE2EC83B6FCB266A9390030383B2C7988A9BCBB223D54DF5AF529A91C7C67048BF8DCB5CA116FD0CD3F8AEDEB9A881B972E1DD0423BC79801B4B8767179812CDF73E3C94E3522726DDABD6FB7F75A598A455C4654E89\\",\\"GateId\\":\\"8613\\",\\"Priv1\\":\\"000000003844\\"}","gsChkValue":"Q5N\\/ywEWcUrB7PounPqkYfFFDBfjhg\\/fh+JP5OjCX0+hre0o\\/aYy3o7kZUcOOLfhyvXzfNMMhBrxbB\\/NcHnuuK8FKvIlNpFDrYqHbUhWM4CDZGBnK9UyLqN9a+kV2JI6l8YYCy2X6vUyop+xKQnOXaYgEILU16BvV7adW9BXUYw=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 01:25:46 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"2016082201250468","gsOrdId":"1471843526493575","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"孙君","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市黄浦区甜爱路","detailAddress2":""},"gsChkValue":"pHgYcXbk16hIjg8ni/JMV7YesXKe4kQxYELlcsbAh0nIWQojGtLJFp09hs5yVuUFcBbhlKZ9SNPDQlB9YqhZTroiAE3RwSCtVLlcM7HLcTZZAFCb7bANxU6tECZd1gYoeLVZXGtkmDd0Rlwzj9B2/DGYlm9rRHD+ma7EkZCoF/0="}',
+)
+==== Seller Request: 2016-08-22 01:25:46 ===========
+==== IP: ::1
+array (
+  'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api.php',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082201250468',
+    'OrderInfo' => '{"merid":"808080071198021","orderno":"1471843526493575","transdate":"20160822","amount":"000000024000","currencycode":"USD","transtype":"0001","status":"1001","checkvalue":"01B95F33B6C18F135B7089F2F8626E5594CB590586EB234F6F5A7D945D337B89CD083ACF16CD8C1CEA14EE2EC83B6FCB266A9390030383B2C7988A9BCBB223D54DF5AF529A91C7C67048BF8DCB5CA116FD0CD3F8AEDEB9A881B972E1DD0423BC79801B4B8767179812CDF73E3C94E3522726DDABD6FB7F75A598A455C4654E89","GateId":"8613","Priv1":"000000003844"}',
+    'GSOrdId' => '1471843526493575',
+    'PackageInfo' => '{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""}',
+    'consigneeInfo' => '{"contactName":"\\u5b59\\u541b","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"\\u4e0a\\u6d77\\u5e02\\u9ec4\\u6d66\\u533a\\u751c\\u7231\\u8def","detailAddress2":""}',
+  ),
+)
+==== Seller Response: 2016-08-22 01:25:46 ===========
+==== IP: ::1
+array (
+  'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api.php',
+  'data' => '{"isSuccess":"1","errno":"","errMessage":""}',
+)
+==== Shopper Request: 2016-08-22 01:25:46 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471843526493575","isSuccess":"1","gsChkValue":"UAKXxJ37oYmuXgK134FvL7ziYCqF4MSpYlHal7vXDFafamdUsmeOc5bqKV9A\\/fgJanFrnhEbi\\/tgFiMIzPDOV319JifFSY+ai\\/7YeLuYmcgoqsv2Tm\\/24pSwh\\/qjJbgKxCCJbVqmn\\/ONZPnr\\/DCNBliFpdqAXl1chB8d8ktWveY=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 01:25:46 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":""}',
+)
+==== Shopper Request: 2016-08-22 01:26:09 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471843526493575","merOrdId":"2016082016211324","gsChkValue":"XfoNZpzDEIPgMSetpa1tBSr39vqb1jPAtlgjnB88wk06KVlj+4jxVGwBe+v0AF7jYbH1GacyM5LKGKwRxUEwkYtCGFi1OqZUjrqIAh4jMFqp4jJvOLtuFALcKXQu+LSd5X7KQ7wabWRrJ\\/hVLKhpiQfGCIxCEtXYxJbKMDru+ec=","pluginVersion":"v2.0.2"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 01:26:09 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"2016082016211324","gsOrdId":"1471843526493575","gsOrdStatus":"","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"孙君","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市黄浦区甜爱路","detailAddress2":""},"gsChkValue":"dBlezojK26gWDzLtyLKPH51JW/Puv6Fd2V4hytIiZfNaYZKIczzqG3I1KkxfOiXjzZHGUk5ol6K4DZFw8pwpC24VC2t+sv7Z66L3QN6gdkNmpMCGtMUAybzJ+cB1zP8z2vKRgpqP3qd4cNEwqVbu07PzJxOHCoTjSdgTlOjYBb4="}',
+)
+==== ChinaPay Result Data: 2016-08-22 01:56:40 ===========
+==== IP: ::1
+array (
+  'uri' => '/shopperpay/return_url.php',
+  'data' => 
+  array (
+    'merid' => '808080071198021',
+    'orderno' => '1471845378673561',
+    'transdate' => '20160822',
+    'amount' => '000000024000',
+    'currencycode' => 'USD',
+    'transtype' => '0001',
+    'status' => '1001',
+    'checkvalue' => '86037390F779B06CCF5E12BF341EF2D1AC1EDFAB49CF2FABCA10EEB1C70DA6DF4DBE04DEA02B1746E3CFA7BD51C6C5CFD01A80EB3C73D09B435E5855922562A113B77B2FE09F084D3D9EF9F3A71C6EAE624551442FE5640B79AB1302E1CA8F6122AAA64F4431A89C2745C8D791991865ED14BE12275C9069038EA20A0795F5B9',
+    'GateId' => '8613',
+    'Priv1' => '000000003844',
+  ),
+)
+==== Shopper Request: 2016-08-22 01:56:40 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471845378673561","orderInfo":"{\\"merid\\":\\"808080071198021\\",\\"orderno\\":\\"1471845378673561\\",\\"transdate\\":\\"20160822\\",\\"amount\\":\\"000000024000\\",\\"currencycode\\":\\"USD\\",\\"transtype\\":\\"0001\\",\\"status\\":\\"1001\\",\\"checkvalue\\":\\"86037390F779B06CCF5E12BF341EF2D1AC1EDFAB49CF2FABCA10EEB1C70DA6DF4DBE04DEA02B1746E3CFA7BD51C6C5CFD01A80EB3C73D09B435E5855922562A113B77B2FE09F084D3D9EF9F3A71C6EAE624551442FE5640B79AB1302E1CA8F6122AAA64F4431A89C2745C8D791991865ED14BE12275C9069038EA20A0795F5B9\\",\\"GateId\\":\\"8613\\",\\"Priv1\\":\\"000000003844\\"}","gsChkValue":"Y6csllFKT0mbXvUIhapJ+EmFwznUvTHHAIKUi0e1pfr5dtFiq+1nT8zO0qlCQfzHSXqt9epQ7QS8jXEVRBJjhd9InYkei9Nwrrq\\/oyEzjcx2VhK+wbxYM5bCGMlp8EO+bv8XcH6yDaAO2shw0eyfKIEQV2CO05Gm4tIphrinVgs=","pluginVersion":"v2.0.3"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 01:56:40 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/update_order.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"2016082201561941","gsOrdId":"1471845378673561","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"孙君","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市黄浦区甜爱路","detailAddress2":""},"gsChkValue":"duepyrVu+WX0kC3pCZvYrDfEANOMGjTNuj0UKepWS9i3D8FB7BzSvWQM6oiSVf9NcmPELOMEAA//RvhrtxQQaOC9nvOYoX4t95oM5xV2wbmVIj75Mz+JZmpZt53WYALCwMmjykJDM8AFTSzqk8ZDEXwvDeVT45/eLRPgL6V+i9k="}',
+)
+==== Seller Request: 2016-08-22 01:56:40 ===========
+==== IP: ::1
+array (
+  'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api_demo.php',
+  'data' => 
+  array (
+    'MerOrdId' => '2016082201561941',
+    'OrderInfo' => '{"merid":"808080071198021","orderno":"1471845378673561","transdate":"20160822","amount":"000000024000","currencycode":"USD","transtype":"0001","status":"1001","checkvalue":"86037390F779B06CCF5E12BF341EF2D1AC1EDFAB49CF2FABCA10EEB1C70DA6DF4DBE04DEA02B1746E3CFA7BD51C6C5CFD01A80EB3C73D09B435E5855922562A113B77B2FE09F084D3D9EF9F3A71C6EAE624551442FE5640B79AB1302E1CA8F6122AAA64F4431A89C2745C8D791991865ED14BE12275C9069038EA20A0795F5B9","GateId":"8613","Priv1":"000000003844"}',
+    'GSOrdId' => '1471845378673561',
+    'PackageInfo' => '{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""}',
+    'consigneeInfo' => '{"contactName":"\\u5b59\\u541b","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"\\u4e0a\\u6d77\\u5e02\\u9ec4\\u6d66\\u533a\\u751c\\u7231\\u8def","detailAddress2":""}',
+  ),
+)
+==== Seller Response: 2016-08-22 01:56:40 ===========
+==== IP: ::1
+array (
+  'url' => 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api_demo.php',
+  'data' => '{"isSuccess":"1","errno":"","errMessage":""}',
+)
+==== Shopper Request: 2016-08-22 01:56:40 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471845378673561","isSuccess":"1","gsChkValue":"T5hm9hkff8aV+uKKd5UlbDowd8jvUo0KXVKU0LT9vXENQ9bUi4YbkEW1ewpED4QzY796SG4rEmfM7+3Or9fpAeoVmXyKgd+5bMKd35awP68jwUREmUUqdsZLlrDR8CqU1BHVJMGw3EHO0zkrQOvXRFgirycI02o9imBM\\/TN\\/\\/Zw=","pluginVersion":"v2.0.3"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 01:56:40 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/mer_order_status.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":""}',
+)
+==== Shopper Request: 2016-08-22 01:56:51 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => 
+  array (
+    'parameters' => '{"gsMerId":"5020001","gsOrdId":"1471681439851441","merOrdId":"2016082016211324","gsChkValue":"kzOS5SK9ZEyONr7j9sA7SsYmyr1H1puJp7g1EeIgKk2u0SL9BS999S8O\\/spboubO1wcJwb71m913QVg\\/tzPgu4T3Yw7K0bsbGWHNoVDoOO6szi7cxt3D31VMyG0DChofktZkLVudK2jKYMpjLZb09vngqizDAIMFOGAyuL3ev4I=","pluginVersion":"v2.0.3"}',
+  ),
+)
+==== Shopper Response: 2016-08-22 01:56:51 ===========
+==== IP: ::1
+array (
+  'url' => 'http://test.globalshopper.com.cn/pay_plugin/gsorder_detail.jhtml',
+  'data' => '{"isSuccess":"1","errorCode":"","errorMessage":"","merOrdId":"2016082016211324","gsOrdId":"1471681439851441","gsOrdStatus":"","ordPackageInfo":{"freightSource":"","postTaxSource":"","sourceExciseSource":"","sourceFreightSource":""},"consigneeInfo":{"contactName":"孙君","contactPhone":"139****5166","areaCode":"","fixedPhone":"","email":"","zipCode":"","countryName":"","provinceName":"","cityName":"","districtName":"","detailAddress1":"上海市黄浦区甜爱路","detailAddress2":""},"gsChkValue":"cRsYYvBsRdwGriDwsBpOprUU5etEbqQBMDwRHDP8KQtvFKIiAGomVqYHn9/8obbaS+8TKczhL6VXdGbfttkGFiFpoYzGw8zQZ7M9tX7w1p68AQUOwe5iipeBB4kb089aq8OcY2LqYvdPn7NOfcAaGl3ermYALK9Q9SZNjaHyBpY="}',
+)

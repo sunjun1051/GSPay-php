@@ -99,7 +99,7 @@ class SellerAPI
 	 */
 	public function goReturnUrl()
 	{
-		if (SELLER_RETURN_URL && !empty(SELLER_RETURN_URL)){
+		if (!!SELLER_RETURN_URL && !empty(SELLER_RETURN_URL)){
 		    $return_url = SELLER_RETURN_URL;
 		}else {
 		    $return_url = GS_ORDER_LIST;

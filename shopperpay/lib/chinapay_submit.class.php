@@ -8,7 +8,14 @@ if (!defined('CHINAPAY_PAY_URL')) {
 	die('Config error: no CHINAPAY_PAY_URL');
 }
 
-require 'netpayclient.php';
+if (PHP_VERSION<=5.4) {
+    require 'netpayclient.php';
+}elseif (PHP_VERSION>5.4 && PHP_VERSION<7.0) {
+    require 'netpayclientgt5.4.php';
+}elseif (PHP_VERSION >= 7.0) {
+    require 'netpayclient7.php';
+}
+
 
 class ChinaPaySubmit
 {
@@ -142,9 +149,9 @@ class ChinaPaySubmit
 	 * @param array $params Payment parameters
 	 * @return string the payment submit form string
 	 */
-	public function buildFormSubmit($params, $url = CHINAPAY_PAY_URL)
+	public function buildFormSubmit($params)
 	{
-	    $sHtml = "<form id='submit' name='submit' action='" . $url . "' method='POST'>";
+	    $sHtml = "<form id='submit' name='submit' action='" . CHINAPAY_PAY_URL . "' method='POST'>";
         if (is_array($params)) {
             while (!!list($key, $val) = each($params)) {
                 $sHtml .= "<input type='hidden' name='" . $key . "' value='" . htmlspecialchars($val) . "'/>";
@@ -164,14 +171,18 @@ class ChinaPaySubmit
 	 * @param string $msg the error message
 	 * @param mixed $detail the detail data about the error
 	 */
-	public function showReturnError($msg, $detail = '')
+	public function showReturnError($code, $msg, $detail = '')
 	{
 		logResult('ChinaPay Return Error', array(
 			'error' => $msg,
 			'detail' => $detail,
 		));
 		header('Content-Type:text/html; charset=utf-8');
-		die($msg);
+		die(json_encode(array(
+    			"isSuccess" => "0",
+    			"errorCode" => $code,
+    			"errorMessage" => $msg),JSON_UNESCAPED_UNICODE)
+		    );
 	}
 
 	/**

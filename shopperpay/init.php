@@ -37,7 +37,7 @@ define('CHINAPAY_REFUND_URL', $chinapay_refund_url);
 // define('CHINAPAY_REFUND_URL', 'http://console.chinapay.com/refund/SingleRefund.jsp');
 
 //插件版本号：
-$shopperpay_config['plugin_version'] = 'v2.0.2';
+$shopperpay_config['plugin_version'] = 'v2.0.3';
 
 // PHP 5.5 关闭已废弃提示
 // PHP 5.5 Shutdown the Deprecated warning

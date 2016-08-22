@@ -30,20 +30,22 @@ $shopper_api = new ShopperAPI();
 $seller_api = new SellerAPI();
 $sp = new ShopperPay();
 
-$_POST or $sp->sendError('920', '非法访问！');
+$_POST or $sp->sendError('101', 'Access Deny！Parameters Is Incorrect');
 
-$gsOrdId = filter_input(INPUT_POST, 'GSOrdId', FILTER_VALIDATE_STRING);
-$merOrdId = filter_input(INPUT_POST, 'MerOrdId', FILTER_VALIDATE_STRING); 
-$order_date = filter_input(INPUT_POST, 'order_date', FILTER_VALIDATE_INT);
-$refund_amount = filter_input(INPUT_POST, 'refund_amount', FILTER_VALIDATE_FLOAT);
-$priv1 = filter_input(INPUT_POST, 'priv1', FILTER_SANITIZE_STRING);
-
+// 接收商户退款数据
 // Get GlobalShopper Order ID By Merchant Order ID
+$gsOrdId = $_POST['GSOrdId'];
+$merOrdId = $_POST['MerOrdId'];
+$order_date = $_POST['order_date'];
+$refund_amount = $_POST['refund_amount'];
+$priv1 = $_POST['priv1'];
+
 $order_id_query_data = array(
     'gsMerId' => $shopperpay_config['GSMerId'],
 	'merOrdId' => $merOrdId,
 	'gsOrdId' => $gsOrdId,
 );
+
 //GS密钥签名
 $order_id_query_data['gsChkValue'] = $sp->get_signed_data($order_id_query_data);
 $order_id_query_data['pluginVersion'] = $shopperpay_config['plugin_version'];

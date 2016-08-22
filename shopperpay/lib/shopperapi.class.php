@@ -102,6 +102,29 @@ class ShopperAPI
 	}
 	
 	/**
+	 * 创建提交表单
+	 * Create the Payment Submit Form
+	 *
+	 * @param array $params Payment parameters
+	 * @return string the payment submit form string
+	 */
+	public function buildFormSubmit($params, $url)
+	{
+	    $sHtml = "<form id='submit' name='submit' action='" . $url . "' method='POST'>";
+	    if (is_array($params)) {
+	        while (!!list($key, $val) = each($params)) {
+	            $sHtml .= "<input type='hidden' name='" . $key . "' value='" . htmlspecialchars($val) . "'/>";
+	        }
+	    }else {
+	        $sHtml .= "<input type='hidden' name='" . $key . "' value='" . htmlspecialchars($params) . "'/>";
+	    }
+	    $sHtml .= "</form>";
+	    $sHtml .= "<script>document.forms['submit'].submit();</script>";
+	    echo $sHtml;
+	}
+	
+	
+	/**
 	 * 海淘天下数据签名
 	 * @return string
 	 */
