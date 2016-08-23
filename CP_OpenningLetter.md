@@ -61,5 +61,5 @@ And there will be some attachments in the mail as follows.
 
 
  [GS_attachments_screenshot_url]:https://globalshopper.github.io/GSPay-php/assets/gs_attachments_screenshot.png
- [GS_account_attchment_url]:https://globalshopper.github.io/GSPay-php/assets/gs_account_attachment
+ [GS_account_attchment_url]:https://globalshopper.github.io/GSPay-php/assets/gs_account_attachment.png
  [GS_CP_Console_Guide_url]:https://globalshopper.github.io/GSPay-php/assets/doc/ChinaPay_Merchant_Console_Guide.pdf
