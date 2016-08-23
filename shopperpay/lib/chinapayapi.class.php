@@ -3,7 +3,13 @@
  * ChinaPay 订单查询与退款接口
  */
 
-require 'netpayclient.php';
+if (PHP_VERSION >= 7.0) {
+    require 'netpayclient7.php';
+}elseif (PHP_VERSION > 5.4) {
+    require 'netpayclientgt5.4.php';
+}else{
+    require 'netpayclient.php';
+}
 
 class ChinaPayAPI
 {
@@ -19,9 +25,11 @@ class ChinaPayAPI
 	 * @return mixed result data received form server
 	 */
 	public function sendRequest($method, $url, $data = array())
-	{
+	{  
+	    if(is_array($data)){
+	        $data=http_build_query($data);
+	    }
 		logResult("ChinaPay Request", array('url' => $url, 'data' => $data));
-
 		# 发送 HTTP 请求并取得返回数据
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array('ContentType：application/x-www-form-urlencoded;charset=utf-8'));
@@ -47,11 +55,13 @@ class ChinaPayAPI
 				}
 				break;
 		}
-		curl_setopt($ch, CURLOPT_URL, $url);  //链接的接口地址
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);  //不直接输出，转为流文件
+		curl_setopt($ch, CURLOPT_HEADER, 0 );
+// 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+// 		curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+		curl_setopt($ch, CURLOPT_URL, $url); 
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);  
 		$res = curl_exec($ch);
 		curl_close($ch);
-
 		logResult("ChinaPay Response", array('url' => $url, 'data' => $res));
 		return $res;
 	}
@@ -74,7 +84,7 @@ class ChinaPayAPI
 
 		$sHtml .= "<script>document.forms['chinapaysubmit'].submit();</script>";
 
-		return $sHtml;
+		return  $sHtml;
 	}
 
 	/**
@@ -109,8 +119,8 @@ class ChinaPayAPI
 			die('Config error: no CHINAPAY_QUERY_URL');
 		}
 		$params = $this->signQueryData($params);
-//		echo $this->buildForm(CHINAPAY_QUERY_URL, $params);
-//		die;
+// 		echo $this->buildForm(CHINAPAY_QUERY_URL, $params);
+// 		die;
 		$result = $this->sendRequest('POST', CHINAPAY_QUERY_URL, $params);
 		return $this->parseResultData($result);
 	}
@@ -128,8 +138,9 @@ class ChinaPayAPI
 			die('Config error: no CHINAPAY_REFUND_URL');
 		}
 		$params = $this->signRefundData($params);
-//		echo $this->buildForm(CHINAPAY_REFUND_URL, $params);
-//		die;
+// 		form表单提交测试
+// 		echo $this->buildForm(CHINAPAY_REFUND_URL, $params);
+// 		die;
 		$result = $this->sendRequest('POST', CHINAPAY_REFUND_URL, $params);
 		return $this->parseResultData($result);
 	}
@@ -143,6 +154,7 @@ class ChinaPayAPI
 	 */
 	public function signQueryData($data)
 	{
+	    file_exists(CHINAPAY_PRIVKEY) or die('Private Key Is Not Found');
 		$merid = buildKey(CHINAPAY_PRIVKEY);
 		if (!$merid) {
 			echo "导入私钥文件失败！";
@@ -194,6 +206,7 @@ class ChinaPayAPI
 	 */
 	public function signRefundData($data)
 	{
+	    file_exists(CHINAPAY_PUBKEY) or die('Public Key Is Not Found');
 		$merid = buildKey(CHINAPAY_PRIVKEY);
 		if (!$merid) {
 			echo "导入私钥文件失败！";

@@ -37,7 +37,7 @@ define('CHINAPAY_REFUND_URL', $chinapay_refund_url);
 // define('CHINAPAY_REFUND_URL', 'http://console.chinapay.com/refund/SingleRefund.jsp');
 
 //插件版本号：
-$shopperpay_config['plugin_version'] = 'v2.0.3';
+$shopperpay_config['plugin_version'] = 'v2.0.4';
 
 // PHP 5.5 关闭已废弃提示
 // PHP 5.5 Shutdown the Deprecated warning
@@ -59,8 +59,8 @@ define('REFUND_NOTIFY_URL', dirname($self_url) . '/refund_notify_url.php');
 
 // 海淘天下接口地址
 // Test development environment,Globalshopper API interface address.
-define('GS_API', 'http://test.globalshopper.com.cn/');
-// define('GS_API', 'http://192.168.0.100:8080/');
+// define('GS_API', 'http://test.globalshopper.com.cn/');
+define('GS_API', 'http://192.168.0.105:8080/');
 
 // 海淘天下订单页
 define('GS_ORDER_LIST', 'http://test.globalshopper.com.cn/member/order/list.jhtml');

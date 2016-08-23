@@ -8,14 +8,13 @@ if (!defined('CHINAPAY_PAY_URL')) {
 	die('Config error: no CHINAPAY_PAY_URL');
 }
 
-if (PHP_VERSION<=5.4) {
-    require 'netpayclient.php';
-}elseif (PHP_VERSION>5.4 && PHP_VERSION<7.0) {
-    require 'netpayclientgt5.4.php';
-}elseif (PHP_VERSION >= 7.0) {
+if (PHP_VERSION >= 7.0) {
     require 'netpayclient7.php';
+}elseif (PHP_VERSION > 5.4) {
+    require 'netpayclientgt5.4.php';
+}else{
+    require 'netpayclient.php';
 }
-
 
 class ChinaPaySubmit
 {
@@ -68,6 +67,7 @@ class ChinaPaySubmit
 	 */
 	public function signPayData($pay_data)
 	{
+	    file_exists(CHINAPAY_PRIVKEY) or die('Private Key Is Not Found');
 		$merid = buildKey(CHINAPAY_PRIVKEY);
 		if (!$merid) {
 			echo "导入私钥文件失败！";
@@ -125,6 +125,7 @@ class ChinaPaySubmit
 	 */
 	public function verifyPayResultData($pay_result_data)
 	{
+	    file_exists(CHINAPAY_PUBKEY) or die('Public Key Is Not Found');
 		$flag = buildKey(CHINAPAY_PUBKEY);
 		if (!$flag) {
 			echo "导入公钥文件失败！";
