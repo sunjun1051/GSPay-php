@@ -1,11 +1,11 @@
-About The Accout Openning Letter
+About The Accout Opening Letter
 =========================== 
 
 There are two different kinds of Account Opening Letter, seperately provided by ChinaPay and Globalshopper .
 
 
-##Account Openning Letter from Globalshopper
-After you have submited your application, you will receive an email with subject of 'Globalshopper Account Openning Letter'
+##Account Opening Letter from Globalshopper
+After you have submited your application, you will receive an email with subject of 'Globalshopper Account Opening Letter'
 
 There will be the following message in the mail
 >Dear Customer:
@@ -34,7 +34,7 @@ There will be the following message in the mail
 2.Replace the configuration items in config.php of GSPay plugin SDK with these parameters which get from opening letter and 
 
 
-##Account Openning Letter from ChinaPay
+##Account Opening Letter from ChinaPay
 
 After you through the certification of ChinaPay.You will receive an email with subject of ‘ChinaPay Account Opening Letter’.
 
