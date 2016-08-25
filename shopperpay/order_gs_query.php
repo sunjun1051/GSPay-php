@@ -27,7 +27,7 @@ $seller_api = new SellerAPI();
 $sp = new ShopperPay();
 
 
-$_POST or $sp->sendError('101', '非法访问！');
+$_POST or $sp->sendError('101', 'Access Deny！Parameters Is Incorrect');
 
 // 接收商户查询订单参数（POST方式）
 $gsOrdId = $_POST['GSOrdId'];

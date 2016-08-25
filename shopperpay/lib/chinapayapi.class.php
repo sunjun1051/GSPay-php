@@ -3,13 +3,6 @@
  * ChinaPay 订单查询与退款接口
  */
 
-if (PHP_VERSION >= 7.0) {
-    require 'netpayclient7.php';
-}elseif (PHP_VERSION > 5.4) {
-    require 'netpayclientgt5.4.php';
-}else{
-    require 'netpayclient.php';
-}
 
 class ChinaPayAPI
 {
@@ -27,7 +20,7 @@ class ChinaPayAPI
 	public function sendRequest($method, $url, $data = array())
 	{  
 	    if(is_array($data)){
-	        $data=http_build_query($data);
+	        $data=http_build_query($data,'', '&');
 	    }
 		logResult("ChinaPay Request", array('url' => $url, 'data' => $data));
 		# 发送 HTTP 请求并取得返回数据
@@ -67,34 +60,13 @@ class ChinaPayAPI
 	}
 
 	/**
-	 * 创建提交表单
-	 * Create the Payment Submit Form
-	 *
-	 * @param string $action Form submit action url
-	 * @param array $params Payment parameters
-	 * @return string the payment submit form string
-	 */
-	public function buildForm($action, $params)
-	{
-		$sHtml = "<form id='chinapaysubmit' name='chinapaysubmit' action='" . $action . "' method='POST'>";
-		while (list ($key, $val) = each($params)) {
-			$sHtml .= "<input type='hidden' name='" . $key . "' value='" . htmlspecialchars($val) . "'/>";
-		}
-		$sHtml .= "</form>";
-
-		$sHtml .= "<script>document.forms['chinapaysubmit'].submit();</script>";
-
-		return  $sHtml;
-	}
-
-	/**
 	 * 解析接口返回的数据
 	 * parse return data from ChinaPay API
 	 *
 	 * @param string $result the origin data returned from api
 	 * @return array the parsed result data
 	 */
-	public function parseResultData($result)
+	public function parseResultData($result, $type = 0)
 	{
 		$is_match = preg_match('/<body>\s*(.*)\s*<\/body>/', $result, $matches);
 		if (!$is_match) {
@@ -103,6 +75,7 @@ class ChinaPayAPI
 		$result_data = $matches[1];
 		$result_data = mb_convert_encoding($result_data, 'UTF-8', 'GB2312');
 		parse_str($result_data, $result_array);
+		empty($type) or logResult("ChinaPay Refund Response BG", array('data' => $result_data));
 		return $result_array;
 	}
 
@@ -138,7 +111,6 @@ class ChinaPayAPI
 			die('Config error: no CHINAPAY_REFUND_URL');
 		}
 		$params = $this->signRefundData($params);
-// 		form表单提交测试
 // 		echo $this->buildForm(CHINAPAY_REFUND_URL, $params);
 // 		die;
 		$result = $this->sendRequest('POST', CHINAPAY_REFUND_URL, $params);
@@ -155,6 +127,7 @@ class ChinaPayAPI
 	public function signQueryData($data)
 	{
 	    file_exists(CHINAPAY_PRIVKEY) or die('Private Key Is Not Found');
+	    $this->loadNetPayClient();
 		$merid = buildKey(CHINAPAY_PRIVKEY);
 		if (!$merid) {
 			echo "导入私钥文件失败！";
@@ -180,6 +153,8 @@ class ChinaPayAPI
 	 */
 	public function verifyQueryResultData($result_data)
 	{
+	    file_exists(CHINAPAY_PUBKEY) or die('Public Key Is Not Found');
+	    $this->loadNetPayClient();
 		$flag = buildKey(CHINAPAY_PUBKEY);
 		if (!$flag) {
 			echo "导入公钥文件失败！";
@@ -206,7 +181,8 @@ class ChinaPayAPI
 	 */
 	public function signRefundData($data)
 	{
-	    file_exists(CHINAPAY_PUBKEY) or die('Public Key Is Not Found');
+	    file_exists(CHINAPAY_PRIVKEY) or die('Private Key Is Not Found');
+	    $this->loadNetPayClient();
 		$merid = buildKey(CHINAPAY_PRIVKEY);
 		if (!$merid) {
 			echo "导入私钥文件失败！";
@@ -225,7 +201,7 @@ class ChinaPayAPI
 		return $data;
 	}
 
-	/*
+	/**
 	 * 验证退款结果签名
 	 * check the signature of refund result data
 	 *
@@ -234,6 +210,8 @@ class ChinaPayAPI
 	 */
 	public function verifyRefundResultData($result_data)
 	{
+	    file_exists(CHINAPAY_PUBKEY) or die('Public Key Is Not Found');
+	    $this->loadNetPayClient();
 		$flag = buildKey(CHINAPAY_PUBKEY);
 		if (!$flag) {
 			echo "导入公钥文件失败！";
@@ -269,52 +247,12 @@ class ChinaPayAPI
 			$refund_result[$result_key] = empty($_POST[$result_key]) ? '' : $_POST[$result_key];
 		}
 		self::$refund_result_data = $refund_result;
-		logResult('ChinaPay Result Data', array(
-			'uri' => $_SERVER["REQUEST_URI"],
+		logResult('ChinaPay Result Data BG', array(
+			'url' => $_SERVER["REQUEST_URI"],
 			'data' => $this->getRefundResult(),
 		));
 		return $refund_result;
 	}
-
-// =======================================================================
-
-	/**
-	 * 金额转分格式
-	 * pay amount transform to cent format
-	 *
-	 * @param string $currencyId the currency code
-	 * @param string|float|int $amount pay amount
-	 * @return string cent format amount
-	 */
-	public function formatAmt($currencyId, $amount)
-	{
-		if ($currencyId == 'JPY') {
-			$formatted_amount = (string)intval((int)$amount * 100);
-		} else {
-			$formatted_amount = (string)intval($amount * 100);
-
-		}
-		return str_pad($formatted_amount, 12, '0', STR_PAD_LEFT);
-	}
-
-// 	/**
-// 	 * 分格式转金额
-// 	 * cent format pay amount transform to normal, the reversed to method formatAmt
-// 	 *
-// 	 * @param string $currencyId the currency code
-// 	 * @param string $amount cent format pay amount
-// 	 * @return string normal format amount
-// 	 */
-// 	public function unformatAmt($currencyId, $amount)
-// 	{
-// 		$amount = ltrim($amount, '0');
-// 		if ($currencyId == 'JPY') {
-// 			return sprintf('%d', $amount / 100);
-// 		} else {
-// 			return sprintf('%.2f', $amount / 100);
-// 		}
-
-// 	}
 
 	/**
 	 * 显示返回页错误
@@ -347,4 +285,78 @@ class ChinaPayAPI
 		));
 		die($msg);
 	}
+	
+	/**
+	 * 载入NetPayClient加密文件
+	 * load CP crypted file
+	 */
+	public function loadNetPayClient() {
+	    if (PHP_VERSION >= 7.0) {
+	        include_once dirname(__FILE__).'/netpayclient7.php';
+	    }elseif (PHP_VERSION >= 5.4) {
+	        include_once dirname(__FILE__).'/netpayclientgt5.4.php';
+	    }else{
+	        include_once dirname(__FILE__).'/netpayclient.php';
+	    }
+	}
+	
+	// =======================================================================
+	
+	// 	/**
+	// 	 * 金额转分格式
+	// 	 * pay amount transform to cent format
+	// 	 *
+	// 	 * @param string $currencyId the currency code
+	// 	 * @param string|float|int $amount pay amount
+	// 	 * @return string cent format amount
+	// 	 */
+	// 	public function formatAmt($currencyId, $amount)
+	// 	{
+	// 		if ($currencyId == 'JPY') {
+	// 			$formatted_amount = (string)intval((int)$amount * 100);
+	// 		} else {
+	// 			$formatted_amount = (string)intval($amount * 100);
+	
+	// 		}
+	// 		return str_pad($formatted_amount, 12, '0', STR_PAD_LEFT);
+	// 	}
+	
+	// 	/**
+	// 	 * 分格式转金额
+	// 	 * cent format pay amount transform to normal, the reversed to method formatAmt
+	// 	 *
+	// 	 * @param string $currencyId the currency code
+	// 	 * @param string $amount cent format pay amount
+	// 	 * @return string normal format amount
+	// 	 */
+	// 	public function unformatAmt($currencyId, $amount)
+	// 	{
+	// 		$amount = ltrim($amount, '0');
+	// 		if ($currencyId == 'JPY') {
+	// 			return sprintf('%d', $amount / 100);
+	// 		} else {
+	// 			return sprintf('%.2f', $amount / 100);
+	// 		}
+	
+	// 	}
+	
+
+// 	/**
+// 	 * 创建提交表单
+// 	 * Create the Payment Submit Form
+// 	 *
+// 	 * @param string $action Form submit action url
+// 	 * @param array $params Payment parameters
+// 	 * @return string the payment submit form string
+// 	 */
+// 	public function buildForm($action, $params)
+// 	{
+// 	    $sHtml = "<form id='chinapaysubmit' name='chinapaysubmit' action='" . $action . "' method='POST'>";
+// 	    while (list ($key, $val) = each($params)) {
+// 	        $sHtml .= "<input type='hidden' name='" . $key . "' value='" . htmlspecialchars($val) . "'/>";
+// 	    }
+// 	    $sHtml .= "</form>";
+// 	    $sHtml .= "<script>document.forms['chinapaysubmit'].submit();</script>";
+// 	    return  $sHtml;
+// 	}
 }

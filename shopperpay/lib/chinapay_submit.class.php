@@ -8,14 +8,6 @@ if (!defined('CHINAPAY_PAY_URL')) {
 	die('Config error: no CHINAPAY_PAY_URL');
 }
 
-if (PHP_VERSION >= 7.0) {
-    require 'netpayclient7.php';
-}elseif (PHP_VERSION > 5.4) {
-    require 'netpayclientgt5.4.php';
-}else{
-    require 'netpayclient.php';
-}
-
 class ChinaPaySubmit
 {
 	static $pay_result_data = null;
@@ -68,6 +60,7 @@ class ChinaPaySubmit
 	public function signPayData($pay_data)
 	{
 	    file_exists(CHINAPAY_PRIVKEY) or die('Private Key Is Not Found');
+	    $this->loadNetPayClient();
 		$merid = buildKey(CHINAPAY_PRIVKEY);
 		if (!$merid) {
 			echo "导入私钥文件失败！";
@@ -95,10 +88,10 @@ class ChinaPaySubmit
 	/**
 	 * 获取支付结果数据
 	 * get the payment result data
-	 *
+	 * @param string or number
 	 * @return array|null
 	 */
-	public function  getPayResult()
+	public function  getPayResult($type = 0)
 	{
 		if (null !== self::$pay_result_data) {
 			return self::$pay_result_data;
@@ -109,8 +102,9 @@ class ChinaPaySubmit
 			$pay_result[$result_key] = empty($_POST[$result_key]) ? '' : $_POST[$result_key];
 		}
 		self::$pay_result_data = $pay_result;
-		logResult('China Pay Submit Response', array(
-			'uri' => $_SERVER["REQUEST_URI"],
+		$logRequestTitle = empty($type) ? "China Pay Submit Response" : "China Pay Submit Response BG" ;
+		logResult($logRequestTitle, array(
+			'url' => $_SERVER["REQUEST_URI"],
 			'data' => $this->getPayResult(),
 		));
 		return $pay_result;
@@ -126,6 +120,7 @@ class ChinaPaySubmit
 	public function verifyPayResultData($pay_result_data)
 	{
 	    file_exists(CHINAPAY_PUBKEY) or die('Public Key Is Not Found');
+	    $this->loadNetPayClient();
 		$flag = buildKey(CHINAPAY_PUBKEY);
 		if (!$flag) {
 			echo "导入公钥文件失败！";
@@ -202,4 +197,21 @@ class ChinaPaySubmit
 		));
 		die($msg);
 	}
+	
+	/**
+	 * 载入NetPayClient加密文件
+	 * load CP crypted file
+	 */
+	
+	public function loadNetPayClient() {
+	    if (PHP_VERSION >= 7.0) {
+	        include_once dirname(__FILE__).'/netpayclient7.php';
+	    }elseif (PHP_VERSION >= 5.4) {
+	        include_once dirname(__FILE__).'/netpayclientgt5.4.php';
+	    }else{
+	        include_once dirname(__FILE__).'/netpayclient.php';
+	    }
+	}
+
+	
 }

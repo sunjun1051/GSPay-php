@@ -62,11 +62,12 @@ $shopperpay_config['DSTFlag'] = '0';
 // Merchant order payment result call back address.
 define('SELLER_API', 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api_demo.php');
 
+
 // 支付成功前端返回到商户的地址
 // Merchant order payment result call back interface API private key.
 define('SELLER_RETURN_URL', '');
 
 // 商户退款状态回传API
 // Merchant refund result call back address.
-define('SELLER_REFUND_API', 'http://localhost/order_refund');
+define('SELLER_REFUND_API', 'http://www.pujiangzhen.cn/shopperpay/demo/seller_api_demo.php');
 

@@ -21,10 +21,11 @@ class ShopperAPI
 	 * @param array $data request data
 	 * @return mixed result data received form server
 	 */
-	public function sendRequest($method, $url, $data = array()) //post， url/checklogin, 用户登录信息
+	public function sendRequest($method, $url, $data = array(), $type) //post， url/checklogin, 用户登录信息
 	{
-		logResult("Shopper Request", array('url' => $url, 'data' => $data));
-
+	    $logRequestTitle = empty($type) ? "Shopper Request" : "Shopper Request BG" ;
+	    $logResponseTitle = empty($type) ? "Shopper Response" : "Shopper Response BG" ;
+		logResult($logRequestTitle, array('url' => $url, 'data' => $data));
 		# 发送 HTTP 请求并取得返回数据
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array('ContentType：application/x-www-form-urlencoded;charset=utf-8'));
@@ -55,7 +56,7 @@ class ShopperAPI
 		$res = curl_exec($ch);
 		curl_close($ch);
 
-		logResult("Shopper Response", array('url' => $url, 'data' => $res));
+		logResult($logResponseTitle, array('url' => $url, 'data' => $res));
 		return $res;
 		
 	}
@@ -68,10 +69,10 @@ class ShopperAPI
 	 * @param array $params parameters of the API
 	 * @return bool|mixed result data
 	 */
-	public function call($method, $params) //$method CheckLogin | $params 用户登录信息
+	public function call($method, $params, $type = 0) //$method CheckLogin | $params 用户登录信息
 	{
 		$shopper_api_params['parameters'] = json_encode($params);
-		$json_str = $this->sendRequest('POST', GS_API . $method, $shopper_api_params);
+		$json_str = $this->sendRequest('POST', GS_API . $method, $shopper_api_params, $type);
 // 		var_dump($shopper_api_params);
 		if ($json_str) {
 // 		    var_dump($json_str); echo '<br/>';
@@ -127,7 +128,10 @@ class ShopperAPI
 	
 	/**
 	 * 海淘天下数据签名
-	 * @return string
+	 * Create Sign Data to GS
+	 * 
+	 * @param string sign data
+	 * @return string signed data
 	 */
 	function sign($data) {
 	    file_exists(GS_PRIVKEY) or die('The path of the GS private key is incorrect');
@@ -141,7 +145,10 @@ class ShopperAPI
 	
 	/**
 	 * 海淘天下验证签名
-	 * @return string
+	 * Verify Sign Data from GS
+	 * 
+	 * @param string signed data
+	 * @return string verify data
 	 */
 	function verify($sign, $data) {
 	    file_exists(GS_PUBKEY) or die('The path of the GS public key is incorrect');

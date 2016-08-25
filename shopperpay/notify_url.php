@@ -31,9 +31,8 @@ $cps = new ChinaPaySubmit();
 
 // 接收支付结果数据
 // get payment result data
-$pay_result_data = $cps->getPayResult();
+$pay_result_data = $cps->getPayResult(1);
 
-// var_dump($pay_result_data); return ;
 // 判断交易状态是否成功
 // check if payment status is success or not
 $pay_result_data['status'] == '1001' or $cps->showReturnError('105','Pay Failture！', $pay_result_data);
@@ -56,7 +55,7 @@ $shopper_sync_data['gsChkValue'] = $sp->get_signed_data($shopper_sync_data);
 $shopper_sync_data['pluginVersion'] = $shopperpay_config['plugin_version'];
 
 // 向GS同步ChinaPay支付信息
-$package_data = $shopper_api->call('pay_plugin/update_order.jhtml', $shopper_sync_data);
+$package_data = $shopper_api->call('pay_plugin/update_order.jhtml', $shopper_sync_data,1);
 
 // 判断返回数据， 如果isSuccess是否为1， 否则失败
 $package_data and $package_data['isSuccess'] == '1'
@@ -76,7 +75,7 @@ $seller_sync_data = array(
 	'consigneeInfo' => $package_data['consigneeInfo'],
 );
 
-$seller_data = $seller_api->onPaid($seller_sync_data);
+$seller_data = $seller_api->onPaid($seller_sync_data, 1);
 $seller_data and $seller_data['isSuccess'] == '1' 
     or $cps->showReturnError('108','Merchant API Sync PayInfo Failture', array('req' => $seller_sync_data, 'res' => $seller_data));
 
@@ -91,6 +90,6 @@ $confirm_order_status = array(
 $confirm_order_status['gsChkValue'] = $sp->get_signed_data($confirm_order_status);
 $confirm_order_status['pluginVersion'] = $shopperpay_config['plugin_version'];
 
-$confirm_request = $shopper_api->call('pay_plugin/mer_order_status.jhtml', $confirm_order_status);
+$confirm_request = $shopper_api->call('pay_plugin/mer_order_status.jhtml', $confirm_order_status,1);
 $confirm_request and $confirm_request['isSuccess'] == '1'
     or $cps->showReturnError('109','GS API Sync Merchant Confirm Failture', array('req' => $confirm_order_status, 'res' => $confirm_request));

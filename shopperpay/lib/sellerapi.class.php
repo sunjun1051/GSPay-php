@@ -10,7 +10,6 @@ if (!defined('SELLER_API')) {
 	die('Config error: no SELLER_API');
 }
 
-
 class SellerAPI
 {
 	/**
@@ -22,10 +21,11 @@ class SellerAPI
 	 * @param array $data request data
 	 * @return mixed result data received form server
 	 */
-	public function sendRequest($method, $url, $data = array())
+	public function sendRequest($method, $url, $data = array(), $type)
 	{
-		logResult("Seller Request", array('url' => $url, 'data' => $data));
-
+	    $logRequestTitle = empty($type) ? "Seller Request" : "Seller Request BG" ;
+	    $logResponseTitle = empty($type) ? "Seller Response" : "Seller Response BG" ;
+		logResult($logRequestTitle, array('url' => $url, 'data' => $data));
 		# 发送 HTTP 请求并取得返回数据
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array('ContentType：application/x-www-form-urlencoded;charset=utf-8'));
@@ -55,7 +55,7 @@ class SellerAPI
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		$res = curl_exec($ch);
 		curl_close($ch);
-		logResult("Seller Response", array('url' => $url, 'data' => $res));
+		logResult($logResponseTitle, array('url' => $url, 'data' => $res));
 		return $res;
 	}
 
@@ -66,9 +66,9 @@ class SellerAPI
 	 * @param array $params received to be send to merchant
 	 * @return bool|mixed result from merchant callback API
 	 */
-	public function onPaid($params)
+	public function onPaid($params, $type = 0)
 	{
-		return $this->call(SELLER_API, $params);
+		return $this->call(SELLER_API, $params, $type);
 	}
 
 	/**
@@ -79,13 +79,13 @@ class SellerAPI
 	 * @param array $params received to be send to merchant
 	 * @return bool|mixed result from merchant callback API
 	 */
-	public function call($api, $params)
+	public function call($api, $params, $type = 0)
 	{
 		$real_params = array();
 		foreach ($params as $k => $v) {
 			$real_params[$k] = is_array($v) ? json_encode($v) : $v;
 		}
-		$json_str = $this->sendRequest('POST', $api, $real_params);
+		$json_str = $this->sendRequest('POST', $api, $real_params, $type);
 		if ($json_str) {
 			return json_decode($json_str, true);
 		} else {
@@ -99,7 +99,7 @@ class SellerAPI
 	 */
 	public function goReturnUrl()
 	{
-		if (!!SELLER_RETURN_URL && !empty(SELLER_RETURN_URL)){
+		if (SELLER_RETURN_URL){
 		    $return_url = SELLER_RETURN_URL;
 		}else {
 		    $return_url = GS_ORDER_LIST;

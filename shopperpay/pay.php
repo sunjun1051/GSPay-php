@@ -12,7 +12,6 @@ require 'init.php';
 // Load GlobalShopper interface
 require_once 'lib/shopperapi.class.php';
 
-
 // 载入插件处理类
 // Load payment plugin process class
 require 'lib/shopperpay.class.php';
@@ -24,7 +23,6 @@ require 'lib/chinapay_submit.class.php';
 $sp = new ShopperPay();
 $shopper_api = new ShopperAPI();
 $cps = new ChinaPaySubmit();
-
 
 // 接收GS返回订单信息
 $payRequest = $_POST or $sp->sendError('101', 'Access Deny！Parameters Is Incorrect');

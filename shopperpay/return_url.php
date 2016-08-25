@@ -33,7 +33,6 @@ $cps = new ChinaPaySubmit();
 // get payment result data
 $pay_result_data = $cps->getPayResult();
 
-// var_dump($pay_result_data); return ;
 // 判断交易状态是否成功
 // check if payment status is success or not
 $pay_result_data['status'] == '1001' or $cps->showReturnError('105','Pay Failture！', $pay_result_data);
