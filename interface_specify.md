@@ -2,18 +2,13 @@
 #System Interact 
 
 
-## Flow chat
+## Order submite and pay
 
 - Payment Flow chat
+
 ![Payment Flow chat][GS_img_url]
 
-- Query and refund flow chat
-
-![Query and refund flow chat][GS_img_url_query]
-
-
-
-## Order information submission
+### Order information submission
 - Description
 	- @See [flow chat 1.1]
 	- After the order is submitted, the order information need to be saved to Session, the key is SHOPPER_PAY_ORDER
@@ -40,7 +35,7 @@
 |perTotalAmt|Subtotal per product|YES|String|12|-|
 |SKU|Product SKU|YES|String|-|Must the same as sku you send to Globalshopper|
 
-##Order payment result notification
+###Order payment result notification
 - Description
 	- @See [flow chat 1.3.2]
 	- This interface should be provided by your system.
@@ -102,8 +97,13 @@
 |isSuccess|isSuccess|YES|Bool|1：success，0：fail|
 |errorMessage|Reson of failure |NO|String|Decription of failure，null when succuss|
 
+##Query and refund
 
-##Single order payment status query
+- Query and refund flow chat
+
+![Query and refund flow chat][GS_img_url_query]
+
+###Single order payment status query
 - Description
 	- @See [flow chat 2.1]
 	- Attention only return the order payment status and information with no packageInfo and consigneeInfo.
@@ -138,7 +138,7 @@
 |checkvalue|Signature value|YES|String|-|String of 256 byte and ASCII,Digital signature for key data submitted for this transaction|
 |Priv1|Logistic costs|YES|String|-|-|
 
-##Refund application
+###Refund application
 - Description
 	- @See [flow chat 3.1]
 	- Attention this interface just submite a refund application, the result can just tell you wether the application is accepted not the refund.
@@ -163,7 +163,7 @@
 
 
 
-## Refund result notification
+### Refund result notification
 - Description
 	- @See [flow chat 4.1.1]
 	- Attention this notification will be send to you after ChinaPay return the final refund result.
@@ -184,7 +184,7 @@
 |errorMessage|Reson of failure |NO|String|Decription of failure，null when succuss|
 
 
-## GSOrder information query
+### GSOrder information query
 - Description
 	- @See [flow chat 5.1]
 	- Attention only return the packageInfo and consigneeInfo with no orderInfo.
@@ -224,6 +224,26 @@
 |detailAddress1|Detail address1|YES|String|-|-|
 |detailAddress2|Detail address2|NO|String|-|If consignee address belongs to America ,it may be used, otherwise it is empty|
 
+## GSOrder Delivery Confirmation
+
+- Description
+	- After you confirm the delivery information you should call this interface to notify globalshopper.
+	- Globalshopper will mark this order package as a wait-receiving mode in our warehouse.
+
+| Parameter | Introduction | Must Need| Field Type | Field Length | Memo|  
+| ---- | ----------------- | ------------------- | ---- | ----------------- | -------------------|
+|MerOrdId | Order Num in your system | Yes( if there is no GSOrdId) | String |-| - |
+|GSOrdId|Globalshopper system order Id, related with MerOrdId in your system.|Yes( if there is no MerOrdId)|String|16|Order number in payment result(16 bit)|
+|trackNum| Tracking Number in your system, could be the tracking number of your express company, or you should use GSOrdId if you label it on your package in the form of bar code.| YES | String | - | - |
+|expressCompany| The express company name | NO(if you use GSOrdId as your TrackNum) YES(if you use tracking number of express company) | String | - | - |
+|estimateTime| the estimated time arrived at the warehouse | YES | String | - | - |
+
+- Response json formatted data:
+
+| Parameter | Introduction | Must Need| Field Type | Field Length | Memo|  
+| ---- | ----------------- | ------------------- | ---- | ----------------- | -------------------|
+|isSuccess|isSuccess|YES|Bool|1：success，0：fail| - |
+|errorMessage|Reson of failure |NO|String|Decription of failure，null when succuss| - |
 
  [GS_img_url]:https://globalshopper.github.io/GSPay-php/assets/gs_pay_flow.png
  [GS_img_url_query]:https://globalshopper.github.io/GSPay-php/assets/gs_query_refund_flow.png
