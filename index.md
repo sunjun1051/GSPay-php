@@ -157,6 +157,8 @@ define('SELLER_REFUND_API', 'http://localhost/order_refund');
 - [Refund application][Interface_01]
 - [Refund result notification][Interface_01]
 - [GSOrder information query][Interface_01]
+- [GSOrder Delivery Confirmation][Interface_01]
+
 
 
 # Version
