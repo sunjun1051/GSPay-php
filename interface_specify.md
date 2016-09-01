@@ -232,11 +232,20 @@
 
 | Parameter | Introduction | Must Need| Field Type | Field Length | Memo|  
 | ---- | ----------------- | ------------------- | ---- | ----------------- | -------------------|
+|totalTrackNum| Tracking Number in your system, could be the tracking number of your express company, or you should use GSOrdId if you label it on your package in the form of bar code.| YES | String | - | - |
+|expressCompany| The express company name | NO(if you use GSOrdId as your TrackNum) YES(if you use tracking number of express company) | String | - | - |
+|estimateTime| the estimated time arrived at the warehouse | YES | String | - | - |
+|packages| the estimated time arrived at the warehouse | YES | List | - | - |
+
+
+- packages elements as follows:
+
+| Parameter | Introduction | Must Need| Field Type | Field Length | Memo|  
+| ---- | ----------------- | ------------------- | ---- | ----------------- | -------------------|
 |MerOrdId | Order Num in your system | Yes( if there is no GSOrdId) | String |-| - |
 |GSOrdId|Globalshopper system order Id, related with MerOrdId in your system.|Yes( if there is no MerOrdId)|String|16|Order number in payment result(16 bit)|
 |trackNum| Tracking Number in your system, could be the tracking number of your express company, or you should use GSOrdId if you label it on your package in the form of bar code.| YES | String | - | - |
-|expressCompany| The express company name | NO(if you use GSOrdId as your TrackNum) YES(if you use tracking number of express company) | String | - | - |
-|estimateTime| the estimated time arrived at the warehouse | YES | String | - | - |
+
 
 - Response json formatted data:
 

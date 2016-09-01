@@ -1894,6 +1894,57 @@ pre {
 </thead>
 <tbody>
 <tr>
+<td>totalTrackNum</td>
+<td>Tracking Number in your system, could be the tracking number of your express company, or you should use GSOrdId if you label it on your package in the form of bar code.</td>
+<td>YES</td>
+<td>String</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>expressCompany</td>
+<td>The express company name</td>
+<td>NO(if you use GSOrdId as your TrackNum) YES(if you use tracking number of express company)</td>
+<td>String</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>estimateTime</td>
+<td>the estimated time arrived at the warehouse</td>
+<td>YES</td>
+<td>String</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>packages</td>
+<td>the estimated time arrived at the warehouse</td>
+<td>YES</td>
+<td>List</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+
+<ul>
+<li>packages elements as follows:</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Introduction</th>
+<th>Must Need</th>
+<th>Field Type</th>
+<th>Field Length</th>
+<th>Memo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
 <td>MerOrdId</td>
 <td>Order Num in your system</td>
 <td>Yes( if there is no GSOrdId)</td>
@@ -1912,22 +1963,6 @@ pre {
 <tr>
 <td>trackNum</td>
 <td>Tracking Number in your system, could be the tracking number of your express company, or you should use GSOrdId if you label it on your package in the form of bar code.</td>
-<td>YES</td>
-<td>String</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td>expressCompany</td>
-<td>The express company name</td>
-<td>NO(if you use GSOrdId as your TrackNum) YES(if you use tracking number of express company)</td>
-<td>String</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td>estimateTime</td>
-<td>the estimated time arrived at the warehouse</td>
 <td>YES</td>
 <td>String</td>
 <td>-</td>
