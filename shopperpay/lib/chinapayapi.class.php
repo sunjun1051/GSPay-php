@@ -250,7 +250,7 @@ class ChinaPayAPI
 			'url' => $_SERVER["REQUEST_URI"],
 			'data' => $this->getRefundResult(),
 			'refund'
-		));
+		),'pay');
 		return $refund_result;
 	}
 

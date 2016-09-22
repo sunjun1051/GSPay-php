@@ -6,7 +6,7 @@
 
 // 载入配置文件
 // Load configuration file
-require 'init.php';
+require_once 'init.php';
 
 $chinapay_api = new ChinaPayAPI();
 $shopper_api = new ShopperAPI();

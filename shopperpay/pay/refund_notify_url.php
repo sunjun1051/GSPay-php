@@ -6,13 +6,11 @@
 
 // 载入配置文件
 // Load configuration file
-require 'init.php';
+require_once 'init.php';
 
 $chinapay_api = new ChinaPayAPI();
 $shopper_api = new ShopperAPI();
 $sp = new ShopperPay();
-$seller_api = new SellerAPI();
-
 
 // 测试数据
 // $a = 'ResponseCode=0&MerID=808080071198021&ProcessDate=20160824&SendTime=171913&TransType=0002&OrderId=1472030990817164&RefundAmout=000000024000&Status=1&Priv1=000000003844&CheckValue=C370850893C60AEE8FF07EE91081A8A36281FC0E2E4882C5F490F77A8DCF3B6374C4B946911FB98A33B6001BBBC88CA2ED9DF5D1F52E754AB4C26C41FFC68F6E73108DAE3B63B8779DE9BD5ADE51709ECAC982716B3307E44F2A8E8F62FEBFF3CFA1BEDF650B012875158B476B52E4FBF1B4854CA8F3CDC0AE0BE532B0C38C5B';
@@ -21,11 +19,24 @@ $seller_api = new SellerAPI();
 // 接收CHINAPAY回执数据
 // send refund request
 $refund_result = $chinapay_api->getRefundResult();
-$refund_result or $chinapay_api->logNotifyError('ChinaPay Refund Reponse GB Failture', $refund_result,);
+$refund_result or $chinapay_api->logNotifyError('ChinaPay Refund Reponse Failture', $refund_result);
 
 // 退款失败处理， 向GS同步失败信息
 // refund failure
 isset($refund_result['ResponseCode']) or $chinapay_api->logNotifyError("ChinaPay Refund Response Failture！", $refund_result);
+
+// 如果config文件采用session配置, 则从商户配置中获取数据
+$path = dirname(__DIR__).'/gsmerconfig/'.$refund_result['MerID'].'_config.txt';
+if (file_exists($path)) {
+	$shopperpay_config = json_decode(file_get_contents($path), true) + $shopperpay_config;
+	define('CHINAPAY_PUBKEY', $shopperpay_config['CHINAPAY_PUBKEY']);
+	define('CHINAPAY_PRIVKEY', $shopperpay_config['CHINAPAY_PRIVKEY']);
+	define('GS_PUBKEY', $shopperpay_config['GS_PUBKEY']);
+	define('GS_PRIVKEY', $shopperpay_config['GS_PRIVKEY']);
+	define('SELLER_API', $shopperpay_config['SELLER_API']);
+	define('SELLER_RETURN_URL', $shopperpay_config['SELLER_RETURN_URL']);
+	define('SELLER_REFUND_API', $shopperpay_config['SELLER_REFUND_API']);
+}
 
 /*
  * 
@@ -133,6 +144,6 @@ $refund_seller_notify_data = array(
     'GSOrdId' => $notify_result['gsOrdId'],
 	'OrderInfo' => $refund_seller_notify_order_data
 );
-
+$seller_api = new SellerAPI();
 $notify_result = $seller_api->call(SELLER_REFUND_API, $refund_seller_notify_data, array('pay', 'BG'));
 !empty($notify_result['isSuccess']) and $notify_result['isSuccess'] == '1' or $chinapay_api->logNotifyError('Merchant Refunch API Sync Failture！', $notify_result);

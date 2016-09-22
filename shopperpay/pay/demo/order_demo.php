@@ -41,6 +41,24 @@ $order = array(
 
 // 开启Session
 session_start();
+
+$_SESSION['SHOPPER_PAY_CONFIG'] = array(
+	'ENV_SWITCH' => 0,
+	'GSMerId' => '5020001',
+	'MerId' => '808080071198021',
+	'LogisticsId' => '808080071198022',
+	'CHINAPAY_PUBKEY' => 'thenatural/PgPubk.key',
+	'CHINAPAY_PRIVKEY' => 'thenatural/MerPrK_808080071198021_20160711103730.key', 
+	'GS_PUBKEY' => 'sign/GS_Pubkey.key', 
+	'GS_PRIVKEY' => 'sign/GS_MerPrk_5020001.key', 
+	'TimeZone' => '-05', 
+	'CountryId' => '0001', 
+	'CuryId' => 'USD', 
+	'DSTFlag' => '0', 
+	'PhpTimeZone' => 'America/New_York',
+	'UpdateAt' => '2016-09-20 05:11:29',
+);
+
 // 将订单数据存入Session
 $_SESSION['SHOPPER_PAY_ORDER'] = $order;
 

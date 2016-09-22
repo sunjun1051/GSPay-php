@@ -4,12 +4,33 @@
  * Payment plugin configuration file
  */
 
-//引入用户配置文件
-require_once 'config.php';
 
-$china_pay_url = ENV_SWITCH ? 'https://payment.chinapay.com/pay/TransGet' : 'http://payment-test.chinapay.com/pay/TransGet';
-$china_query_url = ENV_SWITCH ? 'http://control.chinapay.com/QueryWeb/processQuery.jsp' : 'http://payment-test.chinapay.com/QueryWeb/processQuery.jsp';
-$chinapay_refund_url = ENV_SWITCH ? 'http://console.chinapay.com/refund/SingleRefund.jsp' : 'http://payment-test.chinapay.com/refund1/SingleRefund.jsp';
+// PHP 5.5 关闭已废弃提示
+// PHP 5.5 Shutdown the Deprecated warning
+error_reporting(error_reporting() ^ E_DEPRECATED ^ E_NOTICE);
+
+
+session_id() or session_start();
+
+// 引入用户配置文件
+if (isset($_SESSION['SHOPPER_PAY_CONFIG']) && !empty($_SESSION['SHOPPER_PAY_CONFIG'])) {
+	require_once 'config.php';
+}
+
+// 环境设置定义接口
+if (defined('ENV_SWITCH') && !empty(ENV_SWITCH)) {
+	$china_pay_url = 'https://payment.chinapay.com/pay/TransGet';
+	$china_query_url = 'http://control.chinapay.com/QueryWeb/processQuery.jsp';
+	$chinapay_refund_url = 'http://console.chinapay.com/refund/SingleRefund.jsp';
+	$gs_api = 'http://www.globalshopper.com.cn/';
+}else {
+	$china_pay_url = 'http://payment-test.chinapay.com/pay/TransGet';
+	$china_query_url = 'http://payment-test.chinapay.com/QueryWeb/processQuery.jsp';
+	$chinapay_refund_url = 'http://payment-test.chinapay.com/refund1/SingleRefund.jsp';
+	$gs_api = 'http://test.globalshopper.com.cn/';
+}
+
+
 
 // 测试环境ChinaPay支付接口地址
 // Test development environment, ChinaPay payment interface address.
@@ -37,11 +58,7 @@ define('CHINAPAY_REFUND_URL', $chinapay_refund_url);
 // define('CHINAPAY_REFUND_URL', 'http://console.chinapay.com/refund/SingleRefund.jsp');
 
 //插件版本号：
-$shopperpay_config['plugin_version'] = 'v2.1.0';
-
-// PHP 5.5 关闭已废弃提示
-// PHP 5.5 Shutdown the Deprecated warning
-error_reporting(error_reporting() ^ E_DEPRECATED ^ E_NOTICE);
+$shopperpay_config['plugin_version'] = 'v2.1.1';
 
 // 交易回调地址
 $self_url = ((!empty($_SERVER['HTTPS']) && 'on' == $_SERVER['HTTPS']) ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
@@ -58,8 +75,6 @@ define('REFUND_NOTIFY_URL', dirname($self_url) . '/refund_notify_url.php');
 
 // 海淘天下接口地址
 // Test development environment,Globalshopper API interface address.
-$gs_api = ENV_SWITCH ? 'http://www.globalshopper.com.cn/' : 'http://test.globalshopper.com.cn/';
-// $gs_api = 'http://192.168.0.105:8080/';
 define('GS_API', $gs_api);
 
 // 海淘天下订单页

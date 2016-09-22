@@ -34,3 +34,31 @@ function logResult($title, $data = '', $path)
 	flock($fp, LOCK_UN);
 	fclose($fp);
 }
+
+function configResult() {
+	$dir = dirname(__DIR__).'/gsmerconfig/';
+	is_dir($dir) or mkdir($dir);
+	$filename = $dir.$_SESSION['SHOPPER_PAY_CONFIG']['MerId'].'_config.txt';
+	// 文件不存在或者配置更新日期大于文件修改日期时执行, 更新配置文件
+	if (!file_exists($filename) || strtotime($_SESSION['SHOPPER_PAY_CONFIG']['UpdateAt']) > filemtime($filename)) {
+		$configs = array(
+			'GSMerId' => $_SESSION['SHOPPER_PAY_CONFIG']['GSMerId'], 
+			'MerId' => $_SESSION['SHOPPER_PAY_CONFIG']['MerId'], 
+			'CHINAPAY_PUBKEY' => CHINAPAY_PUBKEY, 
+			'CHINAPAY_PRIVKEY' => CHINAPAY_PRIVKEY, 
+			'GS_PUBKEY' => GS_PUBKEY, 
+			'GS_PRIVKEY' => GS_PRIVKEY, 
+			'SELLER_API' => SELLER_API,
+			'SELLER_RETURN_URL' => SELLER_RETURN_URL,
+			'SELLER_REFUND_API' => SELLER_REFUND_API,
+			'UpdateAt' => $_SESSION['SHOPPER_PAY_CONFIG']['UpdateAt'],
+		);
+		file_put_contents($filename, json_encode($configs));
+	}
+}
+
+
+
+
+
+

@@ -5,7 +5,7 @@
  */
 // 载入配置文件
 // Load configuration file
-require 'init.php';
+require_once 'init.php';
 
 $sp = new ShopperPay();
 $shopper_api = new ShopperAPI();

@@ -5,16 +5,29 @@
  */
 // 载入配置文件
 // Load configuration file
-require 'init.php';
+require_once 'init.php';
 
 $sp = new ShopperPay();
 $shopper_api = new ShopperAPI();
-$seller_api = new SellerAPI();
 $cps = new ChinaPaySubmit();
 
 // 接收支付结果数据
 // get payment result data
 $pay_result_data = $cps->getPayResult(array('pay', 'BG'));
+
+// 如果config文件采用session配置, 则从商户配置中获取数据
+$path = dirname(__DIR__).'/gsmerconfig/'.$pay_result_data['merid'].'_config.txt';
+if (file_exists($path)) {
+	$shopperpay_config = json_decode(file_get_contents($path), true) + $shopperpay_config;
+	define('CHINAPAY_PUBKEY', $shopperpay_config['CHINAPAY_PUBKEY']);
+	define('CHINAPAY_PRIVKEY', $shopperpay_config['CHINAPAY_PRIVKEY']);
+	define('GS_PUBKEY', $shopperpay_config['GS_PUBKEY']);
+	define('GS_PRIVKEY', $shopperpay_config['GS_PRIVKEY']);
+	define('SELLER_API', $shopperpay_config['SELLER_API']);
+	define('SELLER_RETURN_URL', $shopperpay_config['SELLER_RETURN_URL']);
+	define('SELLER_REFUND_API', $shopperpay_config['SELLER_REFUND_API']);
+}
+
 
 // 判断交易状态是否成功
 // check if payment status is success or not
@@ -23,6 +36,7 @@ $pay_result_data['status'] == '1001' or $cps->logNotifyError('Pay Failture！', 
 // 校验支付结果数据
 // verify payment result sign is valid or not
 $pay_result_verify = $cps->verifyPayResultData($pay_result_data);
+
 $pay_result_verify or $cps->logNotifyError('Verify ChinaPay Sign Failture！', $pay_result_data);
 
 // 调用GS接口保存支付状态并获取包裹单相关信息
@@ -58,6 +72,7 @@ $seller_sync_data = array(
 	'consigneeInfo' => $package_data['consigneeInfo'],
 );
 
+$seller_api = new SellerAPI();
 $seller_data = $seller_api->onPaid($seller_sync_data, array('pay', 'BG'));
 $seller_data and $seller_data['isSuccess'] == '1' 
     or $cps->logNotifyError('Merchant API Sync PayInfo Failture', array('req' => $seller_sync_data, 'res' => $seller_data));

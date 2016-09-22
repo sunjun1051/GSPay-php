@@ -22,7 +22,7 @@ $send_data = array(
 	'expressCompany' => $expressCompany,
 	'estimateTime' => $estimateTime,
 	'packages' => $packages
-	);
+);
 
  function sendRequest($url, $data)
 	{  

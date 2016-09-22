@@ -21,6 +21,7 @@ $delivery_request_data = array(
 	'totalTrackNum' => $_POST['totalTrackNum'], //string
 	'expressCompany' => $_POST['expressCompany'],  //string
 	'estimateTime' => $_POST['estimateTime'], //可以为空
+	'warehouseCode' => $_POST['warehouseCode'],  //境外仓库编号 string
 	'packages' => $_POST['packages'], //json array
 	'gsMerId' => $shopperpay_config['GSMerId'],
 );
@@ -34,6 +35,7 @@ $delivery_sign_data = array(
 	'gsMerId' => $delivery_request_data['gsMerId'],  	//GS商户号
 	'totalTrackNum' => $delivery_request_data['totalTrackNum'],
 	'packages' => $delivery_request_data['packages']	//订单组合
+	'warehouseCode' => $delivery_request_data['warehouseCode'] //境外仓库编号 string
 );
 // GS密钥签名
 $delivery_request_data['gsChkValue'] = $sp->get_signed_data($delivery_sign_data);
